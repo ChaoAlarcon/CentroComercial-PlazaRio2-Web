@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto</title>
+</head>
+<body>
+  <header><h1>Contacto</h1></header>
+  <main>
+    <form action="enviar.php" method="post">
+      <p>Nombre:<br>
+        <input type="text" name="nombre" placeholder="Nombre" required>
+      </p>
+      <p>Apellidos:<br>
+        <input type="text" name="apellidos" placeholder="Apellidos" required>
+      </p>
+      <p>Dirección:<br>
+        <input type="text" name="direccion" placeholder="Dirección" required>
+      </p>
+      <p>Email:<br>
+        <input type="email" name="email" placeholder="Email" required>
+      </p>
+      <p>Confirmar Email:<br>
+        <input type="email" name="email_confirm" placeholder="Confirmar Email" required>
+      </p>
+      <p>Teléfono:<br>
+        <input type="tel" name="telefono" placeholder="Teléfono" required>
+      </p>
+      <p>Comentarios:<br>
+        <textarea name="comentarios" placeholder="Escribe tus comentarios aquí" required></textarea>
+      </p>
+      <p>
+        <button type="submit">Enviar</button>
+      </p>
+    </form>
+  </main>
+</body>
+</html>
