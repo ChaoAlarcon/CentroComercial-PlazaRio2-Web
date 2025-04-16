@@ -4,4 +4,4 @@
 ### -Nicolás García-Sampedro Docampo
 ### -Chao An Alarcón Chen
 
-![Logo](PlazaRio2-Logo.png)
+![Logo](Imágenes/PlazaRio2-Logo.png)
