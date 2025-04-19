@@ -5,8 +5,10 @@
   <title>Contacto</title>
 </head>
 <body>
-  <header><h1>Contacto</h1>
-   <nav>
+  <!-- Encabezado con el título y el menú de navegación -->
+  <header>
+    <h1>Contacto</h1>
+    <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="tiendas.html">Tiendas</a></li>
@@ -17,30 +19,48 @@
         <li><a href="avisolegal.html">Aviso Legal</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
-    </nav></header>
+    </nav>
+  </header>
+
+  <!-- Contenido principal con el formulario de contacto -->
   <main>
     <form action="enviar.php" method="post">
+      <!-- Campo para el nombre -->
       <p>Nombre:<br>
         <input type="text" name="nombre" placeholder="Nombre" required>
       </p>
+
+      <!-- Campo para los apellidos -->
       <p>Apellidos:<br>
         <input type="text" name="apellidos" placeholder="Apellidos" required>
       </p>
+
+      <!-- Campo para la dirección -->
       <p>Dirección:<br>
         <input type="text" name="direccion" placeholder="Dirección" required>
       </p>
+
+      <!-- Campo para el email -->
       <p>Email:<br>
         <input type="email" name="email" placeholder="Email" required>
       </p>
+
+      <!-- Campo para confirmar el email -->
       <p>Confirmar Email:<br>
         <input type="email" name="email_confirm" placeholder="Confirmar Email" required>
       </p>
+
+      <!-- Campo para el teléfono -->
       <p>Teléfono:<br>
         <input type="tel" name="telefono" placeholder="Teléfono" required>
       </p>
+
+      <!-- Campo para los comentarios -->
       <p>Comentarios:<br>
         <textarea name="comentarios" placeholder="Escribe tus comentarios aquí" required></textarea>
       </p>
+
+      <!-- Botón para enviar el formulario -->
       <p>
         <button type="submit">Enviar</button>
       </p>
