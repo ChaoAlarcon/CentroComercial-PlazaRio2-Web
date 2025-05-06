@@ -1,72 +1,93 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Visítanos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso - Centro Comercial Plaza Río 2</title>
 </head>
-<body>
-  <!-- Encabezado con el título y el menú de navegación -->
-  <header>
-    <h1>Visítanos</h1>
+<header>
+    <!-- Título principal de la página -->
+    <h1>Acceso</h1>
+                
+    <!-- Menú de navegación principal -->
     <nav>
       <ul>
-        <li><a href="index.html">Inicio</a></li>
+       <li><a href="index.html">Inicio</a></li>
         <li><a href="tiendas.html">Tiendas</a></li>
         <li><a href="restaurantes.html">Restaurantes</a></li>
         <li><a href="ocio.html">Ocio</a></li>
-        <li><a href="visitanos.html">Visítanos</a></li>
         <li><a href="cine.html">Cine</a></li>
+        <li><a href="plano-centro.html">Plano del Centro</a></li>
+        <li><a href="visitanos.html">Visítanos</a></li>       
         <li><a href="avisolegal.html">Aviso Legal</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
-  </header>
-
-  <!-- Contenido principal -->
-  <main>
-    <section>
-      <!-- Horario del centro comercial -->
-      <h2>Horario</h2>
-      <p>Lunes a Domingo: 10:00 - 22:00</p>
-
-      <!-- Dirección del centro comercial -->
-      <h2>Dirección</h2>
-      <p>Av. del Manzanares, 210, 28026 Madrid</p>
-
-      <!-- Información sobre transporte público -->
-      <h2>Transporte Público</h2>
-      <p>Metro: Línea 3, estación Legazpi / Línea 6, estación Usera</p>
-
-      <!-- Información sobre el parking -->
-      <h2>Parking</h2>
-      <p>3 niveles subterráneos, gratuito 3h</p>
-
-      <!-- Mapa embebido de Google Maps -->
-      <h2>Mapa</h2>
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4297.473491076125!2d-3.7028225526437937!3d40.3917312104182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42264aea26f26b%3A0xf00a1384ed1877c7!2sCentro%20Comercial%20Plaza%20R%C3%ADo%202!5e0!3m2!1ses!2ses!4v1744275250291!5m2!1ses!2ses" 
-        width="600" 
-        height="450" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-
-      <!-- Imagen del plano del centro comercial -->
-      <h2>Plano del centro</h2>
-      <img src="Imágenes/PlantaBaja.png" alt="Plano de establecimientos">
-
-      <!-- Lista de servicios disponibles -->
-      <h2>Servicios</h2>
-      <ul>
-        <li>Wifi gratuito</li>
-        <li>Guardería</li>
-        <li>Puntos de carga eléctrica</li>
-        <li>Zonas de descanso</li>
-        <li>Servicios accesibles</li>
-      </ul>
-    </section>
-  </main>
+</header>
+<body>
+<h2>Cómo venir a visitarnos</h2>
+    <main role="main" tabindex="-1">
+        <section>
+            <div>
+                <ul role="tablist">
+                    <li role="tab">
+                        <a href="#coords" tabindex="0">El centro</a>
+                    </li>
+                    <li role="tab">
+                        <a href="#park" tabindex="-1">Parking gratuito</a>
+                    </li>
+                    <li role="tab">
+                        <a href="#infos" tabindex="-1">Medios de transporte</a>
+                    </li>
+                </ul>
+                <div>
+                    <div role="tabpanel" aria-hidden="false">
+                        <address>
+                            <h3>Centro Comercial Plaza Río 2</h3>
+                            <p>Avenida del Manzanares 210<br>28026 Madrid<br>España</p>
+                            <p>Las tiendas estarán hoy abiertas hasta las 22:00</p>
+                            <a href="/horarios">Horarios</a>
+                        </address>
+                        <form action="https://maps.google.com" method="get" target="_blank">
+                            <input type="hidden" name="daddr" value="Centro Comercial Plaza Río 2 Avenida del Manzanares 210 28026 Madrid (ES)">
+                            <ul>
+                                <li>
+                                    <input name="dirflg" value="" type="radio" checked>
+                                    <label>En coche</label>
+                                </li>
+                                <li>
+                                    <input name="dirflg" value="r" type="radio">
+                                    <label>Transporte público</label>
+                                </li>
+                                <li>
+                                    <input name="dirflg" value="w" type="radio">
+                                    <label>A pie</label>
+                                </li>
+                            </ul>
+                            <div>
+                                <label class="sr-only">Introduce una dirección para ver itinerario</label>
+                                <input type="text" name="saddr" placeholder="Introduce una dirección para ver itinerario">
+                                <button type="submit">Ok</button>
+                            </div>
+                        </form>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6077.293257929698!2d-3.710663772097049!3d40.39452381747084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42264a5f32eaf9%3A0x511d4a578e2c1b5c!2sCentro+Comercial+Plaza+Rio+2!5e0!3m2!1sen!2sus!4v1504628122834" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <div role="tabpanel" aria-hidden="true">
+                        <p>Todos nuestros clientes podrán disfrutar de 2 horas de Parking Gratuito al día dentro de las 1.500 plazas de aparcamiento disponibles.</p>
+                    </div>
+                    <div role="tabpanel" aria-hidden="true">
+                        <h3>Dirección</h3>
+                        <p>Avenida del Manzanares 210<br>28026 Madrid</p>
+                        <h3>Bus</h3>
+                        <p>6, 18, 22, 23, 47, 55, 59, 60, 68, 76, 79, 85, 86,123, 247</p>
+                        <h3>Metro</h3>
+                        <p>Legazpi y Usera - Línea 3 y Línea 6</p>
+                        <h3>RENFE</h3>
+                        <p>C1 – C7 – C10 Estación Delicias<br>Conexión directa con Metro Línea 3 – Parada Legazpi</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
