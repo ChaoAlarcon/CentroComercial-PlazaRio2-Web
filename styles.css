@@ -1,0 +1,199 @@
+/* Importar fuente principal */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+/* Estilos para los vídeos */
+html, body {
+    overflow-x: hidden;
+    text-align: justify;
+}
+video {
+    align-items: center;
+    margin-left: -128px;
+    max-width: 125%;
+    height: auto;
+   
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+/* Estilos globales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Encabezado */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #000000;
+}
+
+/* Navegación */
+nav {
+    position: fixed;
+    z-index: 1000;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  background-color: #f8f8f8;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  margin-left: 275px;
+  
+}
+
+nav ul {
+  list-style: none;
+ 
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #007bff;
+}
+
+.quick-navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.quick-navigation a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 600;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+/* Secciones principales */
+section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+/* Tarjetas de contenido */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #666666;
+}
+
+/* Pie de página */
+footer {
+  background-color: #f8f8f8;
+  border-top: 1px solid #eaeaea;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  color: #999999;
+  
+}
+
+.address-section{
+    text-align: left;
+    margin-bottom: -160px;
+    margin-right: -500px;
+    margin-left: 350px;
+}
+
+.info-section{
+    text-align: center;
+    margin-top: -150px;
+}
+
+.brands-section{
+    text-align: center;
+    margin-top: -259px;
+    margin-right: -500px;
+    margin-left: 50px;
+}
+
+.social-newsletter-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #eaeaea;
+}
+
+ul{
+    list-style-type: none;
+  padding-left: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  section {
+    padding: 20px 10px;
+  }
+}

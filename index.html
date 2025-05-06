@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Plaza Río 2 - Inicio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Encabezado -->
   <header>
-    <h1>Plaza Río 2</h1>
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
@@ -27,8 +27,7 @@
   <main>
     <!-- Sección de video -->
     <section>
-      <h2>Video de presentación</h2>
-      <video src="Vídeos\Centro Comercial Plaza Ro 2  Plaza Rio 2.mp4" controls></video>
+      <video class="video-presentacion" autoplay muted loop playsinline src="Vídeos\Centro Comercial Plaza Ro 2  Plaza Rio 2.mp4" ></video>
     </section>
 
     <!-- Sección de presentación -->
@@ -38,49 +37,46 @@
     </section>
 
     <!-- Menú de navegación rápida -->
-    <ul>
+    <section class="quick-navigation">
+      <nav>
+      <ul>
       <li>
-        <a href="tiendas.html">
-          <svg><use xlink:href="#icon-shopping-bag"></use></svg>
-          Tiendas
-        </a>
+      <a href="tiendas.html">
+        <span>Tiendas</span>
+      </a>
       </li>
       <li>
-        <a href="restaurantes.html">
-          <svg><use xlink:href="#icon-plate"></use></svg>
-          Restaurantes
-        </a>
+      <a href="restaurantes.html">
+        <span>Restaurantes</span>
+      </a>
       </li>
       <li>
-        <a href="noticias.html">
-          <svg><use xlink:href="#icon-calendar"></use></svg>
-          Noticias
-        </a>
+      <a href="noticias.html">
+        <span>Noticias</span>
+      </a>
       </li>
       <li>
-        <a href="horarios.html">
-          <svg><use xlink:href="#icon-clock"></use></svg>
-          Horarios
-        </a>
-      </li>
-    </ul>
-
-    <!-- Información rápida: Horarios -->
-    <div>
       <a href="horarios.html">
-        <strong>Las tiendas estarán hoy abiertas hasta las 22:00</strong>
+        <span>Horarios</span>
       </a>
-    </div>
+      </li>
+      </ul>
+      </nav>
+    </section>
 
-    <!-- Información rápida: Visítanos -->
-    <div>
-      <a href="visitanos.html">
-        <svg><use xlink:href="#icon-woman-silhouette"></use></svg>
-        <svg><use xlink:href="#icon-right-long-arrow"></use></svg>
-        <svg><use xlink:href="#icon-pin"></use></svg>
-        <span>Cómo venir a visitarnos</span>
+    <!-- Información rápida -->
+    <section class="quick-info">
+      <div>
+      <a href="horarios.html">
+      <strong>Las tiendas estarán hoy abiertas hasta las 22:00</strong>
       </a>
-    </div>
+      </div>
+      <div>
+      <a href="visitanos.html">
+      <span>Cómo venir a visitarnos</span>
+      </a>
+      </div>
+    </section>
 
     <!-- Sección de galería -->
     <section>
@@ -94,13 +90,13 @@
   <!-- Pie de página -->
   <footer>
     <a href="#content">
-      <div></div>
+      
     </a>
 
     <div>
       <div>
         <!-- Sección de dirección -->
-        <div>
+        <div class="address-section">
           <address>
             <strong>Plaza Rio2</strong>
             <p>Centro Comercial Plaza Río 2<br>
@@ -112,9 +108,9 @@
         </div>
 
         <!-- Sección de información -->
-        <div>
+        <div class="info-section">
           <h2>Información</h2>
-          <ul>
+          <ul >
             <li><a href="/todas-las-tiendas">Todas las tiendas</a></li>
             <li><a href="/prensa">Prensa</a></li>
             <li><a href="/servicios">Servicios</a></li>
@@ -129,7 +125,7 @@
         </div>
 
         <!-- Sección de marcas -->
-        <div>
+        <div class="brands-section">
           <h2>Todas las marcas</h2>
           <ul>
             <li><a href="/tiendas/1091-moda-mujer">Moda Mujer</a></li>
@@ -150,7 +146,7 @@
         </div>
 
         <!-- Sección de redes sociales y boletín -->
-        <div>
+        <div class="social-newsletter-section">
           <section>
             <h2>Síguenos</h2>
             <ul>
