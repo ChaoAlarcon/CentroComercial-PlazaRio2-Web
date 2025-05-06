@@ -7,6 +7,6 @@
 
 
 ### Notas:
--Agregar un footer para cada página
+
 -Añadir un Carrousel de Imágenes en la página de Inicio
 
