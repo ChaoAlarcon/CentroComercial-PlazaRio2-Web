@@ -9,4 +9,6 @@
 ### Notas:
 
 -Añadir un Carrousel de Imágenes en la página de Inicio
+-Hacer mapa interactivo
+-Centrar el logo del plaza rio 2 del Navbar cuando el tamaño esté para móviles
 
