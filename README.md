@@ -7,7 +7,6 @@
 
 =======
 ### Notas:
-#### -Añadir un Carrousel de Imágenes en la página de Inicio
 #### -Hacer mapa interactivo
 
 
