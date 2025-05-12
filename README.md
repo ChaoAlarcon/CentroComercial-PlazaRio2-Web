@@ -10,13 +10,12 @@
 #### -Hacer mapa interactivo
 #### -Hacer una página de créditos, en la que ponga los nombres del equipo y el proceso de creación del sitio web
 
-Próxima Revisión: 19 de mayo
-Marcado semántico.
-Maquetación, con Bootstrap, adaptada a pantallas pequeñas y a pantallas grandes.
-Modal, slider, carousel, acordeón, 
-Iconos.
-Fuentes de Google.
-Validación formulario
-Carga de JSON
+#### -Marcado semántico.
+#### -Maquetación, con Bootstrap, adaptada a pantallas pequeñas y a pantallas grandes.
+#### -Modal, slider, carousel, acordeón, 
+#### -Iconos.
+#### -Fuentes de Google.
+#### -Validación formulario
+#### -Carga de JSON
 
 
