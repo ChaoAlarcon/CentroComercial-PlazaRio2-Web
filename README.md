@@ -11,7 +11,7 @@
 #### -Hacer una página de créditos, en la que ponga los nombres del equipo y el proceso de creación del sitio web
 
 #### -Marcado semántico.
-#### -Maquetación, con Bootstrap, adaptada a pantallas pequeñas y a pantallas grandes.
+#### -Maquetación, con Bootstrap, adaptada a pantallas pequeñas y a pantallas grandes. (Hacer el carrousel responsive)
 #### -Modal, slider, carousel, acordeón, 
 #### -Iconos.
 #### -Fuentes de Google.
