@@ -9,11 +9,12 @@
 ### Notas:
 #### -Hacer mapa interactivo
 #### -Hacer una página de créditos, en la que ponga los nombres del equipo y el proceso de creación del sitio web
-#### -Arreglar imágenes Carousel
 
+#### -Agregar fotos de cada tienda
+#### -Agregar Links de redes Sociales
 #### -Marcado semántico.
-#### -Maquetación, con Bootstrap, adaptada a pantallas pequeñas y a pantallas grandes. 
-#### -Modal, slider, carousel, acordeón, 
+#### -Agregar un Modal con el horario del centro
+#### -acordeón.
 #### -Iconos.
 #### -Fuentes de Google.
 #### -Validación formulario
