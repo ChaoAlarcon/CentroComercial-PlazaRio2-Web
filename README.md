@@ -9,9 +9,10 @@
 ### Notas:
 #### -Hacer mapa interactivo
 #### -Hacer una página de créditos, en la que ponga los nombres del equipo y el proceso de creación del sitio web
+#### -Arreglar imágenes Carousel
 
 #### -Marcado semántico.
-#### -Maquetación, con Bootstrap, adaptada a pantallas pequeñas y a pantallas grandes. (Hacer el carrousel responsive)
+#### -Maquetación, con Bootstrap, adaptada a pantallas pequeñas y a pantallas grandes. 
 #### -Modal, slider, carousel, acordeón, 
 #### -Iconos.
 #### -Fuentes de Google.
