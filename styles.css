@@ -41,16 +41,12 @@ nav {
   background-color: #f8f8f8;
   border-top: 1px solid #eaeaea;
   border-bottom: 1px solid #eaeaea;
-  
-  
-  
 }
 
- /* Ajustar el espaciado de los ítems en el menú */
  .navbar-nav .nav-link {
-  padding: 0.5rem 1rem; /* Espaciado similar al original */
+  padding: 0.5rem 1rem;
 }
-/* Centrar ítems en pantallas grandes */
+
 .navbar-nav {
   justify-content: center;
   width: 100%;
@@ -154,11 +150,19 @@ footer {
   color: #999999;
   
 }
+footer h2 {
+  margin-bottom: 12px;
+}
+.brands-section h2 {
+  margin-left: 30px;
+}
 
-
+.brands-section ul li {
+  margin-bottom: 10px;
+}
 
 ul{
-    list-style-type: none;
+  list-style-type: none;
   padding-left: 0;
 }
 
@@ -178,7 +182,7 @@ ul{
 }
 
 main {
-  margin-top: 100px; /* Espacio para el menú fijo */
+  margin-top: 100px;
 }
 
 

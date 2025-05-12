@@ -130,47 +130,44 @@
             </div>
         </section>
     </main>
-   <!-- Pie de página -->
+  <!-- Pie de página -->
   <footer>
-    <a href="#content">
-      
-    </a>
+  <div class="container-fluid">
+    <div class="row d-flex align-items-start">
+      <!-- Sección de dirección -->
+      <div class="address-section col-md-4">
+        <address>
+          <strong>Plaza Rio2</strong>
+          <p>Centro Comercial Plaza Río 2<br>
+            Avenida del Manzanares 210<br>
+            28026 Madrid<br>
+            España</p>
+          <a href="/acceso">Cómo llegar</a>
+        </address>
+      </div>
 
-    <div class="container-fluid">
-      <div class="row">
-        <!-- Sección de dirección -->
-        <div class="address-section col-md-4">
-          <address>
-            <strong>Plaza Rio2</strong>
-            <p>Centro Comercial Plaza Río 2<br>
-              Avenida del Manzanares 210<br>
-              28026 Madrid<br>
-              España</p>
-            <a href="/acceso">Cómo llegar</a>
-          </address>
-        </div>
+      <!-- Sección de información -->
+      <div class="info-section col-md-4">
+        <h2>Información</h2>
+        <ul>
+          <li><a href="/todas-las-tiendas">Todas las tiendas</a></li>
+          <li><a href="/prensa">Prensa</a></li>
+          <li><a href="/servicios">Servicios</a></li>
+          <li><a href="/plano-del-sitio-web">Plano del sitio web</a></li>
+          <li><a href="/aviso-legal">Aviso Legal</a></li>
+          <li><a href="/#consent">Gestión de cookies</a></li>
+          <li><a href="/contacto">Contacto</a></li>
+          <li><a href="/trabajar-en-plaza-rio">Trabajar en Plaza Río 2</a></li>
+          <li><a href="/promociones-tiendas">Portal empleado RIO</a></li>
+          <li><a href="/mirador-rio2">Mirador Rio 2</a></li>
+        </ul>
+      </div>
 
-        <!-- Sección de información -->
-        <div class="info-section col-md-4">
-          <h2>Información</h2>
-          <ul >
-            <li><a href="/todas-las-tiendas">Todas las tiendas</a></li>
-            <li><a href="/prensa">Prensa</a></li>
-            <li><a href="/servicios">Servicios</a></li>
-            <li><a href="/plano-del-sitio-web">Plano del sitio web</a></li>
-            <li><a href="/aviso-legal">Aviso Legal</a></li>
-            <li><a href="/#consent">Gestión de cookies</a></li>
-            <li><a href="/contacto">Contacto</a></li>
-            <li><a href="/trabajar-en-plaza-rio">Trabajar en Plaza Río 2</a></li>
-            <li><a href="/promociones-tiendas">Portal empleado RIO</a></li>
-            <li><a href="/mirador-rio2">Mirador Rio 2</a></li>
-          </ul>
-        </div>
-
-        <!-- Sección de marcas -->
-        <div class="brands-section col-md-4">
-          <h2>Todas las marcas</h2>
-          <ul>
+      <!-- Sección de marcas -->
+      <div class="brands-section col-md-4">
+        <h2>Todas las marcas</h2>
+        <div class="d-flex justify-content-center">
+          <ul class="mr-4">
             <li><a href="/tiendas/1091-moda-mujer">Moda Mujer</a></li>
             <li><a href="/tiendas/1092-moda-hombre">Moda Hombre</a></li>
             <li><a href="/tiendas/1093-ninos">Niños</a></li>
@@ -178,6 +175,8 @@
             <li><a href="/tiendas/1090-moda-deportiva">Moda Deportiva</a></li>
             <li><a href="/tiendas/1060-zapateria-bolsos-complem">Zapateria, bolsos, complementos</a></li>
             <li><a href="/tiendas/1062-belleza-salud">Belleza, salud</a></li>
+          </ul>
+          <ul>
             <li><a href="/tiendas/1064-hogar-decoracion">Hogar, decoración</a></li>
             <li><a href="/tiendas/1066-cultura-ocio-tecnologia">Cultura, ocio, tecnología</a></li>
             <li><a href="/tiendas/1068-servicios">Servicios</a></li>
@@ -186,48 +185,9 @@
             <li><a href="/tiendas/1094-joyeria-relojeria">Joyería, relojería</a></li>
             <li><a href="/tiendas/1096-alimentacion">Alimentación</a></li>
           </ul>
-        </div>
-
-        <!-- Sección de redes sociales y boletín -->
-        <div class="container-fluid">
-          <div class="row">
-            <!-- Redes sociales -->
-            <div class="col-md-6">
-              <section>
-          <h2>Síguenos</h2>
-          <ul class="social-links">
-            <li><a href="https://www.facebook.com/PlazaRio2/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook fa-1-5x"></i></a></li>
-            <li><a href="https://www.instagram.com/plazario_2/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram fa-1-5x"></i></a></li>
-            <li><a href="https://twitter.com/plazario_2" target="_blank" aria-label="Twitter"><i class="fab fa-twitter fa-1-5x"></i></a></li>
-            <li><a href="https://www.tiktok.com/@plazario2" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok fa-1-5x"></i></a></li>
-          </ul>
-              </section>
-            </div>
-
-            <!-- Boletín de noticias -->
-            <div class="col-md-6">
-              <section>
-          <h2>Suscríbete a nuestro boletín</h2>
-          <form action="/submit" method="post" class="newsletter-form">
-            <label for="newsletter-email">Tu email</label>
-            <input type="email" name="email" id="newsletter-email" placeholder="Tu email" required>
-            <input type="hidden" name="language" value="es">
-            <input type="hidden" name="interest" value="mall">
-            <input type="hidden" name="reference" value="PRIO">
-            <input type="hidden" name="slug" value="<front>">
-            <input type="hidden" name="section" value="footer4">
-            <input type="hidden" name="region" value="1">
-            <input type="hidden" name="gdprConsent" value="1">
-            <input type="hidden" name="gdprConsentProspection" value="1">
-            <button type="submit">Suscribirse</button>
-          </form>
-              </section>
-            </div>
-          </div>
-        </div>
-        </div>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
 </body>
 </html>
