@@ -63,167 +63,186 @@
     
 </header>
 <body>
-
-
-    <main role="main" tabindex="-1">
-    
-        <section>
-        <h1>Acceso</h1>
-        <h2>Cómo venir a visitarnos</h2>
-            <div>
-                <ul role="tablist">
-                    <li role="tab">
-                        <a href="#coords" tabindex="0">El centro</a>
-                    </li>
-                    <li role="tab">
-                        <a href="#park" tabindex="-1">Parking gratuito</a>
-                    </li>
-                    <li role="tab">
-                        <a href="#infos" tabindex="-1">Medios de transporte</a>
-                    </li>
-                </ul>
-                <div>
-                    <div role="tabpanel" aria-hidden="false">
-                        <address>
-                            <h3>Centro Comercial Plaza Río 2</h3>
-                            <p>Avenida del Manzanares 210<br>28026 Madrid<br>España</p>
-                            <p>Las tiendas estarán hoy abiertas hasta las 22:00</p>
-                            <a href="/horarios">Horarios</a>
-                        </address>
-                        <form action="https://maps.google.com" method="get" target="_blank">
-                            <input type="hidden" name="daddr" value="Centro Comercial Plaza Río 2 Avenida del Manzanares 210 28026 Madrid (ES)">
-                            <ul>
-                                <li>
-                                    <input name="dirflg" value="" type="radio" checked>
-                                    <label>En coche</label>
-                                </li>
-                                <li>
-                                    <input name="dirflg" value="r" type="radio">
-                                    <label>Transporte público</label>
-                                </li>
-                                <li>
-                                    <input name="dirflg" value="w" type="radio">
-                                    <label>A pie</label>
-                                </li>
-                            </ul>
-                            <div>
-                                <label class="sr-only">Introduce una dirección para ver itinerario</label>
-                                <input type="text" name="saddr" placeholder="Introduce una dirección para ver itinerario">
-                                <button type="submit">Ok</button>
-                            </div>
-                        </form>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6077.293257929698!2d-3.710663772097049!3d40.39452381747084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42264a5f32eaf9%3A0x511d4a578e2c1b5c!2sCentro+Comercial+Plaza+Rio+2!5e0!3m2!1sen!2sus!4v1504628122834" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                    <div role="tabpanel" aria-hidden="true">
-                        <p>Todos nuestros clientes podrán disfrutar de 2 horas de Parking Gratuito al día dentro de las 1.500 plazas de aparcamiento disponibles.</p>
-                    </div>
-                    <div role="tabpanel" aria-hidden="true">
-                        <h3>Dirección</h3>
-                        <p>Avenida del Manzanares 210<br>28026 Madrid</p>
-                        <h3>Bus</h3>
-                        <p>6, 18, 22, 23, 47, 55, 59, 60, 68, 76, 79, 85, 86,123, 247</p>
-                        <h3>Metro</h3>
-                        <p>Legazpi y Usera - Línea 3 y Línea 6</p>
-                        <h3>RENFE</h3>
-                        <p>C1 – C7 – C10 Estación Delicias<br>Conexión directa con Metro Línea 3 – Parada Legazpi</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-  <!-- Pie de página -->
-  <footer>
-  <div class="container-fluid">
-    <div class="row d-flex align-items-start">
-      <!-- Sección de dirección -->
-      <div class="address-section col-md-4">
-        <address>
-          <strong>Plaza Rio2</strong>
-          <p>Centro Comercial Plaza Río 2<br>
-            Avenida del Manzanares 210<br>
-            28026 Madrid<br>
-            España</p>
-          <a href="/acceso">Cómo llegar</a>
-        </address>
-      </div>
-
-      <!-- Sección de información -->
-      <div class="info-section col-md-4">
-        <h2>Información</h2>
-        <ul>
-          <li><a href="/todas-las-tiendas">Todas las tiendas</a></li>
-          <li><a href="/prensa">Prensa</a></li>
-          <li><a href="/servicios">Servicios</a></li>
-          <li><a href="/plano-del-sitio-web">Plano del sitio web</a></li>
-          <li><a href="/aviso-legal">Aviso Legal</a></li>
-          <li><a href="/#consent">Gestión de cookies</a></li>
-          <li><a href="/contacto">Contacto</a></li>
-          <li><a href="/trabajar-en-plaza-rio">Trabajar en Plaza Río 2</a></li>
-          <li><a href="/promociones-tiendas">Portal empleado RIO</a></li>
-          <li><a href="/mirador-rio2">Mirador Rio 2</a></li>
+  <main role="main" tabindex="-1" class="container my-5">
+    <section>
+      <h1 class="mb-4 text-center">Acceso</h1>
+      <h2 class="h4 mb-4 text-center">Cómo venir a visitarnos</h2>
+      <div class="card shadow-sm mb-5">
+        <ul class="nav nav-tabs justify-content-center" role="tablist">
+          <li class="nav-item" role="tab">
+            <a class="nav-link active" href="#coords" data-toggle="tab" tabindex="0">El centro</a>
+          </li>
+          <li class="nav-item" role="tab">
+            <a class="nav-link" href="#park" data-toggle="tab" tabindex="-1">Parking gratuito</a>
+          </li>
+          <li class="nav-item" role="tab">
+            <a class="nav-link" href="#infos" data-toggle="tab" tabindex="-1">Medios de transporte</a>
+          </li>
         </ul>
+        <div class="tab-content p-4">
+          <div class="tab-pane fade show active" id="coords" role="tabpanel" aria-hidden="false">
+            <address class="mb-4">
+              <h3 class="h5">Centro Comercial Plaza Río 2</h3>
+              <p>Avenida del Manzanares 210<br>28026 Madrid<br>España</p>
+              <p class="text-success font-weight-bold">Las tiendas estarán hoy abiertas hasta las 22:00</p>
+              <a href="/horarios" class="btn btn-outline-primary btn-sm">Horarios</a>
+            </address>
+            <form action="https://maps.google.com" method="get" target="_blank" class="mb-4">
+              <input type="hidden" name="daddr" value="Centro Comercial Plaza Río 2 Avenida del Manzanares 210 28026 Madrid (ES)">
+              <ul class="list-inline mb-3">
+                <li class="list-inline-item">
+                  <input name="dirflg" value="" type="radio" id="car" checked>
+                  <label for="car">En coche</label>
+                </li>
+                <li class="list-inline-item">
+                  <input name="dirflg" value="r" type="radio" id="public">
+                  <label for="public">Transporte público</label>
+                </li>
+                <li class="list-inline-item">
+                  <input name="dirflg" value="w" type="radio" id="walk">
+                  <label for="walk">A pie</label>
+                </li>
+              </ul>
+              <div class="input-group w-50 mx-auto">
+                <input type="text" name="saddr" class="form-control" placeholder="Introduce una dirección para ver itinerario" aria-label="Introduce una dirección para ver itinerario">
+                <div class="input-group-append">
+                  <button type="submit" class="btn btn-primary">Ok</button>
+                </div>
+              </div>
+            </form>
+            <div class="embed-responsive embed-responsive-16by9 rounded shadow-sm">
+              <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6077.293257929698!2d-3.710663772097049!3d40.39452381747084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42264a5f32eaf9%3A0x511d4a578e2c1b5c!2sCentro+Comercial+Plaza+Rio+2!5e0!3m2!1sen!2sus!4v1504628122834" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="park" role="tabpanel" aria-hidden="true">
+            <p class="lead">Todos nuestros clientes podrán disfrutar de <strong>2 horas de Parking Gratuito</strong> al día dentro de las 1.500 plazas de aparcamiento disponibles.</p>
+          </div>
+          <div class="tab-pane fade" id="infos" role="tabpanel" aria-hidden="true">
+            <h3 class="h5">Dirección</h3>
+            <p>Avenida del Manzanares 210<br>28026 Madrid</p>
+            <h3 class="h5 mt-3">Bus</h3>
+            <p>6, 18, 22, 23, 47, 55, 59, 60, 68, 76, 79, 85, 86,123, 247</p>
+            <h3 class="h5 mt-3">Metro</h3>
+            <p>Legazpi y Usera - Línea 3 y Línea 6</p>
+            <h3 class="h5 mt-3">RENFE</h3>
+            <p>C1 – C7 – C10 Estación Delicias<br>Conexión directa con Metro Línea 3 – Parada Legazpi</p>
+          </div>
+        </div>
       </div>
-
-      <!-- Sección de marcas -->
-      <div class="brands-section col-md-4">
-        <h2>Todas las marcas</h2>
-        <div class="d-flex justify-content-center">
-          <ul class="mr-4">
-            <li><a href="/tiendas/1091-moda-mujer">Moda Mujer</a></li>
-            <li><a href="/tiendas/1092-moda-hombre">Moda Hombre</a></li>
-            <li><a href="/tiendas/1093-ninos">Niños</a></li>
-            <li><a href="/tiendas/1089-moda-intima">Moda Intima</a></li>
-            <li><a href="/tiendas/1090-moda-deportiva">Moda Deportiva</a></li>
-            <li><a href="/tiendas/1060-zapateria-bolsos-complem">Zapateria, bolsos, complementos</a></li>
-            <li><a href="/tiendas/1062-belleza-salud">Belleza, salud</a></li>
+    </section>
+  </main>
+  <!-- Pie de página -->
+  <footer class="bg-light pt-5 pb-3 mt-5 border-top">
+    <div class="container">
+      <div class="row d-flex align-items-start">
+        <!-- Sección de dirección -->
+        <div class="address-section col-md-4 mb-4">
+          <address>
+            <h2 class="h5">Dónde estamos</h2>
+            <strong>Plaza Rio2</strong>
+            <p>Centro Comercial Plaza Río 2<br>
+              Avenida del Manzanares 210<br>
+              28026 Madrid<br>
+              España</p>
+            <a href="/acceso" class="btn btn-link p-0">Cómo llegar</a>
+          </address>
+        </div>
+        <!-- Sección de información -->
+        <div class="info-section col-md-4 mb-4">
+          <h2 class="h5">Información</h2>
+          <ul class="list-unstyled">
+            <li><a href="/todas-las-tiendas">Todas las tiendas</a></li>
+            <li><a href="/prensa">Prensa</a></li>
+            <li><a href="/servicios">Servicios</a></li>
+            <li><a href="/plano-del-sitio-web">Plano del sitio web</a></li>
+            <li><a href="/aviso-legal">Aviso Legal</a></li>
+            <li><a href="/#consent">Gestión de cookies</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+            <li><a href="/trabajar-en-plaza-rio">Trabajar en Plaza Río 2</a></li>
+            <li><a href="/promociones-tiendas">Portal empleado RIO</a></li>
+            <li><a href="/mirador-rio2">Mirador Rio 2</a></li>
           </ul>
-          <ul>
-            <li><a href="/tiendas/1064-hogar-decoracion">Hogar, decoración</a></li>
-            <li><a href="/tiendas/1066-cultura-ocio-tecnologia">Cultura, ocio, tecnología</a></li>
-            <li><a href="/tiendas/1068-servicios">Servicios</a></li>
-            <li><a href="/tiendas/1070-hipermercado-alcampo">Hipermercado</a></li>
-            <li><a href="/tiendas/1072-universo-gourmet">Universo gourmet</a></li>
-            <li><a href="/tiendas/1094-joyeria-relojeria">Joyería, relojería</a></li>
-            <li><a href="/tiendas/1096-alimentacion">Alimentación</a></li>
-          </ul>
+        </div>
+        <!-- Sección de marcas -->
+        <div class="brands-section col-md-4 mb-4">
+          <h2 class="h5">Todas las marcas</h2>
+          <div class="d-flex flex-wrap">
+            <ul class="mr-4 list-unstyled">
+              <li><a href="/tiendas/1091-moda-mujer">Moda Mujer</a></li>
+              <li><a href="/tiendas/1092-moda-hombre">Moda Hombre</a></li>
+              <li><a href="/tiendas/1093-ninos">Niños</a></li>
+              <li><a href="/tiendas/1089-moda-intima">Moda Intima</a></li>
+              <li><a href="/tiendas/1090-moda-deportiva">Moda Deportiva</a></li>
+              <li><a href="/tiendas/1060-zapateria-bolsos-complem">Zapateria, bolsos, complementos</a></li>
+              <li><a href="/tiendas/1062-belleza-salud">Belleza, salud</a></li>
+            </ul>
+            <ul class="list-unstyled">
+              <li><a href="/tiendas/1064-hogar-decoracion">Hogar, decoración</a></li>
+              <li><a href="/tiendas/1066-cultura-ocio-tecnologia">Cultura, ocio, tecnología</a></li>
+              <li><a href="/tiendas/1068-servicios">Servicios</a></li>
+              <li><a href="/tiendas/1070-hipermercado-alcampo">Hipermercado</a></li>
+              <li><a href="/tiendas/1072-universo-gourmet">Universo gourmet</a></li>
+              <li><a href="/tiendas/1094-joyeria-relojeria">Joyería, relojería</a></li>
+              <li><a href="/tiendas/1096-alimentacion">Alimentación</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Sección de redes sociales y boletín -->
+      <div class="row mt-4">
+        <!-- Redes sociales -->
+        <div class="col-md-6 mb-3">
+          <section>
+            <h2 class="h5">Síguenos</h2>
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item mx-1">
+                <a href="https://www.facebook.com/PlazaRio2/" target="_blank" aria-label="Facebook">
+                  <i class="fab fa-facebook fa-2x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mx-1">
+                <a href="https://www.instagram.com/plazario_2/" target="_blank" aria-label="Instagram">
+                  <i class="fab fa-instagram fa-2x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mx-1">
+                <a href="https://twitter.com/plazario_2" target="_blank" aria-label="Twitter">
+                  <i class="fab fa-twitter fa-2x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mx-1">
+                <a href="https://www.tiktok.com/@plazario2" target="_blank" aria-label="TikTok">
+                  <i class="fab fa-tiktok fa-2x"></i>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <!-- Boletín de noticias -->
+        <div class="col-md-6 mb-3">
+          <section>
+            <h2 class="h5 mb-3">Suscríbete a nuestro boletín</h2>
+            <form action="/submit" method="post" class="form-inline justify-content-center">
+              <div class="form-group mb-2 mr-2 w-75">
+                <label for="newsletter-email" class="sr-only">Tu email</label>
+                <input type="email" name="email" id="newsletter-email" class="form-control w-100" placeholder="Tu email" required>
+              </div>
+              <button type="submit" class="btn btn-primary mb-2">Suscribirse</button>
+            </form>
+          </section>
+        </div>
       </div>
     </div>
-  </div>
-
-     <!-- Sección de redes sociales y boletín -->
-        <div class="container-fluid">
-          <div class="row">
-            <!-- Redes sociales -->
-            <div class="col-md-6">
-              <section>
-          <h2>Síguenos</h2>
-          <ul class="social-links">
-            <li><a href="https://www.facebook.com/PlazaRio2/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook fa-1-5x"></i></a></li>
-            <li><a href="https://www.instagram.com/plazario_2/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram fa-1-5x"></i></a></li>
-            <li><a href="https://twitter.com/plazario_2" target="_blank" aria-label="Twitter"><i class="fab fa-twitter fa-1-5x"></i></a></li>
-            <li><a href="https://www.tiktok.com/@plazario2" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok fa-1-5x"></i></a></li>
-          </ul>
-              </section>
-            </div>
-
-            <!-- Boletín de noticias -->
-            <div class="col-md-6">
-              <section>
-          <h2>Suscríbete a nuestro boletín</h2>
-          <form action="/submit" method="post" class="newsletter-form">
-            <label for="newsletter-email">Tu email</label>
-            <input type="email" name="email" id="newsletter-email" placeholder="Tu email" required>
-            <input type="hidden" name="language" value="es">
-            <input type="hidden" name="interest" value="mall">
-            <input type="hidden" name="reference" value="PRIO">
-            <input type="hidden" name="slug" value="<front>">
-            <input type="hidden" name="section" value="footer4">
-            <input type="hidden" name="region" value="1">
-            <input type="hidden" name="gdprConsent" value="1">
-            <input type="hidden" name="gdprConsentProspection" value="1">
-            <button type="submit">Suscribirse</button>
-          </form>
-              </section>
-</footer>
+  </footer>
+  <script>
+    // Activar tabs de Bootstrap 4 manualmente
+    $(function () {
+      $('a[data-toggle="tab"]').on('click', function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+      });
+    });
+  </script>
+</body>
 </body>
 </html>

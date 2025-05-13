@@ -62,51 +62,53 @@
   </header>
 
   <!-- Contenido principal con el formulario de contacto -->
-  <main>
-  <section>
-  <h1>Contacto</h1>
-    <form action="enviar.php" method="post">
-      <!-- Campo para el nombre -->
-      <p>Nombre:<br>
-        <input type="text" name="nombre" placeholder="Nombre" required>
-      </p>
-
-      <!-- Campo para los apellidos -->
-      <p>Apellidos:<br>
-        <input type="text" name="apellidos" placeholder="Apellidos" required>
-      </p>
-
-      <!-- Campo para la dirección -->
-      <p>Dirección:<br>
-        <input type="text" name="direccion" placeholder="Dirección" required>
-      </p>
-
-      <!-- Campo para el email -->
-      <p>Email:<br>
-        <input type="email" name="email" placeholder="Email" required>
-      </p>
-
-      <!-- Campo para confirmar el email -->
-      <p>Confirmar Email:<br>
-        <input type="email" name="email_confirm" placeholder="Confirmar Email" required>
-      </p>
-
-      <!-- Campo para el teléfono -->
-      <p>Teléfono:<br>
-        <input type="tel" name="telefono" placeholder="Teléfono" required>
-      </p>
-
-      <!-- Campo para los comentarios -->
-      <p>Comentarios:<br>
-        <textarea name="comentarios" placeholder="Escribe tus comentarios aquí" required></textarea>
-      </p>
-
-      <!-- Botón para enviar el formulario -->
-      <p>
-        <button type="submit">Enviar</button>
-      </p>
-    </form>
-     </section>
+  <main class="container my-5 pt-5">
+    <section class="row justify-content-center">
+      <div class="col-md-8 col-lg-6">
+        <h1 class="mb-4 text-center">Contacto</h1>
+        <form action="enviar.php" method="post" class="p-4 border rounded shadow-sm bg-white">
+          <!-- Campo para el nombre -->
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+          </div>
+          <!-- Campo para los apellidos -->
+          <div class="form-group">
+            <label for="apellidos">Apellidos</label>
+            <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+          </div>
+          <!-- Campo para la dirección -->
+          <div class="form-group">
+            <label for="direccion">Dirección</label>
+            <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Dirección" required>
+          </div>
+          <!-- Campo para el email -->
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+          </div>
+          <!-- Campo para confirmar el email -->
+          <div class="form-group">
+            <label for="email_confirm">Confirmar Email</label>
+            <input type="email" class="form-control" id="email_confirm" name="email_confirm" placeholder="Confirmar Email" required>
+          </div>
+          <!-- Campo para el teléfono -->
+          <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" required>
+          </div>
+          <!-- Campo para los comentarios -->
+          <div class="form-group">
+            <label for="comentarios">Comentarios</label>
+            <textarea class="form-control" id="comentarios" name="comentarios" rows="4" placeholder="Escribe tus comentarios aquí" required></textarea>
+          </div>
+          <!-- Botón para enviar el formulario -->
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary px-5">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
  
   <!-- Pie de página -->

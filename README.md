@@ -9,11 +9,8 @@
 ### Notas:
 #### -Hacer mapa interactivo
 #### -Hacer una página de créditos, en la que ponga los nombres del equipo y el proceso de creación del sitio web
-
-#### -Agregar fotos de cada tienda
-#### -Agregar Links de redes Sociales
+#### -Agregar fotos de cada tienda y restaurante (Agregar un modal para cada tienda y restaurante)
 #### -Marcado semántico.
-#### -Agregar un Modal con el horario del centro
 #### -acordeón.
 #### -Iconos.
 #### -Fuentes de Google.
