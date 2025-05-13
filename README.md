@@ -18,6 +18,6 @@
 #### -Iconos.
 #### -Fuentes de Google.
 #### -Validación formulario
-#### -Carga de JSON
+#### -Carga de JSON (hacer con ChatGPT)
 
 

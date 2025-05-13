@@ -109,9 +109,56 @@
     <!-- Información rápida -->
     <section class="quick-info">
       <div>
-      <a href="horarios.html">
-      <strong>Las tiendas estarán hoy abiertas hasta las 22:00</strong>
-      </a>
+     <!-- Button to Open the Modal -->
+<button type="button" class="btn btn-primary" 
+ data-bs-toggle="modal" data-bs-target="#aviso1">
+  Las tiendas estarán hoy abiertas hasta las 22:00
+</button>
+
+<!-- The Modal -->
+<div class="modal fade" id="aviso1">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h3 class="modal-title">Horario</h3>
+        
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <h4>¿Cuándo venir a visitarnos?</h4>
+        <section class="d-flex justify-content-center">
+          <h5 class=" ">Horario del centro</h5>
+          <section>
+          <img src="Imágenes/reloj.svg" alt="" class="img-fluid">
+          </section>
+          <section>
+          <ol class="list-unstyled">
+        <li>Lunes de 10:00 a 22:00</li>
+        <li>Martes de 10:00 a 22:00</li>
+        <li>Miércoles de 10:00 a 22:00</li>
+        <li>Jueves de 10:00 a 22:00</li>
+        <li>Viernes de 10:00 a 22:00</li>
+        <li>Sábado de 10:00 a 22:00</li>
+        <li>Domingo de 10:00 a 22:00</li>
+          </ol>
+          </section>
+        </section>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
       </div>
       <div>
       <a href="visitanos.html">
