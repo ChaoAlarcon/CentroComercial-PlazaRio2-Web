@@ -1,189 +1,217 @@
-/* Importar fuente principal */
+/* =========================
+  Importar fuentes
+  ========================= */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
-/* Estilos para los vídeos */
+
+/* =========================
+  Reset y estilos globales
+  ========================= */
 html, body {
-    overflow-x: hidden;
-    text-align: justify;
+   overflow-x: hidden;
+   text-align: justify;
 }
 
-
-
-/* Estilos globales */
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Open Sans', sans-serif;
-  background-color: #ffffff;
-  color: #333333;
+   margin: 0;
+   padding: 0;
+   font-family: 'Open Sans', sans-serif;
+   background-color: #ffffff;
+   color: #333333;
 }
 
-/* Encabezado */
+/* =========================
+  Encabezado
+  ========================= */
 header {
-  background-color: #ffffff;
-  border-bottom: 1px solid #eaeaea;
-  padding: 20px 0;
-  text-align: center;
+   background-color: #ffffff;
+   border-bottom: 1px solid #eaeaea;
+   padding: 20px 0;
+   text-align: center;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2rem;
-  color: #000000;
+   margin: 0;
+   font-size: 2rem;
+   color: #000000;
 }
 
-/* Navegación */
+/* =========================
+  Navegación principal
+  ========================= */
 nav {
-    position: fixed;
-    z-index: 1000;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-  background-color: #f8f8f8;
-  border-top: 1px solid #eaeaea;
-  border-bottom: 1px solid #eaeaea;
-}
-
- .navbar-nav .nav-link {
-  padding: 0.5rem 1rem;
+   position: fixed;
+   z-index: 1000;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   background-color: #f8f8f8;
+   border-top: 1px solid #eaeaea;
+   border-bottom: 1px solid #eaeaea;
 }
 
 .navbar-nav {
-  justify-content: center;
-  width: 100%;
+   justify-content: center;
+   width: 100%;
+}
+
+.navbar-nav .nav-link {
+   padding: 0.5rem 1rem;
 }
 
 nav ul {
-  list-style: none;
- 
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
 }
 
 nav ul li {
-  margin: 0 15px;
+   margin: 0 15px;
 }
 
 nav ul li a {
-  text-decoration: none;
-  color: #333333;
-  font-weight: 600;
-  transition: color 0.3s ease;
+   text-decoration: none;
+   color: #333333;
+   font-weight: 600;
+   transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #007bff;
+   color: #007bff;
 }
 
-
-
+/* =========================
+  Navegación rápida
+  ========================= */
 .quick-navigation {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-.quick-navigation a {
-  text-decoration: none;
-  color: #007bff;
-  font-weight: 600;
-  margin: 0 10px;
-  transition: color 0.3s ease;
+   display: flex;
+   justify-content: center;
+   margin-top: 10px;
 }
 
-/* Secciones principales */
+.quick-navigation a {
+   text-decoration: none;
+   color: #007bff;
+   font-weight: 600;
+   margin: 0 10px;
+   transition: color 0.3s ease;
+}
+
+/* =========================
+  Secciones principales
+  ========================= */
 section {
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+   padding: 40px 20px;
+   max-width: 1200px;
+   margin: 0 auto;
 }
 
 h2 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  color: #000000;
+   font-size: 1.5rem;
+   margin-bottom: 20px;
+   color: #000000;
 }
 
-/* Tarjetas de contenido */
+/* =========================
+  Tarjetas de contenido
+  ========================= */
 .card {
-  background-color: #ffffff;
-  border: 1px solid #eaeaea;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  overflow: hidden;
-  transition: transform 0.3s ease;
+   background-color: #ffffff;
+   border: 1px solid #eaeaea;
+   border-radius: 5px;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+   overflow: hidden;
+   transition: transform 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+   transform: translateY(-5px);
 }
 
 .card img {
-  width: 100%;
-  height: auto;
-  display: block;
+   width: 100%;
+   height: auto;
+   display: block;
 }
 
 .card-content {
-  padding: 20px;
+   padding: 20px;
 }
 
 .card-content h3 {
-  margin-top: 0;
-  font-size: 1.2rem;
-  color: #000000;
+   margin-top: 0;
+   font-size: 1.2rem;
+   color: #000000;
 }
 
 .card-content p {
-  font-size: 1rem;
-  color: #666666;
+   font-size: 1rem;
+   color: #666666;
 }
 
-/* Pie de página */
+/* =========================
+  Pie de página
+  ========================= */
 footer {
-  background-color: #f8f8f8;
-  border-top: 1px solid #eaeaea;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 0.9rem;
-  color: #999999;
-  
+   background-color: #f8f8f8;
+   border-top: 1px solid #eaeaea;
+   text-align: center;
+   padding: 20px 0;
+   font-size: 0.9rem;
+   color: #999999;
 }
+
 footer h2 {
-  margin-bottom: 12px;
+   margin-bottom: 12px;
 }
+
+/* =========================
+  Sección de marcas
+  ========================= */
 .brands-section h2 {
-  margin-left: 30px;
+   margin-left: 30px;
 }
 
 .brands-section ul li {
-  margin-bottom: 10px;
+   margin-bottom: 10px;
 }
 
-ul{
-  list-style-type: none;
-  padding-left: 0;
+/* =========================
+  Listas
+  ========================= */
+ul {
+   list-style-type: none;
+   padding-left: 0;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-  }
-
-  nav ul li {
-    margin: 10px 0;
-  }
-
-  section {
-    padding: 20px 10px;
-  }
-}
-
+/* =========================
+  Main y avisos legales
+  ========================= */
 main {
-  margin-top: 100px;
+   margin-top: 100px;
 }
 
+.avisolegal {
+   background: #fff;
+   border-radius: 16px;
+   box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
 
+/* =========================
+  Responsive (adaptación móvil)
+  ========================= */
+@media (max-width: 768px) {
+   nav ul {
+      flex-direction: column;
+   }
+
+   nav ul li {
+      margin: 10px 0;
+   }
+
+   section {
+      padding: 20px 10px;
+   }
+}
 
