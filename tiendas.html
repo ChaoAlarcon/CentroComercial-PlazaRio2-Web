@@ -61,13 +61,40 @@
     <section class="container py-5">
       <h1 class="mb-4 text-center">Tiendas</h1>
       <div class="row">
+        <!-- Modal 4Dreams fuera de la tarjeta para mejor orden -->
+        <div class="modal fade" id="modal4Dreams" tabindex="-1" role="dialog" aria-labelledby="modal4DreamsLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+          <h5 class="modal-title" id="modal4DreamsLabel">Detalles:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+              </div>
+              <div class="modal-body ">
+          <h2 class="h5 card-title text-center">4Dreams</h2>
+          <div class="row">
+            <div class="col-6">
+              <img src="Imágenes/Tiendas/Local/4dreams.jpeg" class="img-fluid rounded mb-2" alt="Tienda 4Dreams">
+            </div>
+            <div class="col-6">
+              <p>4Dreams es una tienda especializada en productos para el hogar y decoración. Ofrecen una amplia gama de artículos que combinan funcionalidad y diseño, ideales para transformar cualquier espacio en un lugar acogedor y único. Desde muebles hasta pequeños detalles decorativos, 4Dreams tiene todo lo que necesitas para hacer realidad tus sueños de diseño interior.</p>
+              <button type="button" class="btn btn-outline-primary btn-block"><strong>Ubicación:</strong> Planta 1, Local 123</button>
+            </div>
+          </div>
+              </div>
+              <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- 4Dreams -->
         <div class="col-md-6 col-lg-4 mb-4">
           <article class="card h-100 shadow-sm">
             <img src="Imágenes/Tiendas/4dreams.png" class="card-img-top p-3" alt="4Dreams">
             <div class="card-body">
               <h2 class="h5 card-title text-center">4Dreams</h2>
-              
             </div>
             <div class="card-footer bg-white border-0">
               <!-- Botón para abrir el modal -->
@@ -77,27 +104,27 @@
             </div>
           </article>
         </div>
-        <!-- Modal 4Dreams fuera de la tarjeta para mejor orden -->
-        <div class="modal fade" id="modal4Dreams" tabindex="-1" role="dialog" aria-labelledby="modal4DreamsLabel" aria-hidden="true">
+
+        <!-- Modal Adidas -->
+        <div class="modal fade" id="modalAdidas" tabindex="-1" role="dialog" aria-labelledby="modalAdidasLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
             <div class="modal-content">
               <div class="modal-header">
-              
-          <h5 class="modal-title" id="modal4DreamsLabel">4Dreams</h5>
-          
+          <h5 class="modal-title" id="modalAdidasLabel">Detalles:</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
             <span aria-hidden="true">&times;</span>
           </button>
               </div>
               <div class="modal-body ">
-              <h2 class="h5 card-title text-center">4Dreams</h2>
-              <div class="row">
-              <div class="col-6">
-              <img src="Imágenes/Tiendas/Local/4dreams.jpeg" class="img-fluid rounded mb-2" alt="Tienda 4Dreams">
-              </div>
-              <div class="col-6">
-          <p>4Dreams es una tienda especializada en productos para el hogar y decoración. Ofrecen una amplia gama de artículos que combinan funcionalidad y diseño, ideales para transformar cualquier espacio en un lugar acogedor y único. Desde muebles hasta pequeños detalles decorativos, 4Dreams tiene todo lo que necesitas para hacer realidad tus sueños de diseño interior.</p>
-          </div>
+          <h2 class="h5 card-title text-center">Adidas</h2>
+          <div class="row">
+            <div class="col-6">
+              <img src="adidas-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Adidas">
+            </div>
+            <div class="col-6">
+              <p>Adidas es una marca líder mundial en ropa y accesorios deportivos. Con una larga trayectoria en innovación y diseño, ofrece productos de alta calidad para deportistas y amantes del deporte. Desde zapatillas de running hasta ropa casual con estilo, Adidas combina rendimiento y moda para ayudarte a alcanzar tus metas.</p>
+              <a href="https://www.adidas.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+            </div>
           </div>
               </div>
               <div class="modal-footer">
@@ -111,222 +138,644 @@
           <article class="card h-100 shadow-sm">
             <img src="Imágenes/Tiendas/adidas.png" class="card-img-top p-3" alt="Adidas">
             <div class="card-body">
-              <h2 class="h5 card-title">Adidas</h2>
-              <img src="adidas-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Adidas">
-              <p class="card-text">Adidas es una marca líder mundial en ropa y accesorios deportivos. Con una larga trayectoria en innovación y diseño, ofrece productos de alta calidad para deportistas y amantes del deporte. Desde zapatillas de running hasta ropa casual con estilo, Adidas combina rendimiento y moda para ayudarte a alcanzar tus metas.</p>
+              <h2 class="h5 card-title text-center">Adidas</h2>
             </div>
             <div class="card-footer bg-white border-0">
-              <a href="https://www.adidas.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalAdidas">
+          Más información
+              </button>
             </div>
           </article>
+        </div>
+
+        <!-- Modal Alain Afflelou -->
+        <div class="modal fade" id="modalAlainAfflelou" tabindex="-1" role="dialog" aria-labelledby="modalAlainAfflelouLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+          <h5 class="modal-title" id="modalAlainAfflelouLabel">Detalles:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+              </div>
+              <div class="modal-body ">
+          <h2 class="h5 card-title text-center">Alain Afflelou</h2>
+          <div class="row">
+            <div class="col-6">
+              <img src="alain-afflelou-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Alain Afflelou">
+            </div>
+            <div class="col-6">
+              <p>Alain Afflelou es una óptica reconocida por su compromiso con la salud visual y el diseño innovador. Ofrecen una amplia variedad de gafas graduadas, lentes de contacto y gafas de sol, adaptadas a las necesidades de cada cliente. Con tecnología avanzada y un enfoque en la moda, Alain Afflelou garantiza calidad y estilo en cada producto.</p>
+              <a href="https://www.afflelou.es" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+            </div>
+          </div>
+              </div>
+              <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Alain Afflelou -->
         <div class="col-md-6 col-lg-4 mb-4">
           <article class="card h-100 shadow-sm">
             <img src="Imágenes/Tiendas/alainafflelou.png" class="card-img-top p-3" alt="Alain Afflelou">
             <div class="card-body">
-              <h2 class="h5 card-title">Alain Afflelou</h2>
-              <img src="alain-afflelou-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Alain Afflelou">
-              <p class="card-text">Alain Afflelou es una óptica reconocida por su compromiso con la salud visual y el diseño innovador. Ofrecen una amplia variedad de gafas graduadas, lentes de contacto y gafas de sol, adaptadas a las necesidades de cada cliente. Con tecnología avanzada y un enfoque en la moda, Alain Afflelou garantiza calidad y estilo en cada producto.</p>
+              <h2 class="h5 card-title text-center">Alain Afflelou</h2>
             </div>
             <div class="card-footer bg-white border-0">
-              <a href="https://www.afflelou.es" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalAlainAfflelou">
+          Más información
+              </button>
             </div>
           </article>
+        </div>
+
+        <!-- Modal Alcampo City -->
+        <div class="modal fade" id="modalAlcampoCity" tabindex="-1" role="dialog" aria-labelledby="modalAlcampoCityLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+          <h5 class="modal-title" id="modalAlcampoCityLabel">Detalles:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+              </div>
+              <div class="modal-body ">
+          <h2 class="h5 card-title text-center">Alcampo City</h2>
+          <div class="row">
+            <div class="col-6">
+              <img src="alcampo-city-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Alcampo City">
+            </div>
+            <div class="col-6">
+              <p>Alcampo City es un supermercado que ofrece una amplia variedad de productos de alta calidad a precios competitivos. Desde alimentos frescos y productos de limpieza hasta artículos para el hogar, Alcampo City se esfuerza por satisfacer las necesidades diarias de sus clientes con un excelente servicio y promociones constantes.</p>
+              <a href="https://www.alcampo.es" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+            </div>
+          </div>
+              </div>
+              <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Alcampo City -->
         <div class="col-md-6 col-lg-4 mb-4">
           <article class="card h-100 shadow-sm">
             <img src="Imágenes/Tiendas/alcampo.png" class="card-img-top p-3" alt="Alcampo City">
             <div class="card-body">
-              <h2 class="h5 card-title">Alcampo City</h2>
-              <img src="alcampo-city-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Alcampo City">
-              <p class="card-text">Alcampo City es un supermercado que ofrece una amplia variedad de productos de alta calidad a precios competitivos. Desde alimentos frescos y productos de limpieza hasta artículos para el hogar, Alcampo City se esfuerza por satisfacer las necesidades diarias de sus clientes con un excelente servicio y promociones constantes.</p>
+              <h2 class="h5 card-title text-center">Alcampo City</h2>
             </div>
             <div class="card-footer bg-white border-0">
-              <a href="https://www.alcampo.es" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalAlcampoCity">
+          Más información
+              </button>
             </div>
           </article>
         </div>
         <!-- Ale-Hop -->
+        <!-- Modal Ale-Hop -->
+        <div class="modal fade" id="modalAleHop" tabindex="-1" role="dialog" aria-labelledby="modalAleHopLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+          <h5 class="modal-title" id="modalAleHopLabel">Detalles:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+              </div>
+              <div class="modal-body ">
+          <h2 class="h5 card-title text-center">Ale-Hop</h2>
+          <div class="row">
+            <div class="col-6">
+              <img src="ale-hop-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Ale-Hop">
+            </div>
+            <div class="col-6">
+              <p>Ale-Hop es una tienda conocida por su amplia selección de regalos y accesorios originales. Desde artículos de papelería y decoración hasta gadgets divertidos, Ale-Hop ofrece productos únicos y asequibles que son perfectos para cualquier ocasión. Su ambiente alegre y creativo hace que cada visita sea una experiencia divertida.</p>
+              <a href="https://www.ale-hop.org" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+            </div>
+          </div>
+              </div>
+              <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="col-md-6 col-lg-4 mb-4">
           <article class="card h-100 shadow-sm">
             <img src="Imágenes/Tiendas/alehop.png" class="card-img-top p-3" alt="Ale-Hop">
             <div class="card-body">
-              <h2 class="h5 card-title">Ale-Hop</h2>
-              <img src="ale-hop-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Ale-Hop">
-              <p class="card-text">Ale-Hop es una tienda conocida por su amplia selección de regalos y accesorios originales. Desde artículos de papelería y decoración hasta gadgets divertidos, Ale-Hop ofrece productos únicos y asequibles que son perfectos para cualquier ocasión. Su ambiente alegre y creativo hace que cada visita sea una experiencia divertida.</p>
+              <h2 class="h5 card-title text-center">Ale-Hop</h2>
             </div>
             <div class="card-footer bg-white border-0">
-              <a href="https://www.ale-hop.org" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalAleHop">
+          Más información
+              </button>
             </div>
           </article>
         </div>
         <!-- AliExpress -->
+        <!-- Modal AliExpress -->
+        <div class="modal fade" id="modalAliExpress" tabindex="-1" role="dialog" aria-labelledby="modalAliExpressLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+          <h5 class="modal-title" id="modalAliExpressLabel">Detalles:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+              </div>
+              <div class="modal-body ">
+          <h2 class="h5 card-title text-center">AliExpress</h2>
+          <div class="row">
+            <div class="col-6">
+              <img src="aliexpress-local.jpg" class="img-fluid rounded mb-2" alt="Tienda AliExpress">
+            </div>
+            <div class="col-6">
+              <p>AliExpress es una plataforma global de comercio electrónico que ofrece una amplia variedad de productos a precios competitivos. Desde electrónica y moda hasta artículos para el hogar y accesorios, AliExpress conecta a millones de compradores con vendedores de todo el mundo. Su compromiso con la accesibilidad y la diversidad de productos lo convierte en un destino ideal para encontrar todo lo que necesitas en un solo lugar.</p>
+              <a href="https://www.aliexpress.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+            </div>
+          </div>
+              </div>
+              <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="col-md-6 col-lg-4 mb-4">
           <article class="card h-100 shadow-sm">
             <img src="Imágenes/Tiendas/aliexpress.png" class="card-img-top p-3" alt="AliExpress">
             <div class="card-body">
-              <h2 class="h5 card-title">AliExpress</h2>
-              <img src="aliexpress-local.jpg" class="img-fluid rounded mb-2" alt="Tienda AliExpress">
-              <p class="card-text">AliExpress es una plataforma global de comercio electrónico que ofrece una amplia variedad de productos a precios competitivos. Desde electrónica y moda hasta artículos para el hogar y accesorios, AliExpress conecta a millones de compradores con vendedores de todo el mundo. Su compromiso con la accesibilidad y la diversidad de productos lo convierte en un destino ideal para encontrar todo lo que necesitas en un solo lugar.</p>
+              <h2 class="h5 card-title text-center">AliExpress</h2>
             </div>
             <div class="card-footer bg-white border-0">
-              <a href="https://www.aliexpress.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalAliExpress">
+          Más información
+              </button>
             </div>
           </article>
         </div>
         <!-- Armani Exchange -->
+        <!-- Modal Armani Exchange -->
+        <div class="modal fade" id="modalArmaniExchange" tabindex="-1" role="dialog" aria-labelledby="modalArmaniExchangeLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+          <h5 class="modal-title" id="modalArmaniExchangeLabel">Detalles:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+              </div>
+              <div class="modal-body ">
+          <h2 class="h5 card-title text-center">Armani Exchange</h2>
+          <div class="row">
+            <div class="col-6">
+              <img src="armani-exchange-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Armani Exchange">
+            </div>
+            <div class="col-6">
+              <p>Armani Exchange es una marca de lujo que combina la elegancia clásica de Giorgio Armani con un enfoque moderno y juvenil. Ofrece una amplia gama de ropa, accesorios y calzado diseñados para quienes buscan un estilo sofisticado y contemporáneo. Con una atención meticulosa a los detalles y materiales de alta calidad, Armani Exchange es sinónimo de moda de lujo accesible.</p>
+              <a href="https://www.armaniexchange.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+            </div>
+          </div>
+              </div>
+              <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="col-md-6 col-lg-4 mb-4">
           <article class="card h-100 shadow-sm">
             <img src="Imágenes/Tiendas/armaniexchange.png" class="card-img-top p-3" alt="Armani Exchange">
             <div class="card-body">
-              <h2 class="h5 card-title">Armani Exchange</h2>
-              <img src="armani-exchange-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Armani Exchange">
-              <p class="card-text">Armani Exchange es una marca de lujo que combina la elegancia clásica de Giorgio Armani con un enfoque moderno y juvenil. Ofrece una amplia gama de ropa, accesorios y calzado diseñados para quienes buscan un estilo sofisticado y contemporáneo. Con una atención meticulosa a los detalles y materiales de alta calidad, Armani Exchange es sinónimo de moda de lujo accesible.</p>
+              <h2 class="h5 card-title text-center">Armani Exchange</h2>
             </div>
             <div class="card-footer bg-white border-0">
-              <a href="https://www.armaniexchange.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalArmaniExchange">
+          Más información
+              </button>
             </div>
           </article>
         </div>
         <!-- Aromas Artesanales -->
+        <!-- Modal Aromas Artesanales -->
+        <div class="modal fade" id="modalAromasArtesanales" tabindex="-1" role="dialog" aria-labelledby="modalAromasArtesanalesLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+          <h5 class="modal-title" id="modalAromasArtesanalesLabel">Detalles:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+              </div>
+              <div class="modal-body ">
+          <h2 class="h5 card-title text-center">Aromas Artesanales</h2>
+          <div class="row">
+            <div class="col-6">
+              <img src="aromas-artesanales-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Aromas Artesanales">
+            </div>
+            <div class="col-6">
+              <p>Aromas Artesanales es una tienda especializada en perfumes y fragancias únicas. Cada producto está cuidadosamente elaborado para ofrecer una experiencia olfativa excepcional, utilizando ingredientes de alta calidad y técnicas tradicionales. Desde aromas frescos y florales hasta notas cálidas y especiadas, Aromas Artesanales tiene algo para cada gusto y ocasión.</p>
+              <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+            </div>
+          </div>
+              </div>
+              <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="col-md-6 col-lg-4 mb-4">
           <article class="card h-100 shadow-sm">
             <img src="Imágenes/Tiendas/aromasartesanales.png" class="card-img-top p-3" alt="Aromas Artesanales">
             <div class="card-body">
-              <h2 class="h5 card-title">Aromas Artesanales</h2>
-              <img src="aromas-artesanales-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Aromas Artesanales">
-              <p class="card-text">Aromas Artesanales es una tienda especializada en perfumes y fragancias únicas. Cada producto está cuidadosamente elaborado para ofrecer una experiencia olfativa excepcional, utilizando ingredientes de alta calidad y técnicas tradicionales. Desde aromas frescos y florales hasta notas cálidas y especiadas, Aromas Artesanales tiene algo para cada gusto y ocasión.</p>
+              <h2 class="h5 card-title text-center">Aromas Artesanales</h2>
             </div>
             <div class="card-footer bg-white border-0">
-              <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalAromasArtesanales">
+          Más información
+              </button>
             </div>
           </article>
         </div>
         <!-- Arriaga Asociados -->
+        <!-- Modal Arriaga Asociados -->
+        <div class="modal fade" id="modalArriagaAsociados" tabindex="-1" role="dialog" aria-labelledby="modalArriagaAsociadosLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+          <h5 class="modal-title" id="modalArriagaAsociadosLabel">Detalles:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+              </div>
+              <div class="modal-body ">
+          <h2 class="h5 card-title text-center">Arriaga Asociados</h2>
+          <div class="row">
+            <div class="col-6">
+              <img src="arriaga-asociados-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Arriaga Asociados">
+            </div>
+            <div class="col-6">
+              <p>Arriaga Asociados es una firma de abogados líder en servicios legales y asesoramiento jurídico. Con un equipo de expertos altamente cualificados, se especializan en ayudar a sus clientes a resolver problemas legales complejos de manera eficiente y profesional. Su enfoque personalizado y compromiso con la justicia los convierte en un aliado confiable para cualquier necesidad legal.</p>
+              <a href="https://www.arriagaasociados.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+            </div>
+          </div>
+              </div>
+              <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="col-md-6 col-lg-4 mb-4">
           <article class="card h-100 shadow-sm">
             <img src="Imágenes/Tiendas/arriagaasociados.png" class="card-img-top p-3" alt="Arriaga Asociados">
             <div class="card-body">
-              <h2 class="h5 card-title">Arriaga Asociados</h2>
-              <img src="arriaga-asociados-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Arriaga Asociados">
-              <p class="card-text">Arriaga Asociados es una firma de abogados líder en servicios legales y asesoramiento jurídico. Con un equipo de expertos altamente cualificados, se especializan en ayudar a sus clientes a resolver problemas legales complejos de manera eficiente y profesional. Su enfoque personalizado y compromiso con la justicia los convierte en un aliado confiable para cualquier necesidad legal.</p>
+              <h2 class="h5 card-title text-center">Arriaga Asociados</h2>
             </div>
             <div class="card-footer bg-white border-0">
-              <a href="https://www.arriagaasociados.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalArriagaAsociados">
+          Más información
+              </button>
             </div>
           </article>
         </div>
         <!-- BEDLAND -->
+        <!-- Modal BEDLAND -->
+        <div class="modal fade" id="modalBedland" tabindex="-1" role="dialog" aria-labelledby="modalBedlandLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+          <h5 class="modal-title" id="modalBedlandLabel">Detalles:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+              </div>
+              <div class="modal-body ">
+          <h2 class="h5 card-title text-center">BEDLAND</h2>
+          <div class="row">
+            <div class="col-6">
+              <img src="bedland-local.jpg" class="img-fluid rounded mb-2" alt="Tienda BEDLAND">
+            </div>
+            <div class="col-6">
+              <p>BEDLAND es una tienda especializada en colchones y soluciones para el descanso. Ofrecen una amplia gama de productos diseñados para mejorar la calidad del sueño, incluyendo colchones de última generación, bases ajustables y almohadas ergonómicas. Con un enfoque en la innovación y el confort, BEDLAND se compromete a proporcionar productos que se adapten a las necesidades individuales de cada cliente, garantizando un descanso reparador y saludable.</p>
+              <a href="https://www.bedland.es" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+            </div>
+          </div>
+              </div>
+              <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="col-md-6 col-lg-4 mb-4">
           <article class="card h-100 shadow-sm">
             <img src="Imágenes/Tiendas/bedland.png" class="card-img-top p-3" alt="BEDLAND">
             <div class="card-body">
-              <h2 class="h5 card-title">BEDLAND</h2>
-              <img src="bedland-local.jpg" class="img-fluid rounded mb-2" alt="Tienda BEDLAND">
-              <p class="card-text">BEDLAND es una tienda especializada en colchones y soluciones para el descanso. Ofrecen una amplia gama de productos diseñados para mejorar la calidad del sueño, incluyendo colchones de última generación, bases ajustables y almohadas ergonómicas. Con un enfoque en la innovación y el confort, BEDLAND se compromete a proporcionar productos que se adapten a las necesidades individuales de cada cliente, garantizando un descanso reparador y saludable.</p>
+              <h2 class="h5 card-title text-center">BEDLAND</h2>
             </div>
             <div class="card-footer bg-white border-0">
-              <a href="https://www.bedland.es" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalBedland">
+          Más información
+              </button>
             </div>
           </article>
         </div>
         <!-- Belros -->
+        <!-- Modal Belros -->
+        <div class="modal fade" id="modalBelros" tabindex="-1" role="dialog" aria-labelledby="modalBelrosLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+          <h5 class="modal-title" id="modalBelrosLabel">Detalles:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+              </div>
+              <div class="modal-body ">
+          <h2 class="h5 card-title text-center">Belros</h2>
+          <div class="row">
+            <div class="col-6">
+              <img src="belros-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Belros">
+            </div>
+            <div class="col-6">
+              <p>Belros es el lugar ideal para los amantes de los dulces y los snacks. Con una amplia selección de chucherías, frutos secos, palomitas y otros aperitivos, Belros ofrece productos de alta calidad para satisfacer todos los antojos. Además, cuentan con opciones personalizables para eventos y celebraciones, convirtiéndose en una opción perfecta para añadir un toque dulce a cualquier ocasión especial.</p>
+              <a href="https://www.belros.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+            </div>
+          </div>
+              </div>
+              <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="col-md-6 col-lg-4 mb-4">
           <article class="card h-100 shadow-sm">
             <img src="Imágenes/Tiendas/belros.png" class="card-img-top p-3" alt="Belros">
             <div class="card-body">
-              <h2 class="h5 card-title">Belros</h2>
-              <img src="belros-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Belros">
-              <p class="card-text">Belros es el lugar ideal para los amantes de los dulces y los snacks. Con una amplia selección de chucherías, frutos secos, palomitas y otros aperitivos, Belros ofrece productos de alta calidad para satisfacer todos los antojos. Además, cuentan con opciones personalizables para eventos y celebraciones, convirtiéndose en una opción perfecta para añadir un toque dulce a cualquier ocasión especial.</p>
+              <h2 class="h5 card-title text-center">Belros</h2>
             </div>
             <div class="card-footer bg-white border-0">
-              <a href="https://www.belros.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalBelros">
+          Más información
+              </button>
             </div>
           </article>
         </div>
         <!-- Bijou Brigitte -->
+        <!-- Modal Bijou Brigitte -->
+        <div class="modal fade" id="modalBijouBrigitte" tabindex="-1" role="dialog" aria-labelledby="modalBijouBrigitteLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+          <h5 class="modal-title" id="modalBijouBrigitteLabel">Detalles:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+              </div>
+              <div class="modal-body ">
+          <h2 class="h5 card-title text-center">Bijou Brigitte</h2>
+          <div class="row">
+            <div class="col-6">
+              <img src="bijou-brigitte-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Bijou Brigitte">
+            </div>
+            <div class="col-6">
+              <p>Bijou Brigitte es una tienda líder en accesorios y bisutería, ofreciendo una amplia variedad de productos para todos los estilos y ocasiones. Desde collares y pulseras hasta pendientes y anillos, cada pieza está diseñada con atención al detalle y materiales de calidad. Con colecciones que abarcan desde lo clásico hasta lo moderno, Bijou Brigitte es el destino perfecto para quienes buscan añadir un toque especial a su look.</p>
+              <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+            </div>
+          </div>
+              </div>
+              <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="col-md-6 col-lg-4 mb-4">
           <article class="card h-100 shadow-sm">
             <img src="Imágenes/Tiendas/bijoubrigitte.png" class="card-img-top p-3" alt="Bijou Brigitte">
             <div class="card-body">
-              <h2 class="h5 card-title">Bijou Brigitte</h2>
-              <img src="bijou-brigitte-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Bijou Brigitte">
-              <p class="card-text">Bijou Brigitte es una tienda líder en accesorios y bisutería, ofreciendo una amplia variedad de productos para todos los estilos y ocasiones. Desde collares y pulseras hasta pendientes y anillos, cada pieza está diseñada con atención al detalle y materiales de calidad. Con colecciones que abarcan desde lo clásico hasta lo moderno, Bijou Brigitte es el destino perfecto para quienes buscan añadir un toque especial a su look.</p>
+              <h2 class="h5 card-title text-center">Bijou Brigitte</h2>
             </div>
             <div class="card-footer bg-white border-0">
-              <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalBijouBrigitte">
+          Más información
+              </button>
             </div>
           </article>
         </div>
         <!-- Bimba y Lola -->
+        <!-- Modal Bimba y Lola -->
+        <div class="modal fade" id="modalBimbayLola" tabindex="-1" role="dialog" aria-labelledby="modalBimbayLolaLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+          <h5 class="modal-title" id="modalBimbayLolaLabel">Detalles:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+              </div>
+              <div class="modal-body ">
+          <h2 class="h5 card-title text-center">Bimba y Lola</h2>
+          <div class="row">
+            <div class="col-6">
+              <img src="bimba-y-lola-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Bimba y Lola">
+            </div>
+            <div class="col-6">
+              <p>Bimba y Lola es una marca reconocida por su estilo único y vanguardista en moda y complementos. Sus colecciones incluyen ropa, bolsos, calzado y accesorios que destacan por su diseño innovador y materiales de alta calidad. Con un enfoque en la creatividad y la exclusividad, Bimba y Lola se ha convertido en un referente para quienes buscan piezas originales y sofisticadas.</p>
+              <a href="https://www.bimbaylola.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+            </div>
+          </div>
+              </div>
+              <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="col-md-6 col-lg-4 mb-4">
           <article class="card h-100 shadow-sm">
             <img src="Imágenes/Tiendas/bimbaylola.png" class="card-img-top p-3" alt="Bimba y Lola">
             <div class="card-body">
-              <h2 class="h5 card-title">Bimba y Lola</h2>
-              <img src="bimba-y-lola-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Bimba y Lola">
-              <p class="card-text">Bimba y Lola es una marca reconocida por su estilo único y vanguardista en moda y complementos. Sus colecciones incluyen ropa, bolsos, calzado y accesorios que destacan por su diseño innovador y materiales de alta calidad. Con un enfoque en la creatividad y la exclusividad, Bimba y Lola se ha convertido en un referente para quienes buscan piezas originales y sofisticadas.</p>
+              <h2 class="h5 card-title text-center">Bimba y Lola</h2>
             </div>
             <div class="card-footer bg-white border-0">
-              <a href="https://www.bimbaylola.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalBimbayLola">
+          Más información
+              </button>
             </div>
           </article>
         </div>
         <!-- Book Center -->
+        <!-- Modal Book Center -->
+        <div class="modal fade" id="modalBookCenter" tabindex="-1" role="dialog" aria-labelledby="modalBookCenterLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+          <h5 class="modal-title" id="modalBookCenterLabel">Detalles:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+              </div>
+              <div class="modal-body ">
+          <h2 class="h5 card-title text-center">Book Center</h2>
+          <div class="row">
+            <div class="col-6">
+              <img src="book-center-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Book Center">
+            </div>
+            <div class="col-6">
+              <p>Book Center es una librería que ofrece una amplia selección de libros para todos los gustos y edades. Desde novelas y libros de texto hasta material escolar y de oficina, Book Center es el lugar perfecto para los amantes de la lectura y el aprendizaje. Además, cuentan con un equipo de expertos que están siempre dispuestos a ayudar a los clientes a encontrar el libro o material que necesitan.</p>
+              <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+            </div>
+          </div>
+              </div>
+              <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="col-md-6 col-lg-4 mb-4">
           <article class="card h-100 shadow-sm">
             <img src="Imágenes/Tiendas/bookcenter.png" class="card-img-top p-3" alt="Book Center">
             <div class="card-body">
-              <h2 class="h5 card-title">Book Center</h2>
-              <img src="book-center-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Book Center">
-              <p class="card-text">Book Center es una librería que ofrece una amplia selección de libros para todos los gustos y edades. Desde novelas y libros de texto hasta material escolar y de oficina, Book Center es el lugar perfecto para los amantes de la lectura y el aprendizaje. Además, cuentan con un equipo de expertos que están siempre dispuestos a ayudar a los clientes a encontrar el libro o material que necesitan.</p>
+              <h2 class="h5 card-title text-center">Book Center</h2>
             </div>
             <div class="card-footer bg-white border-0">
-              <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalBookCenter">
+          Más información
+              </button>
             </div>
           </article>
         </div>
         <!-- Calzedonia -->
+        <!-- Modal Calzedonia -->
+        <div class="modal fade" id="modalCalzedonia" tabindex="-1" role="dialog" aria-labelledby="modalCalzedoniaLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+          <h5 class="modal-title" id="modalCalzedoniaLabel">Detalles:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+              </div>
+              <div class="modal-body ">
+          <h2 class="h5 card-title text-center">Calzedonia</h2>
+          <div class="row">
+            <div class="col-6">
+              <img src="calzedonia-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Calzedonia">
+            </div>
+            <div class="col-6">
+              <p>Calzedonia es una marca líder en ropa interior, calcetería y trajes de baño para hombres, mujeres y niños. Con un enfoque en la moda y la comodidad, sus productos combinan diseños modernos con materiales de alta calidad. Desde medias elegantes hasta bañadores funcionales, Calzedonia ofrece opciones para cada ocasión, destacándose por su estilo y durabilidad.</p>
+              <a href="https://www.calzedonia.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+            </div>
+          </div>
+              </div>
+              <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="col-md-6 col-lg-4 mb-4">
           <article class="card h-100 shadow-sm">
             <img src="Imágenes/Tiendas/calzedonia.png" class="card-img-top p-3" alt="Calzedonia">
             <div class="card-body">
-              <h2 class="h5 card-title">Calzedonia</h2>
-              <img src="calzedonia-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Calzedonia">
-              <p class="card-text">Calzedonia es una marca líder en ropa interior, calcetería y trajes de baño para hombres, mujeres y niños. Con un enfoque en la moda y la comodidad, sus productos combinan diseños modernos con materiales de alta calidad. Desde medias elegantes hasta bañadores funcionales, Calzedonia ofrece opciones para cada ocasión, destacándose por su estilo y durabilidad.</p>
+              <h2 class="h5 card-title text-center">Calzedonia</h2>
             </div>
             <div class="card-footer bg-white border-0">
-              <a href="https://www.calzedonia.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalCalzedonia">
+          Más información
+              </button>
             </div>
           </article>
         </div>
         <!-- Canitas -->
+        <!-- Modal Canitas -->
+        <div class="modal fade" id="modalCanitas" tabindex="-1" role="dialog" aria-labelledby="modalCanitasLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+          <h5 class="modal-title" id="modalCanitasLabel">Detalles:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+              </div>
+              <div class="modal-body ">
+          <h2 class="h5 card-title text-center">Canitas</h2>
+          <div class="row">
+            <div class="col-6">
+              <img src="canitas-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Canitas">
+            </div>
+            <div class="col-6">
+              <p>Canitas es una tienda especializada en productos y accesorios para el cuidado personal. Ofrecen una amplia gama de artículos que incluyen productos de belleza, cuidado del cabello y cuidado de la piel, diseñados para satisfacer las necesidades de cada cliente. Con un enfoque en la calidad y la innovación, Canitas se compromete a proporcionar soluciones efectivas para el bienestar y la belleza diaria.</p>
+              <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+            </div>
+          </div>
+              </div>
+              <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="col-md-6 col-lg-4 mb-4">
           <article class="card h-100 shadow-sm">
             <img src="Imágenes/Tiendas/canitas.png" class="card-img-top p-3" alt="Canitas">
             <div class="card-body">
-              <h2 class="h5 card-title">Canitas</h2>
-              <img src="canitas-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Canitas">
-              <p class="card-text">Canitas es una tienda especializada en productos y accesorios para el cuidado personal. Ofrecen una amplia gama de artículos que incluyen productos de belleza, cuidado del cabello y cuidado de la piel, diseñados para satisfacer las necesidades de cada cliente. Con un enfoque en la calidad y la innovación, Canitas se compromete a proporcionar soluciones efectivas para el bienestar y la belleza diaria.</p>
+              <h2 class="h5 card-title text-center">Canitas</h2>
             </div>
             <div class="card-footer bg-white border-0">
-              <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalCanitas">
+          Más información
+              </button>
             </div>
           </article>
         </div>
         <!-- CatchGo -->
+        <!-- Modal CatchGo -->
+        <div class="modal fade" id="modalCatchGo" tabindex="-1" role="dialog" aria-labelledby="modalCatchGoLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg " role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+          <h5 class="modal-title" id="modalCatchGoLabel">Detalles:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+              </div>
+              <div class="modal-body ">
+          <h2 class="h5 card-title text-center">CatchGo</h2>
+          <div class="row">
+            <div class="col-6">
+              <img src="catchgo-local.jpg" class="img-fluid rounded mb-2" alt="Tienda CatchGo">
+            </div>
+            <div class="col-6">
+              <p>CatchGo es una tienda especializada en accesorios tecnológicos y gadgets innovadores. Ofrecen una amplia variedad de productos diseñados para facilitar la vida diaria y mejorar la experiencia tecnológica de sus clientes. Desde cargadores portátiles y auriculares inalámbricos hasta dispositivos inteligentes para el hogar, CatchGo combina funcionalidad y diseño moderno para satisfacer las necesidades de los amantes de la tecnología.</p>
+              <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+            </div>
+          </div>
+              </div>
+              <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="col-md-6 col-lg-4 mb-4">
           <article class="card h-100 shadow-sm">
             <img src="Imágenes/Tiendas/catchgo.png" class="card-img-top p-3" alt="CatchGo">
             <div class="card-body">
-              <h2 class="h5 card-title">CatchGo</h2>
-              <img src="catchgo-local.jpg" class="img-fluid rounded mb-2" alt="Tienda CatchGo">
-              <p class="card-text">CatchGo es una tienda especializada en accesorios tecnológicos y gadgets innovadores. Ofrecen una amplia variedad de productos diseñados para facilitar la vida diaria y mejorar la experiencia tecnológica de sus clientes. Desde cargadores portátiles y auriculares inalámbricos hasta dispositivos inteligentes para el hogar, CatchGo combina funcionalidad y diseño moderno para satisfacer las necesidades de los amantes de la tecnología.</p>
+              <h2 class="h5 card-title text-center">CatchGo</h2>
             </div>
             <div class="card-footer bg-white border-0">
-              <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalCatchGo">
+          Más información
+              </button>
             </div>
           </article>
         </div>
@@ -335,101 +784,2032 @@
           <article class="card h-100 shadow-sm">
             <img src="Imágenes/Tiendas/centros-unico.png" class="card-img-top p-3" alt="Centros Único">
             <div class="card-body">
-              <h2 class="h5 card-title">Centros Único</h2>
-              <img src="centros-unico-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Centros Único">
-              <p class="card-text">Centros Único es una cadena líder en tratamientos estéticos y depilación láser. Con tecnología avanzada y un equipo de profesionales altamente cualificados, ofrecen servicios personalizados para mejorar la belleza y el bienestar de sus clientes. Desde tratamientos faciales y corporales hasta soluciones de depilación permanente, Centros Único se compromete a proporcionar resultados efectivos y seguros en un ambiente cómodo y profesional.</p>
+              <h2 class="h5 card-title text-center">Centros Único</h2>
             </div>
             <div class="card-footer bg-white border-0">
-              <a href="https://www.centrosunico.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalCentrosUnico">
+          Más información
+              </button>
             </div>
           </article>
+        </div>
+        <!-- Modal Centros Único -->
+        <div class="modal fade" id="modalCentrosUnico" tabindex="-1" role="dialog" aria-labelledby="modalCentrosUnicoLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+          <h5 class="modal-title" id="modalCentrosUnicoLabel">Detalles:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+              </div>
+              <div class="modal-body">
+          <h2 class="h5 card-title text-center">Centros Único</h2>
+          <div class="row">
+            <div class="col-6">
+              <img src="centros-unico-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Centros Único">
+            </div>
+            <div class="col-6">
+              <p>Centros Único es una cadena líder en tratamientos estéticos y depilación láser. Con tecnología avanzada y un equipo de profesionales altamente cualificados, ofrecen servicios personalizados para mejorar la belleza y el bienestar de sus clientes. Desde tratamientos faciales y corporales hasta soluciones de depilación permanente, Centros Único se compromete a proporcionar resultados efectivos y seguros en un ambiente cómodo y profesional.</p>
+              <a href="https://www.centrosunico.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+            </div>
+          </div>
+              </div>
+              <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- CITEES -->
         <div class="col-md-6 col-lg-4 mb-4">
           <article class="card h-100 shadow-sm">
             <img src="Imágenes/Tiendas/citees.png" class="card-img-top p-3" alt="CITEES">
             <div class="card-body">
-              <h2 class="h5 card-title">CITEES</h2>
-              <img src="citees-local.jpg" class="img-fluid rounded mb-2" alt="Tienda CITEES">
-              <p class="card-text">CITEES es una tienda especializada en camisetas personalizadas y originales. Ofrecen diseños únicos que reflejan creatividad y estilo, ideales para expresar la personalidad de cada cliente. Además, cuentan con opciones de personalización para eventos, regalos o simplemente para crear una prenda única. Con materiales de alta calidad y un enfoque en la sostenibilidad, CITEES es el lugar perfecto para encontrar camisetas que destacan.</p>
+              <h2 class="h5 card-title text-center">CITEES</h2>
             </div>
             <div class="card-footer bg-white border-0">
-              <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalCitees">
+          Más información
+              </button>
             </div>
           </article>
+        </div>
+        <!-- Modal CITEES -->
+        <div class="modal fade" id="modalCitees" tabindex="-1" role="dialog" aria-labelledby="modalCiteesLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+          <h5 class="modal-title" id="modalCiteesLabel">Detalles:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+              </div>
+              <div class="modal-body">
+          <h2 class="h5 card-title text-center">CITEES</h2>
+          <div class="row">
+            <div class="col-6">
+              <img src="citees-local.jpg" class="img-fluid rounded mb-2" alt="Tienda CITEES">
+            </div>
+            <div class="col-6">
+              <p>CITEES es una tienda especializada en camisetas personalizadas y originales. Ofrecen diseños únicos que reflejan creatividad y estilo, ideales para expresar la personalidad de cada cliente. Además, cuentan con opciones de personalización para eventos, regalos o simplemente para crear una prenda única. Con materiales de alta calidad y un enfoque en la sostenibilidad, CITEES es el lugar perfecto para encontrar camisetas que destacan.</p>
+              <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+            </div>
+          </div>
+              </div>
+              <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- CLAIRE'S -->
         <div class="col-md-6 col-lg-4 mb-4">
           <article class="card h-100 shadow-sm">
             <img src="Imágenes/Tiendas/claires.png" class="card-img-top p-3" alt="CLAIRE'S">
             <div class="card-body">
-              <h2 class="h5 card-title">CLAIRE'S</h2>
-              <img src="claires-local.jpg" class="img-fluid rounded mb-2" alt="Tienda CLAIRE'S">
-              <p class="card-text">CLAIRE'S es una tienda icónica en accesorios de moda y bisutería juvenil. Con una amplia gama de productos que incluyen pendientes, collares, pulseras y accesorios para el cabello, CLAIRE'S es el destino favorito para quienes buscan añadir un toque divertido y moderno a su estilo. Además, ofrecen servicios como perforación de orejas y colecciones temáticas para todas las edades.</p>
+              <h2 class="h5 card-title text-center">CLAIRE'S</h2>
             </div>
             <div class="card-footer bg-white border-0">
-              <a href="https://www.claires.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalClaires">
+          Más información
+              </button>
             </div>
           </article>
+        </div>
+        <!-- Modal CLAIRE'S -->
+        <div class="modal fade" id="modalClaires" tabindex="-1" role="dialog" aria-labelledby="modalClairesLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+          <h5 class="modal-title" id="modalClairesLabel">Detalles:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+              </div>
+              <div class="modal-body">
+          <h2 class="h5 card-title text-center">CLAIRE'S</h2>
+          <div class="row">
+            <div class="col-6">
+              <img src="claires-local.jpg" class="img-fluid rounded mb-2" alt="Tienda CLAIRE'S">
+            </div>
+            <div class="col-6">
+              <p>CLAIRE'S es una tienda icónica en accesorios de moda y bisutería juvenil. Con una amplia gama de productos que incluyen pendientes, collares, pulseras y accesorios para el cabello, CLAIRE'S es el destino favorito para quienes buscan añadir un toque divertido y moderno a su estilo. Además, ofrecen servicios como perforación de orejas y colecciones temáticas para todas las edades.</p>
+              <a href="https://www.claires.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+            </div>
+          </div>
+              </div>
+              <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Dash and Stars -->
         <div class="col-md-6 col-lg-4 mb-4">
           <article class="card h-100 shadow-sm">
             <img src="Imágenes/Tiendas/dash-and-stars.png" class="card-img-top p-3" alt="Dash and Stars">
             <div class="card-body">
-              <h2 class="h5 card-title">Dash and Stars</h2>
-              <img src="dash-and-stars-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Dash and Stars">
-              <p class="card-text">Dash and Stars es una tienda que combina moda deportiva y casual para un estilo de vida activo. Sus colecciones incluyen ropa cómoda y funcional diseñada para actividades deportivas y momentos de ocio. Con un enfoque en la calidad y el diseño moderno, Dash and Stars ofrece prendas que se adaptan a las necesidades de quienes buscan un equilibrio entre rendimiento y estilo.</p>
+              <h2 class="h5 card-title text-center">Dash and Stars</h2>
             </div>
             <div class="card-footer bg-white border-0">
-              <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalDashAndStars">
+          Más información
+              </button>
             </div>
           </article>
+        </div>
+        <!-- Modal Dash and Stars -->
+        <div class="modal fade" id="modalDashAndStars" tabindex="-1" role="dialog" aria-labelledby="modalDashAndStarsLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+          <h5 class="modal-title" id="modalDashAndStarsLabel">Detalles:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+              </div>
+              <div class="modal-body">
+          <h2 class="h5 card-title text-center">Dash and Stars</h2>
+          <div class="row">
+            <div class="col-6">
+              <img src="dash-and-stars-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Dash and Stars">
+            </div>
+            <div class="col-6">
+              <p>Dash and Stars es una tienda que combina moda deportiva y casual para un estilo de vida activo. Sus colecciones incluyen ropa cómoda y funcional diseñada para actividades deportivas y momentos de ocio. Con un enfoque en la calidad y el diseño moderno, Dash and Stars ofrece prendas que se adaptan a las necesidades de quienes buscan un equilibrio entre rendimiento y estilo.</p>
+              <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+            </div>
+          </div>
+              </div>
+              <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Decimas -->
         <div class="col-md-6 col-lg-4 mb-4">
           <article class="card h-100 shadow-sm">
             <img src="Imágenes/Tiendas/decimas.png" class="card-img-top p-3" alt="Decimas">
             <div class="card-body">
-              <h2 class="h5 card-title">Decimas</h2>
-              <img src="decimas-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Decimas">
-              <p class="card-text">Decimas es una tienda líder en moda deportiva y accesorios para el deporte. Ofrecen una amplia gama de productos que incluyen ropa, calzado y equipamiento para diversas disciplinas deportivas. Con marcas reconocidas y diseños propios, Decimas combina calidad, funcionalidad y estilo para satisfacer las necesidades de deportistas y aficionados al deporte.</p>
+              <h2 class="h5 card-title text-center">Decimas</h2>
             </div>
             <div class="card-footer bg-white border-0">
-              <a href="https://www.decimas.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalDecimas">
+          Más información
+              </button>
             </div>
           </article>
+        </div>
+        <!-- Modal Decimas -->
+        <div class="modal fade" id="modalDecimas" tabindex="-1" role="dialog" aria-labelledby="modalDecimasLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+          <h5 class="modal-title" id="modalDecimasLabel">Detalles:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+              </div>
+              <div class="modal-body">
+          <h2 class="h5 card-title text-center">Decimas</h2>
+          <div class="row">
+            <div class="col-6">
+              <img src="decimas-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Decimas">
+            </div>
+            <div class="col-6">
+              <p>Decimas es una tienda líder en moda deportiva y accesorios para el deporte. Ofrecen una amplia gama de productos que incluyen ropa, calzado y equipamiento para diversas disciplinas deportivas. Con marcas reconocidas y diseños propios, Decimas combina calidad, funcionalidad y estilo para satisfacer las necesidades de deportistas y aficionados al deporte.</p>
+              <a href="https://www.decimas.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+            </div>
+          </div>
+              </div>
+              <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Dekorazon -->
         <div class="col-md-6 col-lg-4 mb-4">
           <article class="card h-100 shadow-sm">
             <img src="Imágenes/Tiendas/dekorazon.png" class="card-img-top p-3" alt="Dekorazon">
             <div class="card-body">
-              <h2 class="h5 card-title">Dekorazon</h2>
-              <img src="dekorazon-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Dekorazon">
-              <p class="card-text">Dekorazon es una tienda especializada en decoración y accesorios para el hogar. Ofrecen una selección cuidadosamente curada de productos que incluyen muebles, textiles, iluminación y detalles decorativos. Con un enfoque en el diseño y la funcionalidad, Dekorazon ayuda a transformar cualquier espacio en un lugar acogedor y con estilo.</p>
+              <h2 class="h5 card-title text-center">Dekorazon</h2>
             </div>
             <div class="card-footer bg-white border-0">
-              <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalDekorazon">
+          Más información
+              </button>
             </div>
           </article>
+        </div>
+        <!-- Modal Dekorazon -->
+        <div class="modal fade" id="modalDekorazon" tabindex="-1" role="dialog" aria-labelledby="modalDekorazonLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+          <h5 class="modal-title" id="modalDekorazonLabel">Detalles:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+              </div>
+              <div class="modal-body">
+          <h2 class="h5 card-title text-center">Dekorazon</h2>
+          <div class="row">
+            <div class="col-6">
+              <img src="dekorazon-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Dekorazon">
+            </div>
+            <div class="col-6">
+              <p>Dekorazon es una tienda especializada en decoración y accesorios para el hogar. Ofrecen una selección cuidadosamente curada de productos que incluyen muebles, textiles, iluminación y detalles decorativos. Con un enfoque en el diseño y la funcionalidad, Dekorazon ayuda a transformar cualquier espacio en un lugar acogedor y con estilo.</p>
+              <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+            </div>
+          </div>
+              </div>
+              <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- Druni -->
         <div class="col-md-6 col-lg-4 mb-4">
           <article class="card h-100 shadow-sm">
             <img src="Imágenes/Tiendas/druni.png" class="card-img-top p-3" alt="Druni">
             <div class="card-body">
-              <h2 class="h5 card-title">Druni</h2>
-              <img src="druni-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Druni">
-              <p class="card-text">Druni es una cadena de perfumerías que ofrece una amplia gama de productos de belleza, cuidado personal y cosmética de alta calidad. Desde fragancias exclusivas hasta maquillaje y tratamientos para el cuidado de la piel, Druni se destaca por su compromiso con la excelencia y la satisfacción del cliente. Además, cuentan con marcas reconocidas y asesoramiento personalizado para cada necesidad.</p>
+              <h2 class="h5 card-title text-center">Druni</h2>
             </div>
             <div class="card-footer bg-white border-0">
-              <a href="https://www.druni.es" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalDruni">
+          Más información
+              </button>
             </div>
           </article>
         </div>
-        <!-- ... Continúa igual para el resto de las tiendas ... -->
+        <!-- Modal Druni -->
+        <div class="modal fade" id="modalDruni" tabindex="-1" role="dialog" aria-labelledby="modalDruniLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+          <h5 class="modal-title" id="modalDruniLabel">Detalles:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+              </div>
+              <div class="modal-body">
+          <h2 class="h5 card-title text-center">Druni</h2>
+          <div class="row">
+            <div class="col-6">
+              <img src="druni-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Druni">
+            </div>
+            <div class="col-6">
+              <p>Druni es una cadena de perfumerías que ofrece una amplia gama de productos de belleza, cuidado personal y cosmética de alta calidad. Desde fragancias exclusivas hasta maquillaje y tratamientos para el cuidado de la piel, Druni se destaca por su compromiso con la excelencia y la satisfacción del cliente. Además, cuentan con marcas reconocidas y asesoramiento personalizado para cada necesidad.</p>
+              <a href="https://www.druni.es" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+            </div>
+          </div>
+              </div>
+              <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Elena Hernández -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/elenahernandez.png" class="card-img-top p-3" alt="Elena Hernández">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Elena Hernández</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalElenaHernandez">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalElenaHernandez" tabindex="-1" role="dialog" aria-labelledby="modalElenaHernandezLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalElenaHernandezLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Elena Hernández</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="elena-hernandez-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Elena Hernández">
+                  </div>
+                  <div class="col-6">
+                    <p>Elena Hernández es una tienda de moda femenina que destaca por sus diseños elegantes y actuales. Ofrece colecciones pensadas para la mujer moderna, con prendas de calidad y estilo propio.</p>
+                    <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- El Ganso -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/elganso.png" class="card-img-top p-3" alt="El Ganso">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">El Ganso</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalElGanso">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalElGanso" tabindex="-1" role="dialog" aria-labelledby="modalElGansoLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalElGansoLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">El Ganso</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="elganso-local.jpg" class="img-fluid rounded mb-2" alt="Tienda El Ganso">
+                  </div>
+                  <div class="col-6">
+                    <p>El Ganso es una marca de moda reconocida por su estilo casual y elegante, con prendas y accesorios para hombre y mujer que combinan tradición y modernidad.</p>
+                    <a href="https://www.elganso.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Etam -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/etam.png" class="card-img-top p-3" alt="Etam">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Etam</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalEtam">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalEtam" tabindex="-1" role="dialog" aria-labelledby="modalEtamLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalEtamLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Etam</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="etam-local.jpg" class="img-fluid rounded mb-2" alt="Tienda Etam">
+                  </div>
+                  <div class="col-6">
+                    <p>Etam es una tienda especializada en lencería, ropa interior y moda femenina, con colecciones que destacan por su comodidad, diseño y calidad.</p>
+                    <a href="https://www.etam.es" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Farmacia -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/farmacia.png" class="card-img-top p-3" alt="Farmacia">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Farmacia</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalFarmacia">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalFarmacia" tabindex="-1" role="dialog" aria-labelledby="modalFarmaciaLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalFarmaciaLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Farmacia</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="farmacia-local.jpg" class="img-fluid rounded mb-2" alt="Farmacia">
+                  </div>
+                  <div class="col-6">
+                    <p>La Farmacia del centro comercial ofrece productos farmacéuticos, parafarmacia y asesoramiento profesional para el cuidado de la salud y el bienestar.</p>
+                    <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fitness Park -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/fitnesspark.png" class="card-img-top p-3" alt="Fitness Park">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Fitness Park</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalFitnessPark">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalFitnessPark" tabindex="-1" role="dialog" aria-labelledby="modalFitnessParkLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalFitnessParkLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Fitness Park</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="fitnesspark-local.jpg" class="img-fluid rounded mb-2" alt="Fitness Park">
+                  </div>
+                  <div class="col-6">
+                    <p>Fitness Park es un gimnasio moderno con instalaciones de última generación, clases dirigidas y entrenadores profesionales para todos los niveles.</p>
+                    <a href="https://www.fitnesspark.es" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flap -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/flap.png" class="card-img-top p-3" alt="Flap">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Flap</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalFlap">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalFlap" tabindex="-1" role="dialog" aria-labelledby="modalFlapLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalFlapLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Flap</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="flap-local.jpg" class="img-fluid rounded mb-2" alt="Flap">
+                  </div>
+                  <div class="col-6">
+                    <p>Flap es una tienda de moda y complementos con propuestas originales y actuales para todos los públicos.</p>
+                    <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flying Tiger Copenhagen -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/flyingtiger.png" class="card-img-top p-3" alt="Flying Tiger Copenhagen">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Flying Tiger Copenhagen</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalFlyingTiger">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalFlyingTiger" tabindex="-1" role="dialog" aria-labelledby="modalFlyingTigerLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalFlyingTigerLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Flying Tiger Copenhagen</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="flyingtiger-local.jpg" class="img-fluid rounded mb-2" alt="Flying Tiger Copenhagen">
+                  </div>
+                  <div class="col-6">
+                    <p>Flying Tiger Copenhagen ofrece una gran variedad de productos originales, desde artículos de papelería y decoración hasta juguetes y gadgets, siempre con un toque divertido y creativo.</p>
+                    <a href="https://es.flyingtiger.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fnac -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/fnac.png" class="card-img-top p-3" alt="Fnac">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Fnac</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalFnac">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalFnac" tabindex="-1" role="dialog" aria-labelledby="modalFnacLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalFnacLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Fnac</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="fnac-local.jpg" class="img-fluid rounded mb-2" alt="Fnac">
+                  </div>
+                  <div class="col-6">
+                    <p>Fnac es una tienda referente en cultura, tecnología y ocio, con una amplia oferta de libros, música, electrónica y productos para el hogar.</p>
+                    <a href="https://www.fnac.es" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Foot Locker -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/footlocker.png" class="card-img-top p-3" alt="Foot Locker">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Foot Locker</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalFootLocker">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalFootLocker" tabindex="-1" role="dialog" aria-labelledby="modalFootLockerLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalFootLockerLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Foot Locker</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="footlocker-local.jpg" class="img-fluid rounded mb-2" alt="Foot Locker">
+                  </div>
+                  <div class="col-6">
+                    <p>Foot Locker es la tienda líder en zapatillas y moda deportiva, con las últimas novedades de las mejores marcas internacionales.</p>
+                    <a href="https://www.footlocker.es" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Game -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/game.png" class="card-img-top p-3" alt="Game">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Game</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalGame">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalGame" tabindex="-1" role="dialog" aria-labelledby="modalGameLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalGameLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Game</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="game-local.jpg" class="img-fluid rounded mb-2" alt="Game">
+                  </div>
+                  <div class="col-6">
+                    <p>Game es la tienda líder en videojuegos, consolas y accesorios, con las últimas novedades y ofertas para gamers de todas las edades.</p>
+                    <a href="https://www.game.es" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Geek Atmosphere -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/geekatmosphere.png" class="card-img-top p-3" alt="Geek Atmosphere">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Geek Atmosphere</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalGeekAtmosphere">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalGeekAtmosphere" tabindex="-1" role="dialog" aria-labelledby="modalGeekAtmosphereLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalGeekAtmosphereLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Geek Atmosphere</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="geekatmosphere-local.jpg" class="img-fluid rounded mb-2" alt="Geek Atmosphere">
+                  </div>
+                  <div class="col-6">
+                    <p>Geek Atmosphere es la tienda ideal para los amantes de la cultura pop, cómics, figuras, merchandising y regalos originales.</p>
+                    <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- General Optica -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/generaloptica.png" class="card-img-top p-3" alt="General Optica">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">General Optica</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalGeneralOptica">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalGeneralOptica" tabindex="-1" role="dialog" aria-labelledby="modalGeneralOpticaLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalGeneralOpticaLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">General Optica</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="generaloptica-local.jpg" class="img-fluid rounded mb-2" alt="General Optica">
+                  </div>
+                  <div class="col-6">
+                    <p>General Optica ofrece servicios de óptica, gafas graduadas, de sol y lentes de contacto con asesoramiento profesional y tecnología avanzada.</p>
+                    <a href="https://www.generaloptica.es" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Guess -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/guess.png" class="card-img-top p-3" alt="Guess">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Guess</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalGuess">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalGuess" tabindex="-1" role="dialog" aria-labelledby="modalGuessLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalGuessLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Guess</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="guess-local.jpg" class="img-fluid rounded mb-2" alt="Guess">
+                  </div>
+                  <div class="col-6">
+                    <p>Guess es una marca internacional de moda que ofrece ropa, bolsos, calzado y accesorios con un estilo moderno y sofisticado.</p>
+                    <a href="https://www.guess.eu" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- H&M -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/hm.png" class="card-img-top p-3" alt="H&M">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">H&M</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalHM">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalHM" tabindex="-1" role="dialog" aria-labelledby="modalHMLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalHMLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">H&M</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="hm-local.jpg" class="img-fluid rounded mb-2" alt="H&M">
+                  </div>
+                  <div class="col-6">
+                    <p>H&M es una tienda de moda internacional con colecciones para mujer, hombre, niños y hogar, siempre a la última tendencia y a precios asequibles.</p>
+                    <a href="https://www2.hm.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hug & Clau -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/hugandclau.png" class="card-img-top p-3" alt="Hug & Clau">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Hug & Clau</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalHugClau">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalHugClau" tabindex="-1" role="dialog" aria-labelledby="modalHugClauLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalHugClauLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Hug & Clau</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="hugandclau-local.jpg" class="img-fluid rounded mb-2" alt="Hug & Clau">
+                  </div>
+                  <div class="col-6">
+                    <p>Hug & Clau es una tienda de moda femenina con prendas bohemias, cómodas y originales para mujeres con personalidad.</p>
+                    <a href="https://www.hugandclau.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jack&Jones -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/jackjones.png" class="card-img-top p-3" alt="Jack&Jones">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Jack&Jones</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalJackJones">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalJackJones" tabindex="-1" role="dialog" aria-labelledby="modalJackJonesLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalJackJonesLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Jack&Jones</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="jackjones-local.jpg" class="img-fluid rounded mb-2" alt="Jack&Jones">
+                  </div>
+                  <div class="col-6">
+                    <p>Jack&Jones es una marca de moda masculina con colecciones urbanas, casual y denim para hombres jóvenes y actuales.</p>
+                    <a href="https://www.jackjones.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- JD Sports -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/jdsports.png" class="card-img-top p-3" alt="JD Sports">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">JD Sports</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalJDSports">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalJDSports" tabindex="-1" role="dialog" aria-labelledby="modalJDSportsLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalJDSportsLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">JD Sports</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="jdsports-local.jpg" class="img-fluid rounded mb-2" alt="JD Sports">
+                  </div>
+                  <div class="col-6">
+                    <p>JD Sports es la tienda líder en moda deportiva, zapatillas y ropa urbana de las mejores marcas internacionales.</p>
+                    <a href="https://www.jdsports.es" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Jose Luis Joyerías -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/joseluisjoyerias.png" class="card-img-top p-3" alt="Jose Luis Joyerías">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Jose Luis Joyerías</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalJoseLuisJoyeria">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalJoseLuisJoyeria" tabindex="-1" role="dialog" aria-labelledby="modalJoseLuisJoyeriaLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalJoseLuisJoyeriaLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Jose Luis Joyerías</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="joseluisjoyerias-local.jpg" class="img-fluid rounded mb-2" alt="Jose Luis Joyerías">
+                  </div>
+                  <div class="col-6">
+                    <p>Jose Luis Joyerías ofrece una amplia selección de joyas, relojes y complementos para ocasiones especiales y el día a día.</p>
+                    <a href="https://www.joseluisjoyerias.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Joya Y Diseño -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/joyaydiseño.png" class="card-img-top p-3" alt="Joya Y Diseño">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Joya Y Diseño</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalJoyaYDiseno">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalJoyaYDiseno" tabindex="-1" role="dialog" aria-labelledby="modalJoyaYDisenoLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalJoyaYDisenoLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Joya Y Diseño</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="joyaydiseño-local.jpg" class="img-fluid rounded mb-2" alt="Joya Y Diseño">
+                  </div>
+                  <div class="col-6">
+                    <p>Joya Y Diseño es una joyería especializada en piezas exclusivas, personalizadas y de alta calidad para todos los gustos.</p>
+                    <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Juguettos -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/juguettos.png" class="card-img-top p-3" alt="Juguettos">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Juguettos</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalJuguettos">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalJuguettos" tabindex="-1" role="dialog" aria-labelledby="modalJuguettosLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalJuguettosLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Juguettos</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="juguettos-local.jpg" class="img-fluid rounded mb-2" alt="Juguettos">
+                  </div>
+                  <div class="col-6">
+                    <p>Juguettos es la tienda de juguetes para todas las edades, con las mejores marcas y novedades para el entretenimiento y aprendizaje de los niños.</p>
+                    <a href="https://www.juguettos.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kids Garage -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/kidsgarage.png" class="card-img-top p-3" alt="Kids Garage">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Kids Garage</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalKidsGarage">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalKidsGarage" tabindex="-1" role="dialog" aria-labelledby="modalKidsGarageLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalKidsGarageLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Kids Garage</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="kidsgarage-local.jpg" class="img-fluid rounded mb-2" alt="Kids Garage">
+                  </div>
+                  <div class="col-6">
+                    <p>Kids Garage es un espacio de ocio infantil con actividades, talleres y juegos para que los más pequeños se diviertan y aprendan.</p>
+                    <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kiko Make Up Milano -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/kiko.png" class="card-img-top p-3" alt="Kiko Make Up Milano">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Kiko Make Up Milano</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalKiko">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalKiko" tabindex="-1" role="dialog" aria-labelledby="modalKikoLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalKikoLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Kiko Make Up Milano</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="kiko-local.jpg" class="img-fluid rounded mb-2" alt="Kiko Make Up Milano">
+                  </div>
+                  <div class="col-6">
+                    <p>Kiko Make Up Milano es la tienda de maquillaje y cosmética con productos innovadores, colores de tendencia y precios accesibles.</p>
+                    <a href="https://www.kikocosmetics.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- La Casa de las Carcasas -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/lacasadelascarcasas.png" class="card-img-top p-3" alt="La Casa de las Carcasas">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">La Casa de las Carcasas</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalLaCasaDeLasCarcasas">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalLaCasaDeLasCarcasas" tabindex="-1" role="dialog" aria-labelledby="modalLaCasaDeLasCarcasasLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalLaCasaDeLasCarcasasLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">La Casa de las Carcasas</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="lacasadelascarcasas-local.jpg" class="img-fluid rounded mb-2" alt="La Casa de las Carcasas">
+                  </div>
+                  <div class="col-6">
+                    <p>La Casa de las Carcasas es la tienda especializada en fundas, carcasas y accesorios para móviles y tablets de todos los modelos.</p>
+                    <a href="https://www.lacasadelascarcasas.es" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- La Chinata -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/lachinata.png" class="card-img-top p-3" alt="La Chinata">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">La Chinata</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalLaChinata">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalLaChinata" tabindex="-1" role="dialog" aria-labelledby="modalLaChinataLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalLaChinataLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">La Chinata</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="lachinata-local.jpg" class="img-fluid rounded mb-2" alt="La Chinata">
+                  </div>
+                  <div class="col-6">
+                    <p>La Chinata ofrece productos gourmet y cosmética natural elaborados con aceite de oliva virgen extra de alta calidad.</p>
+                    <a href="https://www.lachinata.es" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Llongueras -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/llongueras.png" class="card-img-top p-3" alt="Llongueras">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Llongueras</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalLlongueras">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalLlongueras" tabindex="-1" role="dialog" aria-labelledby="modalLlonguerasLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalLlonguerasLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Llongueras</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="llongueras-local.jpg" class="img-fluid rounded mb-2" alt="Llongueras">
+                  </div>
+                  <div class="col-6">
+                    <p>Llongueras es una peluquería de referencia con servicios de corte, color y tratamientos capilares para hombre y mujer.</p>
+                    <a href="https://www.llongueras.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lola Rey -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/lolarey.png" class="card-img-top p-3" alt="Lola Rey">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Lola Rey</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalLolaRey">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalLolaRey" tabindex="-1" role="dialog" aria-labelledby="modalLolaReyLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalLolaReyLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Lola Rey</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="lolarey-local.jpg" class="img-fluid rounded mb-2" alt="Lola Rey">
+                  </div>
+                  <div class="col-6">
+                    <p>Lola Rey es una zapatería con las últimas tendencias en calzado y complementos para mujer y hombre.</p>
+                    <a href="https://www.lolarey.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lovisa -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/lovisa.png" class="card-img-top p-3" alt="Lovisa">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Lovisa</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalLovisa">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalLovisa" tabindex="-1" role="dialog" aria-labelledby="modalLovisaLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalLovisaLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Lovisa</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="lovisa-local.jpg" class="img-fluid rounded mb-2" alt="Lovisa">
+                  </div>
+                  <div class="col-6">
+                    <p>Lovisa es una tienda de bisutería y accesorios de moda con colecciones actuales y asequibles para todos los estilos.</p>
+                    <a href="https://www.lovisa.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Luxenter -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/luxenter.png" class="card-img-top p-3" alt="Luxenter">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Luxenter</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalLuxenter">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalLuxenter" tabindex="-1" role="dialog" aria-labelledby="modalLuxenterLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalLuxenterLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Luxenter</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="luxenter-local.jpg" class="img-fluid rounded mb-2" alt="Luxenter">
+                  </div>
+                  <div class="col-6">
+                    <p>Luxenter es una joyería con diseños exclusivos en plata, acero y piedras naturales, ideales para regalar o darte un capricho.</p>
+                    <a href="https://www.luxenter.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Macho Sports Barbershop -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/macho.png" class="card-img-top p-3" alt="Macho Sports Barbershop">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Macho Sports Barbershop</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalMacho">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalMacho" tabindex="-1" role="dialog" aria-labelledby="modalMachoLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalMachoLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Macho Sports Barbershop</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="macho-local.jpg" class="img-fluid rounded mb-2" alt="Macho Sports Barbershop">
+                  </div>
+                  <div class="col-6">
+                    <p>Macho Sports Barbershop es una barbería moderna con servicios de corte, afeitado y cuidado masculino en un ambiente deportivo.</p>
+                    <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mango -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/mango.png" class="card-img-top p-3" alt="Mango">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Mango</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalMango">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalMango" tabindex="-1" role="dialog" aria-labelledby="modalMangoLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalMangoLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Mango</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="mango-local.jpg" class="img-fluid rounded mb-2" alt="Mango">
+                  </div>
+                  <div class="col-6">
+                    <p>Mango es una marca de moda internacional con colecciones para mujer, hombre y niños, siempre a la vanguardia del diseño.</p>
+                    <a href="https://shop.mango.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mango Man -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/mangoman.png" class="card-img-top p-3" alt="Mango Man">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Mango Man</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalMangoMan">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalMangoMan" tabindex="-1" role="dialog" aria-labelledby="modalMangoManLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalMangoManLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Mango Man</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="mangoman-local.jpg" class="img-fluid rounded mb-2" alt="Mango Man">
+                  </div>
+                  <div class="col-6">
+                    <p>Mango Man es la línea masculina de Mango, con moda actual, elegante y casual para el hombre moderno.</p>
+                    <a href="https://shop.mango.com/es/hombre" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Marco Aldany -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/marcoaldany.png" class="card-img-top p-3" alt="Marco Aldany">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Marco Aldany</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalMarcoAldany">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalMarcoAldany" tabindex="-1" role="dialog" aria-labelledby="modalMarcoAldanyLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalMarcoAldanyLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Marco Aldany</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="marcoaldany-local.jpg" class="img-fluid rounded mb-2" alt="Marco Aldany">
+                  </div>
+                  <div class="col-6">
+                    <p>Marco Aldany es una cadena de peluquerías y centros de belleza con servicios de corte, color, estética y barbería.</p>
+                    <a href="https://www.marcoaldany.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Massimo Dutti -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/massimodutti.png" class="card-img-top p-3" alt="Massimo Dutti">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Massimo Dutti</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalMassimoDutti">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalMassimoDutti" tabindex="-1" role="dialog" aria-labelledby="modalMassimoDuttiLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalMassimoDuttiLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Massimo Dutti</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="massimodutti-local.jpg" class="img-fluid rounded mb-2" alt="Massimo Dutti">
+                  </div>
+                  <div class="col-6">
+                    <p>Massimo Dutti es una marca de moda elegante y sofisticada para hombre y mujer, con prendas y accesorios de alta calidad.</p>
+                    <a href="https://www.massimodutti.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mayoral -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/mayoral.png" class="card-img-top p-3" alt="Mayoral">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Mayoral</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalMayoral">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalMayoral" tabindex="-1" role="dialog" aria-labelledby="modalMayoralLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalMayoralLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Mayoral</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="mayoral-local.jpg" class="img-fluid rounded mb-2" alt="Mayoral">
+                  </div>
+                  <div class="col-6">
+                    <p>Mayoral es una tienda de moda infantil con colecciones cómodas, actuales y de calidad para bebés, niños y niñas.</p>
+                    <a href="https://www.mayoral.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Misako -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/misako.png" class="card-img-top p-3" alt="Misako">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Misako</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalMisako">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalMisako" tabindex="-1" role="dialog" aria-labelledby="modalMisakoLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalMisakoLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Misako</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="misako-local.jpg" class="img-fluid rounded mb-2" alt="Misako">
+                  </div>
+                  <div class="col-6">
+                    <p>Misako es la tienda de bolsos, mochilas y complementos de moda con diseños originales y precios asequibles.</p>
+                    <a href="https://www.misako.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mister Minit -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/misterminit.png" class="card-img-top p-3" alt="Mister Minit">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Mister Minit</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalMisterMinit">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalMisterMinit" tabindex="-1" role="dialog" aria-labelledby="modalMisterMinitLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalMisterMinitLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Mister Minit</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="misterminit-local.jpg" class="img-fluid rounded mb-2" alt="Mister Minit">
+                  </div>
+                  <div class="col-6">
+                    <p>Mister Minit ofrece servicios de duplicado de llaves, reparación de calzado, grabados y pilas para relojes.</p>
+                    <a href="https://www.misterminit.eu" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mon Clinic -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/monclinic.png" class="card-img-top p-3" alt="Mon Clinic">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Mon Clinic</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalMonClinic">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalMonClinic" tabindex="-1" role="dialog" aria-labelledby="modalMonClinicLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalMonClinicLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Mon Clinic</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="monclinic-local.jpg" class="img-fluid rounded mb-2" alt="Mon Clinic">
+                  </div>
+                  <div class="col-6">
+                    <p>Mon Clinic es una clínica de medicina estética y tratamientos de belleza con tecnología avanzada y profesionales cualificados.</p>
+                    <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Movistar -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/movistar.png" class="card-img-top p-3" alt="Movistar">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Movistar</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalMovistar">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalMovistar" tabindex="-1" role="dialog" aria-labelledby="modalMovistarLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalMovistarLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Movistar</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="movistar-local.jpg" class="img-fluid rounded mb-2" alt="Movistar">
+                  </div>
+                  <div class="col-6">
+                    <p>Movistar es la tienda de telefonía, internet y televisión con las mejores ofertas en móviles, tarifas y servicios digitales.</p>
+                    <a href="https://www.movistar.es" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Muero de Amor -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/muerodeamor.png" class="card-img-top p-3" alt="Muero de Amor">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Muero de Amor</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalMueroDeAmor">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalMueroDeAmor" tabindex="-1" role="dialog" aria-labelledby="modalMueroDeAmorLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalMueroDeAmorLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Muero de Amor</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="muerodeamor-local.jpg" class="img-fluid rounded mb-2" alt="Muero de Amor">
+                  </div>
+                  <div class="col-6">
+                    <p>Muero de Amor es una tienda de regalos originales, papelería y detalles para sorprender en cualquier ocasión.</p>
+                    <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Natura -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/natura.png" class="card-img-top p-3" alt="Natura">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Natura</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalNatura">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalNatura" tabindex="-1" role="dialog" aria-labelledby="modalNaturaLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalNaturaLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Natura</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="natura-local.jpg" class="img-fluid rounded mb-2" alt="Natura">
+                  </div>
+                  <div class="col-6">
+                    <p>Natura es una tienda de moda, complementos y artículos de regalo inspirados en la naturaleza y el bienestar.</p>
+                    <a href="https://www.naturaselection.com" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Naturwash -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/naturwash.png" class="card-img-top p-3" alt="Naturwash">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Naturwash</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalNaturwash">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+        <div class="modal fade" id="modalNaturwash" tabindex="-1" role="dialog" aria-labelledby="modalNaturwashLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalNaturwashLabel">Detalles:</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center">Naturwash</h2>
+                <div class="row">
+                  <div class="col-6">
+                    <img src="naturwash-local.jpg" class="img-fluid rounded mb-2" alt="Naturwash">
+                  </div>
+                  <div class="col-6">
+                    <p>Naturwash es una lavandería autoservicio con tecnología ecológica y productos respetuosos con el medio ambiente.</p>
+                    <a href="#" target="_blank" class="btn btn-outline-primary btn-block">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Oh! Nails -->
+        <div class="col-md-6 col-lg-4 mb-4">
+          <article class="card h-100 shadow-sm">
+            <img src="Imágenes/Tiendas/ohnails.png" class="card-img-top p-3" alt="Oh! Nails">
+            <div class="card-body">
+              <h2 class="h5 card-title text-center">Oh! Nails</h2>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <button type="button" class="btn btn-outline-primary btn-block" data-toggle="modal" data-target="#modalOhNails">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
       </div>
+      
     </section>
   </main>
   <footer>
