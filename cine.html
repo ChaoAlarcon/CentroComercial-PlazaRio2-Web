@@ -60,23 +60,72 @@
     </div>
   </nav>
   </header>
-  <main class="container my-5 pt-5">
+  <main class="mt-5 mb-5 pt-5 pb-5" >
     <!-- Sección principal con información sobre el cine -->
     <section class="bg-white rounded shadow p-4">
-      <h1 class="mb-4 text-center"><i class="fas fa-film mr-2"></i>Cine</h1>
-      <h2 class="h4 mb-3">Información General</h2>
-      <ul class="list-unstyled mb-4">
-        <li><strong>Salas:</strong> Equipadas con tecnología <span class="badge badge-info">4DX</span> y sonido <span class="badge badge-secondary">Dolby Atmos</span>.</li>
-        <li><strong>Ubicación:</strong> Planta superior, al lado de la zona de restauración.</li>
-        <li><strong>Horarios:</strong> Todos los días de <span class="font-weight-bold">12:00</span> a <span class="font-weight-bold">00:00</span></li>
-        <li><strong>Servicios:</strong> Cafetería, accesibilidad, asientos VIP</li>
-      </ul>
-      <!-- Enlace externo para comprar entradas -->
-      <div class="text-center">
-        <a href="https://cinesa.es" target="_blank" class="btn btn-primary btn-lg">
-          <i class="fas fa-ticket-alt mr-2"></i>Comprar entradas
-        </a>
+     <h1 class="mb-4 text-center">Cine</h1>
+
+      <!-- Hero Section -->
+      <section id="home" class="d-flex align-items-center justify-content-center rounded mb-5 shadow" >
+        <div class="text-center p-5 rounded" >
+          <h2 class="h1 font-weight-bold mb-3 text-primary">
+        <i class="fas fa-film mr-2"></i>¡Vive la magia del cine!
+            </h2>
+            <p class="lead mb-4">Descubre las mejores películas y horarios en Cine Plaza Río 2.</p>
+            <a href="#movies" class="btn btn-primary btn-lg font-weight-bold shadow-sm px-5" style="scroll-behavior: smooth;">
+              <i class="fas fa-ticket-alt mr-2"></i>Ver Películas
+            </a>
+            <style>
+              html {
+              scroll-behavior: smooth;
+              }
+            </style>
+        </div>
+      </section>
+
+      <!-- Movies Section -->
+      <section id="movies" class="py-5">
+        <div class="container px-0">
+          <h2 class="text-center font-weight-bold mb-5" style="font-size:2rem;">Películas en Cartelera</h2>
+          <div id="peliculas" class="row">
+            <!-- Las películas se cargarán aquí -->
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid  rounded shadow p-4">
+      <h2 class="h4 mb-3 text-primary font-weight-bold">Información General</h2>
+       <div class="row mt-5">
+        <div class="col-md-7">
+          <h3 class="h5 mb-3">Cinesa Plaza Río 2</h3>
+          <ul class="list-unstyled mb-4 pl-3" style="font-size:1.1rem;">
+            <li class="mb-2">
+              <strong>Salas:</strong>
+              Equipadas con tecnología <span class="badge badge-info">4DX</span> y sonido <span class="badge badge-secondary">Dolby Atmos</span>.
+            </li>
+            <li class="mb-2">
+              <strong>Ubicación:</strong>
+              Planta superior, al lado de la zona de restauración.
+            </li>
+            <li class="mb-2">
+              <strong>Horarios:</strong>
+              Todos los días de <span class="font-weight-bold">12:00</span> a <span class="font-weight-bold">00:00</span>
+            </li>
+            <li class="mb-2">
+              <strong>Servicios:</strong>
+              Cafetería, accesibilidad, asientos VIP
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-5 d-flex align-items-center justify-content-center">
+          <div class="text-center mt-4 mt-md-0 w-100">
+            <a href="https://cinesa.es" target="_blank" class="btn btn-primary btn-lg px-5 shadow font-weight-bold" style="font-size:1.25rem;">
+              <i class="fas fa-ticket-alt mr-2"></i>Comprar entradas
+            </a>
+            <p class="mt-3 text-muted small">Redirige a la web oficial de venta de entradas</p>
+          </div>
+        </div>
       </div>
+      </section>
     </section>
   </main>
 
@@ -187,4 +236,46 @@
             </div>
 </footer>
 </body>
+
+<script>
+  async function cargarPeliculas() {
+    try {
+      const response = await fetch('peliculas.json');
+      if (!response.ok) {
+        throw new Error('Error al cargar las películas');
+      }
+      const peliculas = await response.json();
+      const contenedor = document.getElementById('peliculas');
+      contenedor.innerHTML = ''; // Limpiar antes de agregar
+
+      peliculas.forEach(pelicula => {
+        const col = document.createElement('div');
+        col.className = 'col-md-4 mb-4 d-flex align-items-stretch';
+
+        col.innerHTML = `
+          <div class="card h-100 shadow-sm border-0">
+            <img src="${pelicula.imagen}" alt="${pelicula.titulo}" class="card-img-top rounded-top" style="height:420px; width:280px; object-fit:cover; margin:auto; display:block;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title text-primary font-weight-bold mb-2">${pelicula.titulo}</h5>
+              <span class="badge badge-info mb-2">${pelicula.genero}</span>
+              <p class="mb-1"><i class="far fa-calendar-alt mr-1"></i> <strong>Estreno:</strong> ${pelicula.fecha_estreno}</p>
+              <p class="card-text text-muted mb-3" style="font-size:0.98rem;">${pelicula.descripcion}</p>
+              <div class="mt-auto text-center">
+                <a href="https://cinesa.es" target="_blank" class="btn btn-outline-primary btn-sm px-4">
+                  <i class="fas fa-ticket-alt mr-1"></i>Entradas
+                </a>
+              </div>
+            </div>
+          </div>
+        `;
+        contenedor.appendChild(col);
+      });
+    } catch (error) {
+      console.error('Error:', error);
+      document.getElementById('peliculas').innerHTML = '<p class="text-danger text-center">Error al cargar las películas</p>';
+    }
+  }
+
+  cargarPeliculas();
+</script>
 </html>

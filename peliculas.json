@@ -1,0 +1,37 @@
+[
+    {
+        "titulo": "Hurry Up Tomorrow",
+        "fecha_estreno": "2025-05-14",
+        "genero": "Ciencia ficción/Drama",
+        "descripcion": "Una odisea cinematográfica surrealista protagonizada por The Weeknd, Jenna Ortega y Barry Keoghan. Una experiencia única que combina música y narrativa visual.",
+        "imagen": "Películas/hurryuptomorrow.jpeg"
+    },
+    {
+        "titulo": "Lilo & Stitch",
+        "fecha_estreno": "2025-05-22",
+        "genero": "Aventura/Familia",
+        "descripcion": "La reimaginación en acción real de Disney sobre un alienígena azul y su familia en Hawái. Perfecta para disfrutar en RealD 3D.",
+        "imagen": "Películas/lilo&stitch.jpeg"
+    },
+    {
+        "titulo": "Final Destination: Bloodlines",
+        "fecha_estreno": "2025-05-14",
+        "genero": "Terror/Suspenso",
+        "descripcion": "Una nueva entrega de la icónica saga de terror, donde el destino persigue a sus protagonistas en un evento especial en IMAX.",
+        "imagen": "Películas/finaldestination.jpeg"
+    },
+    {
+        "titulo": "ATEEZ WORLD TOUR [TOWARDS THE LIGHT : WILL TO POWER] IN CINEMAS",
+        "fecha_estreno": "2025-05-14",
+        "genero": "Concierto/Musical",
+        "descripcion": "El espectáculo en vivo de ATEEZ, capturado para la gran pantalla. Una experiencia inmersiva para los fans de K-pop.",
+        "imagen": "Películas/ateez.jpeg"
+    },
+    {
+        "titulo": "The Penguin Lessons",
+        "fecha_estreno": "2025-03-28",
+        "genero": "Drama/Comedia",
+        "descripcion": "Una conmovedora historia basada en hechos reales sobre un profesor y su conexión con un pingüino. Ideal para toda la familia.",
+        "imagen": "Películas/thepenguinlessons.jpeg"
+    }
+]
