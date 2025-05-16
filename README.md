@@ -13,7 +13,6 @@
 #### -Marcado semántico.
 #### -Iconos.
 #### -Fuentes de Google.
-#### -Validación formulario
 #### -Carga de JSON (hacer con ChatGPT)
 
 
