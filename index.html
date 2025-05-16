@@ -73,110 +73,101 @@
     <section class=" d-flex justify-content-center">
      
     </section>
-    <!-- Sección de presentación -->
-    <section >
-      <h2 >Presentación</h2>
-      <p>Bienvenido a Plaza Río 2, el centro comercial de referencia en Madrid.</p>
+    <!-- Sección de presentación mejorada -->
+    <section class="presentation-section py-5 text-center">
+      <div class="container">
+      <h2 class="display-4 mb-3 font-weight-bold text-primary">Bienvenido a Plaza Río 2</h2>
+      <p class="lead mb-0">El centro comercial de referencia en Madrid. Descubre tiendas, restaurantes, ocio y mucho más en un entorno moderno y familiar.</p>
+      </div>
     </section>
 
-    <!-- Menú de navegación rápida -->
-    <section class="quick-navigation my-4">
-      <nav>
-      <ul class="nav justify-content-center flex-wrap">
-        <li class="nav-item mx-2 my-1">
-        <a class="btn btn-outline-primary" href="tiendas.html">
-          <span>Tiendas</span>
-        </a>
-        </li>
-        <li class="nav-item mx-2 my-1">
-        <a class="btn btn-outline-primary" href="restaurantes.html">
-          <span>Restaurantes</span>
-        </a>
-        </li>
-        <li class="nav-item mx-2 my-1">
-        <a class="btn btn-outline-primary" href="noticias.html">
-          <span>Noticias</span>
-        </a>
-        </li>
-        <li class="nav-item mx-2 my-1">
-        <a class="btn btn-outline-primary" href="horarios.html">
-          <span>Horarios</span>
-        </a>
-        </li>
-      </ul>
-      </nav>
+    <!-- Menú de navegación rápida con solo botones -->
+    <section class="quick-navigation my-5">
+      <div class="container d-flex justify-content-center flex-wrap">
+      <button class="btn btn-outline-primary btn-lg shadow-sm mx-2 my-1" onclick="location.href='tiendas.html'">
+        <i class="fas fa-store mr-2"></i>Tiendas
+      </button>
+      <button class="btn btn-outline-success btn-lg shadow-sm mx-2 my-1" onclick="location.href='restaurantes.html'">
+        <i class="fas fa-utensils mr-2"></i>Restaurantes
+      </button>
+      <button class="btn btn-outline-info btn-lg shadow-sm mx-2 my-1" onclick="location.href='noticias.html'">
+        <i class="fas fa-newspaper mr-2"></i>Noticias
+      </button>
+      <button class="btn btn-outline-warning btn-lg shadow-sm mx-2 my-1" onclick="location.href='horarios.html'">
+        <i class="fas fa-clock mr-2"></i>Horarios
+      </button>
+      </div>
     </section>
 
-    <!-- Información rápida -->
-    <section class="quick-info">
-      <div>
-     <!-- Button to Open the Modal -->
-<button type="button" class="btn btn-primary" 
- data-bs-toggle="modal" data-bs-target="#aviso1">
-  Las tiendas estarán hoy abiertas hasta las 22:00
-</button>
-
-<!-- The Modal -->
-<div class="modal fade" id="aviso1">
-  <div class="modal-dialog modal-md modal-dialog-centered">
-    <div class="modal-content">
-
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h3 class="modal-title">Horario</h3>
-        
-        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+    <!-- Información rápida mejorada -->
+    <section class="quick-info py-4 bg-white border-top border-bottom">
+      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+      <div class="mb-3 mb-md-0">
+        <!-- Button to Open the Modal -->
+        <button type="button" class="btn btn-primary btn-lg px-4 shadow" data-bs-toggle="modal" data-bs-target="#aviso1">
+        <i class="fas fa-bullhorn mr-2"></i>Las tiendas estarán hoy abiertas hasta las 22:00
         </button>
       </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
-      <h4 class="text-center">¿Cuándo venir a visitarnos?</h4>
-      <section>
-        
-        <div class="row">
-          <div class="col-md-6">
-            <h5 class="text-center">Horario del centro</h5>
-            <br>
-            <div class="d-flex justify-content-center">
-              <img src="Imágenes/reloj.svg" alt="" class="img-fluid">
-            </div>
-            <br>
-            
-            <ol class="list-unstyled text-center">
-              <li>Lunes de 10:00 a 22:00</li>
-              <li>Martes de 10:00 a 22:00</li>
-              <li>Miércoles de 10:00 a 22:00</li>
-              <li>Jueves de 10:00 a 22:00</li>
-              <li>Viernes de 10:00 a 22:00</li>
-              <li>Sábado de 10:00 a 22:00</li>
-              <li>Domingo de 10:00 a 22:00</li>
-            </ol>
-          </div>
-            <div class="col-md-6 border rounded p-3" >
-            <h4 class="text-justify">APERTURAS FESTIVOS</h4>
-            <p class="text-justify"><strong>Domingos y festivos de apertura</strong><br>
-              Abrimos todos los domingos y festivos a excepción del 25 de diciembre, 1 de enero, 6 de enero y 1 de mayo (abierta zona de restauración).
-            </p>
-          </div>
-        </div>
-        </section>
-      </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-      </div>
-
-    </div>
-  </div>
-</div>
-      </div>
       <div>
-      <a href="visitanos.html">
-      <span>Cómo venir a visitarnos</span>
-      </a>
+        <a href="visitanos.html" class="btn btn-outline-secondary btn-lg px-4 shadow">
+        <i class="fas fa-map-marker-alt mr-2"></i>Cómo venir a visitarnos
+        </a>
+      </div>
+      </div>
+
+      <!-- The Modal -->
+      <div class="modal fade" id="aviso1" tabindex="-1" aria-labelledby="aviso1Label" aria-hidden="true">
+      <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header bg-primary text-white">
+          <h3 class="modal-title" id="aviso1Label"><i class="fas fa-clock mr-2"></i>Horario</h3>
+          <button type="button" class="close text-white" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4 class="text-center mb-4">¿Cuándo venir a visitarnos?</h4>
+          <section>
+          <div class="row">
+            <div class="col-md-6 mb-3 mb-md-0">
+            <div class="card border-0 shadow-sm h-100">
+              <div class="card-body">
+              <h5 class="card-title text-center text-primary">Horario del centro</h5>
+              <div class="d-flex justify-content-center my-3">
+                <img src="Imágenes/reloj.svg" alt="Horario" class="img-fluid" style="max-width:60px;">
+              </div>
+              <ol class="list-unstyled text-center mb-0">
+                <li>Lunes a Domingo: <strong>10:00 a 22:00</strong></li>
+              </ol>
+              </div>
+            </div>
+            </div>
+            <div class="col-md-6">
+            <div class="card border-0 shadow-sm h-100 bg-light">
+              <div class="card-body">
+              <h5 class="card-title text-center text-danger">Aperturas Festivos</h5>
+              <p class="card-text text-justify mb-0">
+                <strong>Domingos y festivos de apertura:</strong><br>
+                Abrimos todos los domingos y festivos excepto el 25 de diciembre, 1 y 6 de enero y 1 de mayo (abierta zona de restauración).
+              </p>
+              </div>
+            </div>
+            </div>
+          </div>
+          </section>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+
+        </div>
+      </div>
       </div>
     </section>
 
