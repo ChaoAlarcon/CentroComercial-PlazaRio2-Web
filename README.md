@@ -10,9 +10,8 @@
 #### -Hacer mapa interactivo
 #### -Hacer una página de créditos, en la que ponga los nombres del equipo y el proceso de creación del sitio web
 
-#### -Marcado semántico.
 
-#### -Fuentes de Google.
+
 
 
 #### -Agregar fotos de cada tienda y restaurante (Agregar un modal para cada tienda y restaurante) - En Proceso, ya que requiere de mucho tiempo
