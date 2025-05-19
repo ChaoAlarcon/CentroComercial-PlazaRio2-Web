@@ -48,9 +48,35 @@ El objetivo es ofrecer una experiencia moderna, accesible y adaptada a dispositi
 #### -Hacer mapa interactivo
 #### -Hacer una página de créditos, en la que ponga los nombres del equipo y el proceso de creación del sitio web
 
-
-
-
-
 #### -Agregar fotos de cada tienda y restaurante (Agregar un modal para cada tienda y restaurante) - En Proceso, ya que requiere de mucho tiempo
 #### -Ajustar paleta de colores de la página
+
+#### 1- Bienvenido a plaza texto …. encima del video
+
+#### 2- Cambiar letras y distintos tipos para títulos y textos
+
+#### 3- Tiendas(6)
+#### 	3.1- Poner menos(6)
+#### 	3.2- Que sean más pequeñas y estén centradas
+#### 	3.3- Nombres de las tiendas arriba a la izquierda
+#### 	3.4- Cambiar el botón de cerrar por el de visitar la web
+
+#### 4- Restaurantes: lo mismo que tiendas
+
+#### 5- Ocio: lo mismo que tiendas 
+#### 	5.1- que los iframes todos de YT o TikTok)
+
+#### 6- Cine
+#### 	6.1- Las fotos no las tenemos que descargar, tenemos que cogerlas online
+
+#### 7- Plano: cambiar organización a 2-2
+
+#### 8- Visítanos
+#### 	8.1- Quitar las pestañas de "centro, parking y transporte" y ponerlo en la misma y en columnas
+#### 	8.2- Quitar el formulario innecesario de transporte
+
+#### 9- Contacto: 
+#### 	9.1- Aprovechar el espacio poniendo varios campos en la misma linea
+#### 	9.2- Poner un campo nuevo de confirmar Email que verifique que es el mismo
+
+#### 10- Footer: Hacer que funcionen los enlaces
