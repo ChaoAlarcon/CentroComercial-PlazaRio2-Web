@@ -10,6 +10,7 @@ html, body {
     overflow-x: hidden;
     text-align: justify;
     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {

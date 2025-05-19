@@ -75,11 +75,7 @@
             <a href="#movies" class="btn btn-primary btn-lg font-weight-bold shadow-sm px-5" style="scroll-behavior: smooth;">
               <i class="fas fa-ticket-alt mr-2"></i>Ver Películas
             </a>
-            <style>
-              html {
-              scroll-behavior: smooth;
-              }
-            </style>
+           
         </div>
       </section>
 
@@ -246,7 +242,7 @@
       }
       const peliculas = await response.json();
       const contenedor = document.getElementById('peliculas');
-      contenedor.innerHTML = ''; // Limpiar antes de agregar
+      contenedor.innerHTML = ''; 
 
       peliculas.forEach(pelicula => {
         const col = document.createElement('div');
