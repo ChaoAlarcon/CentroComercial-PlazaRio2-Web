@@ -1,12 +1,11 @@
 /* =========================
-   Importar fuentes
-   ========================= */
-
+    Fuentes importadas de Google Fonts
+    ========================= */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 /* =========================
-   Reset y estilos globales
-   ========================= */
+    Ajustes básicos y estilos generales
+    ========================= */
 html, body {
     overflow-x: hidden;
     text-align: justify;
@@ -22,8 +21,24 @@ body {
 }
 
 /* =========================
-   Encabezado
-   ========================= */
+    Estilos para listas sin viñetas
+    ========================= */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+}
+
+/* =========================
+    Estilos para mostrar código fuente
+    ========================= */
+code, pre {
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* =========================
+    Estilos para el encabezado principal
+    ========================= */
 header {
     background-color: #ffffff;
     border-bottom: 1px solid #eaeaea;
@@ -40,8 +55,8 @@ header h1 {
 }
 
 /* =========================
-   Navegación principal
-   ========================= */
+    Barra de navegación principal
+    ========================= */
 nav {
     position: fixed;
     z-index: 1000;
@@ -88,8 +103,8 @@ nav ul li a:hover {
 }
 
 /* =========================
-   Navegación rápida
-   ========================= */
+    Navegación rápida (enlaces destacados)
+    ========================= */
 .quick-navigation {
     display: flex;
     justify-content: center;
@@ -106,8 +121,8 @@ nav ul li a:hover {
 }
 
 /* =========================
-   Secciones principales
-   ========================= */
+    Secciones principales del contenido
+    ========================= */
 section {
     padding: 40px 20px;
     max-width: 1200px;
@@ -123,8 +138,8 @@ h2 {
 }
 
 /* =========================
-   Tarjetas de contenido
-   ========================= */
+    Tarjetas para mostrar información
+    ========================= */
 .card {
     background-color: #ffffff;
     border: 1px solid #eaeaea;
@@ -163,8 +178,8 @@ h2 {
 }
 
 /* =========================
-   Pie de página
-   ========================= */
+    Pie de página del sitio
+    ========================= */
 footer {
     background-color: #f8f8f8;
     border-top: 1px solid #eaeaea;
@@ -181,8 +196,8 @@ footer h2 {
 }
 
 /* =========================
-   Sección de marcas
-   ========================= */
+    Sección donde aparecen las marcas
+    ========================= */
 .brands-section h2 {
     margin-left: 30px;
     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
@@ -193,17 +208,8 @@ footer h2 {
 }
 
 /* =========================
-   Listas
-   ========================= */
-ul {
-    list-style-type: none;
-    padding-left: 0;
-    font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
-}
-
-/* =========================
-   Main y avisos legales
-   ========================= */
+    Espaciado para el contenido principal y avisos legales
+    ========================= */
 main {
     margin-top: 100px;
     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
@@ -217,25 +223,64 @@ main {
 }
 
 /* =========================
-   Código fuente (opcional)
-   ========================= */
-code, pre {
-    font-family: 'Source Code Pro', monospace;
+    Estilos específicos para main y avisos legales
+    ========================= */
+main .card-header {
+    background: #f8f9fa;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+main .card {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #e1e1e1;
+}
+
+main .btn-link {
+    color: #2980b9;
+    text-decoration: none;
+    font-size: 1.15rem;
+    transition: color 0.2s;
+}
+
+main .btn-link:hover, main .btn-link:focus {
+    color: #1a5276;
+    text-decoration: underline;
+}
+
+main ul, main ol {
+    padding-left: 1.5rem;
+}
+
+main h2, main h3 {
+    color: #2980b9;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+main .legal-content::-webkit-scrollbar {
+    width: 8px;
+    background: #f1f1f1;
+}
+
+main .legal-content::-webkit-scrollbar-thumb {
+    background: #d1d1d1;
+    border-radius: 4px;
 }
 
 /* =========================
-   Responsive (adaptación móvil)
-   ========================= */
+    Adaptación para pantallas pequeñas (responsive)
+    ========================= */
 @media (max-width: 768px) {
     nav ul {
-         flex-direction: column;
+        flex-direction: column;
     }
 
     nav ul li {
-         margin: 10px 0;
+        margin: 10px 0;
     }
 
     section {
-         padding: 20px 10px;
+        padding: 20px 10px;
     }
 }
