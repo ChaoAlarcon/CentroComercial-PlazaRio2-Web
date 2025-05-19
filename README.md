@@ -80,3 +80,5 @@ El objetivo es ofrecer una experiencia moderna, accesible y adaptada a dispositi
 #### 	9.2- Poner un campo nuevo de confirmar Email que verifique que es el mismo
 
 #### 10- Footer: Hacer que funcionen los enlaces
+
+#### Quitar links de bootstrap antiguos
