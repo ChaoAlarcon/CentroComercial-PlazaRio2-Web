@@ -69,8 +69,6 @@ El objetivo es ofrecer una experiencia moderna, accesible y adaptada a dispositi
 #### 6- Cine
 #### 	6.1- Las fotos no las tenemos que descargar, tenemos que cogerlas online
 
-#### 7- Plano: cambiar organización a 2-2
-
 #### 8- Visítanos
 #### 	8.1- Quitar las pestañas de "centro, parking y transporte" y ponerlo en la misma y en columnas
 #### 	8.2- Quitar el formulario innecesario de transporte
