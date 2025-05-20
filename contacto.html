@@ -66,33 +66,44 @@
     <section class="row justify-content-center">
       <div class="col-md-8 col-lg-6">
         <h1 class="mb-4 text-center"><i class="fas fa-envelope-open-text mr-2"></i>Contacto</h1>
-        <form action="http://www.cursos-diseño.es/mostrar.php" method="post" class="p-4 border rounded shadow-sm bg-white">
-          <!-- Campo para el nombre -->
-          <div class="form-group">
-            <label for="nombre"><i class="fas fa-user mr-2"></i>Nombre</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+        <form action="http://www.cursos-diseño.es/mostrar.php" method="post" class="p-4 border rounded shadow-sm bg-white" onsubmit="return validarEmails();">
+          <div class="form-row">
+            <!-- Nombre -->
+            <div class="form-group col-md-6">
+              <label for="nombre"><i class="fas fa-user mr-2"></i>Nombre</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+            </div>
+            <!-- Apellidos -->
+            <div class="form-group col-md-6">
+              <label for="apellidos"><i class="fas fa-user-tag mr-2"></i>Apellidos</label>
+              <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+            </div>
           </div>
-          <!-- Campo para los apellidos -->
-          <div class="form-group">
-            <label for="apellidos"><i class="fas fa-user-tag mr-2"></i>Apellidos</label>
-            <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+          <div class="form-row">
+            <!-- Dirección -->
+            <div class="form-group col-md-6">
+              <label for="direccion"><i class="fas fa-map-marker-alt mr-2"></i>Dirección</label>
+              <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Dirección" required>
+            </div>
+            <!-- Teléfono -->
+            <div class="form-group col-md-6">
+              <label for="telefono"><i class="fas fa-phone mr-2"></i>Teléfono</label>
+              <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" required>
+            </div>
           </div>
-          <!-- Campo para la dirección -->
-          <div class="form-group">
-            <label for="direccion"><i class="fas fa-map-marker-alt mr-2"></i>Dirección</label>
-            <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Dirección" required>
+          <div class="form-row">
+            <!-- Email -->
+            <div class="form-group col-md-6">
+              <label for="email"><i class="fas fa-envelope mr-2"></i>Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+            </div>
+            <!-- Confirmar Email -->
+            <div class="form-group col-md-6">
+              <label for="confirmarEmail"><i class="fas fa-envelope mr-2"></i>Confirmar Email</label>
+              <input type="email" class="form-control" id="confirmarEmail" name="confirmarEmail" placeholder="Confirma tu Email" required>
+            </div>
           </div>
-          <!-- Campo para el email -->
-          <div class="form-group">
-            <label for="email"><i class="fas fa-envelope mr-2"></i>Email</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-          </div>
-          <!-- Campo para el teléfono -->
-          <div class="form-group">
-            <label for="telefono"><i class="fas fa-phone mr-2"></i>Teléfono</label>
-            <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" required>
-          </div>
-          <!-- Campo para los comentarios -->
+          <!-- Comentarios -->
           <div class="form-group">
             <label for="comentarios"><i class="fas fa-comment-dots mr-2"></i>Comentarios</label>
             <textarea class="form-control" id="comentarios" name="comentarios" rows="4" placeholder="Escribe tus comentarios aquí" required></textarea>
@@ -105,7 +116,17 @@
       </div>
     </section>
   </main>
- 
+  <script>
+    function validarEmails() {
+      var email = document.getElementById('email').value;
+      var confirmar = document.getElementById('confirmarEmail').value;
+      if (email !== confirmar) {
+        alert('Los emails no coinciden.');
+        return false;
+      }
+      return true;
+    }
+  </script>
   <!-- Pie de página -->
   <footer>
   <div class="container-fluid">

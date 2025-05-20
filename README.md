@@ -75,8 +75,5 @@ El objetivo es ofrecer una experiencia moderna, accesible y adaptada a dispositi
 #### 	8.1- Quitar las pestañas de "centro, parking y transporte" y ponerlo en la misma y en columnas
 #### 	8.2- Quitar el formulario innecesario de transporte
 
-#### 9- Contacto: 
-#### 	9.1- Aprovechar el espacio poniendo varios campos en la misma linea
-#### 	9.2- Poner un campo nuevo de confirmar Email que verifique que es el mismo
 
 #### 10- Footer: Hacer que funcionen los enlaces
