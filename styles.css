@@ -3,6 +3,8 @@
     ========================= */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
+
+
 /* =========================
     Ajustes básicos y estilos generales
     ========================= */
@@ -11,6 +13,10 @@ html, body {
     text-align: justify;
     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
     scroll-behavior: smooth;
+}
+
+#collapseCookies {
+  scroll-margin-top: 80px; /* Ajusta este valor según la altura de tu barra de navegación */
 }
 
 body {
@@ -61,6 +67,7 @@ header h1 {
 nav {
     position: fixed;
     z-index: 1000;
+    display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;

@@ -77,3 +77,7 @@ El objetivo es ofrecer una experiencia moderna, accesible y adaptada a dispositi
 #### 10- Footer: Hacer que funcionen los enlaces
 
 #### Quitar links de bootstrap antiguos
+
+#### - 6 tiendas
+#### - 6 restaurantes
+#### - 3 zonas de ocio

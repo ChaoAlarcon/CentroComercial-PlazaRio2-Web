@@ -6,18 +6,19 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" href="Imágenes/icono.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!-- Font Awesome 6 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap 5.3.5 CSS and JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
   <!-- Encabezado principal con el menú de navegación -->
   <header>
     <!-- Barra de navegación superior, aquí puedes moverte por toda la web -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+    <nav class="navbar navbar-expand-lg navbar bg-light fixed-top ">
       <div class="container-fluid justify-content-center">
         <!-- Aquí va el logo del centro comercial, haz clic para volver al inicio -->
         <a class="navbar-brand" href="index.html">
@@ -74,7 +75,7 @@
     <section class="presentation-section py-5 text-center">
       <div class="container">
       <h2 class="display-4 mb-3 font-weight-bold text-primary">
-        <i class="fas fa-shopping-bag mr-2"></i>Bienvenido a Plaza Río 2
+        Bienvenido a Plaza Río 2
       </h2>
       <p class="lead mb-0">
         <i class="fas fa-map-marker-alt mr-2"></i>
@@ -186,7 +187,7 @@
 
     <section>
     <!-- Carrusel de imágenes para que conozcas el centro de un vistazo -->
-    <div id="demo" class="carousel slide " data-ride="carousel">
+    <div id="demo" class="carousel slide " data-bs-ride="carousel">
 
       <!-- Aquí van las imágenes principales del centro comercial -->
       <div class="carousel-inner">
@@ -226,19 +227,19 @@
       </div>
 
       <!-- Flechas para pasar las imágenes del carrusel -->
-      <a class="carousel-control-prev" href="#demo" role="button" data-slide="prev">
+      <a class="carousel-control-prev" href="#demo" role="button" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Anterior</span>
+        <span class="visually-hidden">Anterior</span>
       </a>
-      <a class="carousel-control-next" href="#demo" role="button" data-slide="next">
+      <a class="carousel-control-next" href="#demo" role="button" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Siguiente</span>
+        <span class="visually-hidden">Siguiente</span>
       </a>
       <!-- Puntitos para saber en qué imagen estás -->
       <ol class="carousel-indicators">
-        <li data-target="#demo" data-slide-to="0" class="active"></li>
-        <li data-target="#demo" data-slide-to="1"></li>
-        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-bs-target="#demo" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#demo" data-bs-slide-to="1"></li>
+        <li data-bs-target="#demo" data-bs-slide-to="2"></li>
       </ol>
     </div>
     </section>
@@ -267,14 +268,14 @@
           <ul>
             <li><a href="tiendas.html">Todas las tiendas</a></li>
             <li><a href="/prensa">Prensa</a></li>
-            <li><a href="/servicios">Servicios</a></li>
+            <li><a href="ocio.html">Servicios</a></li>
             <li><a href="/plano-del-sitio-web">Plano del sitio web</a></li>
             <li><a href="avisolegal.html">Aviso Legal</a></li>
-            <li><a href="/#consent">Gestión de cookies</a></li>
+            <li><a href="avisolegal.html#collapseCookies">Gestión de cookies</a></li>
             <li><a href="contacto.html">Contacto</a></li>
             <li><a href="/trabajar-en-plaza-rio">Trabajar en Plaza Río 2</a></li>
             <li><a href="">Portal empleado RIO</a></li>
-            <li><a href="/mirador-rio2">Mirador Rio 2</a></li>
+            <li><a href="ocio.html#miradorrio2">Mirador Rio 2</a></li>
           </ul>
         </div>
 
