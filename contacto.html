@@ -64,55 +64,73 @@
   </header>
 
   <!-- Contenido principal con el formulario de contacto -->
-  <main class="container my-5 pt-5">
-    <section class="row justify-content-center">
+  <main class="container my-5 pt-5 d-flex justify-content-center align-items-center" style="min-height: 70vh;">
+    <section class="row justify-content-center w-100">
       <div class="col-md-8 col-lg-6">
-        <h1 class="mb-4 text-center"><i class="fas fa-envelope-open-text mr-2"></i>Contacto</h1>
-        <form action="http://www.cursos-dise&#241;o.es/mostrar.php" method="post" class="p-4 border rounded shadow-sm bg-white" onsubmit="return validarEmails();">
+        <h1 class="mb-5 text-center fw-bold text-primary">
+          <i class="fas fa-envelope-open-text me-2"></i>Contacto
+        </h1>
+        <form action="http://www.cursos-dise&#241;o.es/mostrar.php" method="post" class="p-4 border rounded-4 shadow bg-white" onsubmit="return validarEmails();">
           <div class="row">
             <!-- Nombre -->
             <div class="col-md-6 mb-3">
-              <label for="nombre"><i class="fas fa-user me-2"></i>Nombre</label>
-              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+              <label for="nombre" class="form-label fw-semibold">
+                <i class="fas fa-user me-2 text-info"></i>Nombre
+              </label>
+              <input type="text" class="form-control text-center" id="nombre" name="nombre" placeholder="Nombre" required>
             </div>
             <!-- Apellidos -->
             <div class="col-md-6 mb-3">
-              <label for="apellidos"><i class="fas fa-user-tag me-2"></i>Apellidos</label>
-              <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+              <label for="apellidos" class="form-label fw-semibold">
+                <i class="fas fa-user-tag me-2 text-info"></i>Apellidos
+              </label>
+              <input type="text" class="form-control text-center" id="apellidos" name="apellidos" placeholder="Apellidos" required>
             </div>
           </div>
           <div class="row">
             <!-- Dirección -->
             <div class="col-md-6 mb-3">
-              <label for="direccion"><i class="fas fa-map-marker-alt me-2"></i>Dirección</label>
-              <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Dirección" required>
+              <label for="direccion" class="form-label fw-semibold">
+                <i class="fas fa-map-marker-alt me-2 text-info"></i>Dirección
+              </label>
+              <input type="text" class="form-control text-center" id="direccion" name="direccion" placeholder="Dirección" required>
             </div>
             <!-- Teléfono -->
             <div class="col-md-6 mb-3">
-              <label for="telefono"><i class="fas fa-phone me-2"></i>Teléfono</label>
-              <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Teléfono" required>
+              <label for="telefono" class="form-label fw-semibold">
+                <i class="fas fa-phone me-2 text-info"></i>Teléfono
+              </label>
+              <input type="tel" class="form-control text-center" id="telefono" name="telefono" placeholder="Teléfono" required>
             </div>
           </div>
           <div class="row">
             <!-- Email -->
             <div class="col-md-6 mb-3">
-              <label for="email"><i class="fas fa-envelope me-2"></i>Email</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+              <label for="email" class="form-label fw-semibold">
+                <i class="fas fa-envelope me-2 text-info"></i>Email
+              </label>
+              <input type="email" class="form-control text-center" id="email" name="email" placeholder="Email" required>
             </div>
             <!-- Confirmar Email -->
             <div class="col-md-6 mb-3">
-              <label for="confirmarEmail"><i class="fas fa-envelope me-2"></i>Confirmar Email</label>
-              <input type="email" class="form-control" id="confirmarEmail" name="confirmarEmail" placeholder="Confirma tu Email" required>
+              <label for="confirmarEmail" class="form-label fw-semibold">
+                <i class="fas fa-envelope me-2 text-info"></i>Confirmar Email
+              </label>
+              <input type="email" class="form-control text-center" id="confirmarEmail" name="confirmarEmail" placeholder="Confirma tu Email" required>
             </div>
           </div>
           <!-- Comentarios -->
           <div class="mb-3">
-            <label for="comentarios"><i class="fas fa-comment-dots me-2"></i>Comentarios</label>
-            <textarea class="form-control" id="comentarios" name="comentarios" rows="4" placeholder="Escribe tus comentarios aquí" required></textarea>
+            <label for="comentarios" class="form-label fw-semibold">
+              <i class="fas fa-comment-dots me-2 text-info"></i>Comentarios
+            </label>
+            <textarea class="form-control text-center" id="comentarios" name="comentarios" rows="4" placeholder="Escribe tus comentarios aquí" required></textarea>
           </div>
           <!-- Botón para enviar el formulario -->
           <div class="text-center">
-            <button type="submit" class="btn btn-primary px-5"><i class="fas fa-paper-plane me-2"></i>Enviar</button>
+            <button type="submit" class="btn btn-info px-5 text-dark fw-bold">
+              <i class="fas fa-paper-plane me-2"></i>Enviar
+            </button>
           </div>
         </form>
       </div>

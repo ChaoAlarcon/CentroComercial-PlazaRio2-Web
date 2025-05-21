@@ -61,24 +61,13 @@ El objetivo es ofrecer una experiencia moderna, accesible y adaptada a dispositi
 
 
 #### 1- Bienvenido a plaza texto …. encima del video
-
 #### 2- Cambiar letras y distintos tipos para títulos y textos
-
-#### 3- Tiendas(6) Cambiar el botón de cerrar por el de visitar la web
-
-
 #### 5- Ocio: que los iframes todos de YT o TikTok)
-
-
 #### 6- Cine
 #### 	6.1- Las fotos no las tenemos que descargar, tenemos que cogerlas online
 
-#### 8- Visítanos
-#### 	8.1- Quitar las pestañas de "centro, parking y transporte" y ponerlo en la misma y en columnas
-#### 	8.2- Quitar el formulario innecesario de transporte
-
-
 #### 10- Footer: Hacer que funcionen los enlaces
+#### -Hacer página de "Prensa" y de "Portal de empelo"
 
 
 

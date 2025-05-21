@@ -196,6 +196,8 @@ footer {
     font-size: 0.9rem;
     color: #999999;
     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+    margin-left: -72px;
+    
 }
 
 footer h2 {

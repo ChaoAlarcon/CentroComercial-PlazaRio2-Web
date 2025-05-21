@@ -68,79 +68,56 @@
 <body>
   <main role="main" tabindex="-1" class="container my-5">
     <section>
-      <h1 class="mb-4 text-center"><i class="fas fa-map-marker-alt mr-2"></i>Acceso</h1>
-      <h2 class="h4 mb-4 text-center"><i class="fas fa-route mr-2"></i>Cómo venir a visitarnos</h2>
-      <div class="card shadow-sm mb-5">
-        <ul class="nav nav-tabs justify-content-center" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="coords-tab" data-bs-toggle="tab" data-bs-target="#coords" type="button" role="tab" aria-controls="coords" aria-selected="true" tabindex="0">
-              <i class="fas fa-building mr-1"></i>El centro
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="park-tab" data-bs-toggle="tab" data-bs-target="#park" type="button" role="tab" aria-controls="park" aria-selected="false" tabindex="-1">
-              <i class="fas fa-parking mr-1"></i>Parking gratuito
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="infos-tab" data-bs-toggle="tab" data-bs-target="#infos" type="button" role="tab" aria-controls="infos" aria-selected="false" tabindex="-1">
-              <i class="fas fa-bus mr-1"></i>Medios de transporte
-            </button>
-          </li>
-        </ul>
-        <div class="tab-content p-4">
-          <div class="tab-pane fade show active" id="coords" role="tabpanel" aria-hidden="false">
-            <address class="mb-4">
-              <h3 class="h5"><i class="fas fa-store mr-2"></i>Centro Comercial Plaza Río 2</h3>
-              <p><i class="fas fa-map-marker-alt mr-1"></i>Avenida del Manzanares 210<br>28026 Madrid<br>España</p>
-              <p class="text-success font-weight-bold"><i class="far fa-clock mr-1"></i>Las tiendas estarán hoy abiertas hasta las 22:00</p>
-              <a href="/horarios" class="btn btn-outline-primary btn-sm"><i class="far fa-calendar-alt mr-1"></i>Horarios</a>
-            </address>
-            <form action="https://maps.google.com" method="get" target="_blank" class="mb-4">
-              <input type="hidden" name="daddr" value="Centro Comercial Plaza Río 2 Avenida del Manzanares 210 28026 Madrid (ES)">
-              <ul class="list-inline mb-3">
-                <li class="list-inline-item">
-                  <input name="dirflg" value="" type="radio" id="car" checked>
-                  <label for="car"><i class="fas fa-car mr-1"></i>En coche</label>
-                </li>
-                <li class="list-inline-item">
-                  <input name="dirflg" value="r" type="radio" id="public">
-                  <label for="public"><i class="fas fa-subway mr-1"></i>Transporte público</label>
-                </li>
-                <li class="list-inline-item">
-                  <input name="dirflg" value="w" type="radio" id="walk">
-                  <label for="walk"><i class="fas fa-walking mr-1"></i>A pie</label>
-                </li>
-              </ul>
-              <div class="input-group w-50 mx-auto">
-                <input type="text" name="saddr" class="form-control" placeholder="Introduce una dirección para ver itinerario" aria-label="Introduce una dirección para ver itinerario">
-                <div class="input-group-append">
-                  <button type="submit" class="btn btn-primary"><i class="fas fa-search-location mr-1"></i>Ok</button>
-                </div>
+      <h1 class="mb-5 text-center fw-bold text-primary"><i class="fas fa-map-marker-alt me-2"></i>Acceso</h1>
+      <h2 class="h4 mb-4 text-center"><i class="fas fa-route me-2"></i>Cómo venir a visitarnos</h2>
+      <div class="row g-4">
+        <!-- Columna: El centro -->
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <address class="mb-4">
+                <h3 class="h5"><i class="fas fa-store me-2"></i>Centro Comercial Plaza Río 2</h3>
+                <p><i class="fas fa-map-marker-alt me-1"></i>Avenida del Manzanares 210<br>28026 Madrid<br>España</p>
+                <p class="text-success fw-bold" ><i class="far fa-clock me-1"></i>Las tiendas estarán hoy abiertas hasta las 22:00</p>
+              <button class="btn btn-outline-warning btn-lg shadow-sm mx-2 my-1" data-bs-toggle="modal" data-bs-target="#aviso1">
+        <i class="fas fa-clock me-2"></i>Horarios
+      </button>
+              </address>
+               <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6077.293257929698!2d-3.710663772097049!3d40.39452381747084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42264a5f32eaf9%3A0x511d4a578e2c1b5c!2sCentro+Comercial+Plaza+Rio+2!5e0!3m2!1sen!2sus!4v1504628122834" width="600" height="450" frameborder="0" allowfullscreen></iframe>
               </div>
-            </form>
-            <div class="embed-responsive embed-responsive-16by9 rounded shadow-sm">
-              <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6077.293257929698!2d-3.710663772097049!3d40.39452381747084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42264a5f32eaf9%3A0x511d4a578e2c1b5c!2sCentro+Comercial+Plaza+Rio+2!5e0!3m2!1sen!2sus!4v1504628122834" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
           </div>
-          <div class="tab-pane fade" id="park" role="tabpanel" aria-hidden="true">
-            <p class="lead"><i class="fas fa-parking mr-2"></i>Todos nuestros clientes podrán disfrutar de <strong>2 horas de Parking Gratuito</strong> al día dentro de las 1.500 plazas de aparcamiento disponibles.</p>
+        </div>
+        <!-- Columna: Parking gratuito -->
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100" aria-label="Información sobre parking gratuito">
+            <div class="card-body">
+              <h3 class="h5 mb-3"><i class="fas fa-parking me-2"></i>Parking gratuito</h3>
+              <p class="lead">Todos nuestros clientes podrán disfrutar de <strong>2 horas de Parking Gratuito</strong> al día dentro de las 1.500 plazas de aparcamiento disponibles.</p>
+            </div>
           </div>
-          <div class="tab-pane fade" id="infos" role="tabpanel" aria-hidden="true">
-            <h3 class="h5"><i class="fas fa-map-signs mr-2"></i>Dirección</h3>
-            <p><i class="fas fa-map-marker-alt mr-1"></i>Avenida del Manzanares 210<br>28026 Madrid</p>
-            <h3 class="h5 mt-3"><i class="fas fa-bus mr-2"></i>Bus</h3>
-            <p>6, 18, 22, 23, 47, 55, 59, 60, 68, 76, 79, 85, 86,123, 247</p>
-            <h3 class="h5 mt-3"><i class="fas fa-subway mr-2"></i>Metro</h3>
-            <p>Legazpi y Usera - Línea 3 y Línea 6</p>
-            <h3 class="h5 mt-3"><i class="fas fa-train mr-2"></i>RENFE</h3>
-            <p>C1 – C7 – C10 Estación Delicias<br>Conexión directa con Metro Línea 3 – Parada Legazpi</p>
+        </div>
+        <!-- Columna: Medios de transporte -->
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <h3 class="h5 mb-3"><i class="fas fa-bus me-2"></i>Medios de transporte</h3>
+              <h4 class="h6"><i class="fas fa-map-signs me-2"></i>Dirección</h4>
+              <p><i class="fas fa-map-marker-alt me-1"></i>Avenida del Manzanares 210<br>28026 Madrid</p>
+              <h4 class="h6 mt-3"><i class="fas fa-bus me-2"></i>Bus</h4>
+              <p>6, 18, 22, 23, 47, 55, 59, 60, 68, 76, 79, 85, 86,123, 247</p>
+              <h4 class="h6 mt-3"><i class="fas fa-subway me-2"></i>Metro</h4>
+              <p>Legazpi y Usera - Línea 3 y Línea 6</p>
+              <h4 class="h6 mt-3"><i class="fas fa-train me-2"></i>RENFE</h4>
+              <p>C1 – C7 – C10 Estación Delicias<br>Conexión directa con Metro Línea 3 – Parada Legazpi</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
   </main>
-  <!-- Pie de página -->
+ 
 
   <!-- Pie de página con toda la información útil y enlaces -->
   <footer class="bg-dark text-light pt-5 pb-3 mt-5">
@@ -196,14 +173,77 @@
               <li><a href="tiendas.html" class="text-light text-decoration-none">Joyería, relojería</a></li>
               <li><a href="tiendas.html" class="text-light text-decoration-none">Alimentación</a></li>
             </ul>
-            </ul>
           </div>
         </div>
       </div>
     </div>
     
     <!-- Aquí puedes seguirnos en redes sociales o suscribirte a nuestro boletín -->
-    <div class="container-fluid   pt-4 mt-4">
+  </main>
+
+  <!-- Ventana emergente con toda la información de horarios -->
+  <div class="modal fade" id="aviso1" tabindex="-1" aria-labelledby="aviso1Label" aria-hidden="true">
+    <div class="modal-dialog modal-md modal-dialog-centered">
+      <div class="modal-content">
+
+        <!-- Encabezado de la ventana de horarios -->
+        <div class="modal-header bg-primary text-white">
+          <h3 class="modal-title" id="aviso1Label"><i class="fas fa-clock me-2"></i>Horario</h3>
+          
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+
+        <!-- Aquí te contamos cuándo puedes venir a visitarnos -->
+        <div class="modal-body">
+          <h4 class="text-center mb-4"><i class="fas fa-question-circle me-2"></i>¿Cuándo venir a visitarnos?</h4>
+          <section>
+            <div class="row">
+              <div class="col-md-6 mb-3 mb-md-0">
+                <div class="card border-0 shadow-sm h-100">
+                  <div class="card-body">
+                    <h5 class="card-title text-center text-primary">
+                      Horario del centro
+                    </h5>
+                    <div class="d-flex justify-content-center my-3">
+                      <img src="Imágenes/reloj.svg" alt="Horario" class="img-fluid" style="max-width:60px;">
+                    </div>
+                    <ol class="list-unstyled text-center mb-0">
+                      <li>
+                        Lunes a Domingo: <strong>10:00 a 22:00</strong>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card border-0 shadow-sm h-100 bg-light">
+                  <div class="card-body">
+                    <h5 class="card-title text-center text-danger">
+                      <i class="fas fa-star me-2"></i>Aperturas Festivos
+                    </h5>
+                    <p class="card-text text-justify mb-0">
+                      <strong>
+                        Domingos y festivos de apertura:
+                      </strong><br>
+                      Abrimos todos los domingos y festivos excepto el 25 de diciembre, 1 y 6 de enero y 1 de mayo (abierta zona de restauración).
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Botón para cerrar la ventana de horarios -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            <i class="fas fa-times me-1"></i>Cerrar
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
       <div class="row">
         <!-- Síguenos en tus redes favoritas para no perderte nada -->
         <div class="col-md-6 mb-3">
