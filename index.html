@@ -64,7 +64,7 @@
   <!-- Aquí empieza el contenido principal de la página -->
   <main class="main-content bg-light py-4">
     <!-- Un vídeo para que veas cómo es nuestro centro comercial -->
-    <section class="d-flex justify-content-center mb-4">
+    <section class="Vídeo d-flex justify-content-center mb-4">
       <video class="main-video rounded shadow" autoplay muted loop playsinline src="Vídeos\Centro Comercial Plaza Ro 2  Plaza Rio 2.mp4"></video>
     </section>
     
@@ -72,38 +72,42 @@
       <!-- Espacio reservado para futuros contenidos destacados -->
     </section>
     <!-- Presentación cálida para darte la bienvenida -->
-    <section class="presentation-section py-5 text-center">
-      <div class="container">
-        <h2 class="display-4 mb-3 fw-bold text-primary">
+    <section class=" presentation-section py-5 text-center">
+      <div class=" Presentación container">
+        <h2 class="display-4 mb-3 fw-bold text-primary ">
           Bienvenido a Plaza Río 2
         </h2>
-        <p class="lead mb-0">
+        <p class="Text-Presentación lead mb-0 text-white text-center">
           <i class="fas fa-map-marker-alt me-2"></i>
           El centro comercial de referencia en Madrid. Descubre tiendas, restaurantes, ocio y mucho más en un entorno moderno y familiar.
         </p>
+        <a class="btn btn-outline-primary btn-lg shadow-sm mx-2 my-1 align-items-lg-center text-center" href="#Carousel">
+          Descúbrenos<br>
+          <i class="bi bi-chevron-double-down"></i>
+        </a>
       </div>
     </section>
 
     <!-- Botones rápidos para ir directo a lo que más te interesa -->
-    <section class="quick-navigation my-5">
+    <section class=" my-5">
       <div class="container d-flex justify-content-center flex-wrap gap-2">
-        <button class="btn btn-outline-primary btn-lg shadow-sm mx-2 my-1" onclick="location.href='tiendas.html'">
-          <i class="fas fa-store me-2"></i>Tiendas
-        </button>
-        <button class="btn btn-outline-success btn-lg shadow-sm mx-2 my-1" onclick="location.href='restaurantes.html'">
-          <i class="fas fa-utensils me-2"></i>Restaurantes
-        </button>
-        <button class="btn btn-outline-info btn-lg shadow-sm mx-2 my-1" onclick="location.href='noticias.html'">
-          <i class="fas fa-newspaper me-2"></i>Noticias
-        </button>
-        <button class="btn btn-outline-warning btn-lg shadow-sm mx-2 my-1" data-bs-toggle="modal" data-bs-target="#aviso1">
-          <i class="fas fa-clock me-2"></i>Horarios
-        </button>
+      <button class="btn btn-outline-primary btn-lg shadow-sm mx-2 my-1" onclick="location.href='tiendas.html'">
+        <i class="fas fa-store me-2"></i>Tiendas
+      </button>
+      <button class="btn btn-outline-success btn-lg shadow-sm mx-2 my-1" onclick="location.href='restaurantes.html'">
+        <i class="fas fa-utensils me-2"></i>Restaurantes
+      </button>
+      <button class="btn btn-outline-info btn-lg shadow-sm mx-2 my-1" onclick="location.href='noticias.html'">
+        <i class="fas fa-newspaper me-2"></i>Noticias
+      </button>
+      <button class="btn btn-outline-warning btn-lg shadow-sm mx-2 my-1" data-bs-toggle="modal" data-bs-target="#aviso1">
+        <i class="fas fa-clock me-2"></i>Horarios
+      </button>
       </div>
     </section>
 
     <!-- Información útil y rápida sobre horarios y cómo llegar -->
-    <section class="quick-info py-4 bg-white border-top border-bottom">
+    <section class="Contenido py-4 bg-white border-top border-bottom">
       <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
         <div class="mb-3 mb-md-0">
           <!-- Pulsa este botón para ver el horario de hoy -->
@@ -183,7 +187,7 @@
       </div>
     </section>
 
-    <section class="carousel-section my-5">
+    <section id="Carousel" class="Contenido2 carousel-section my-5">
       <!-- Carrusel de imágenes para que conozcas el centro de un vistazo -->
       <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
@@ -296,7 +300,6 @@
               <li><a href="tiendas.html" class="text-light text-decoration-none">Universo gourmet</a></li>
               <li><a href="tiendas.html" class="text-light text-decoration-none">Joyería, relojería</a></li>
               <li><a href="tiendas.html" class="text-light text-decoration-none">Alimentación</a></li>
-            </ul>
             </ul>
           </div>
         </div>

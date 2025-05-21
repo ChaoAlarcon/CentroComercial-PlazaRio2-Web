@@ -110,23 +110,7 @@ nav ul li a:hover {
     color: #007bff;
 }
 
-/* =========================
-    Navegación rápida (enlaces destacados)
-    ========================= */
-.quick-navigation {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
 
-.quick-navigation a {
-    text-decoration: none;
-    color: #007bff;
-    font-weight: 600;
-    margin: 0 10px;
-    transition: color 0.3s ease;
-    font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
-}
 
 /* =========================
     Secciones principales del contenido
@@ -143,6 +127,29 @@ h2 {
     margin-bottom: 20px;
     color: #000000;
     font-family: 'Inter', 'Source Sans 3', Arial, sans-serif;
+}
+
+.Presentación{
+    margin-top: -650px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.25);
+}
+
+.Text-Presentación {
+    justify-items: center;
+    text-align-last: center;
+    text-align: center;
+    text-justify: inter-word;
+}
+
+.Contenido{
+    margin-top: -470px;
+    margin-bottom: 300px;
+}
+
+
+
+.Vídeo{
+    margin-top: -500px;
 }
 
 /* =========================
