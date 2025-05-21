@@ -64,244 +64,316 @@
   </header>
 
   <!-- Contenido principal -->
-  <main class="container my-5">
-    <section>
-      <h1 class="mb-4 text-center"><i class="fas fa-gamepad mr-2"></i>Ocio</h1>
-
-      <!-- Artículo: Kids Team Area -->
-      <article class="mb-5 p-4 rounded shadow bg-white">
-        <div class="row align-items-center">
-          <div class="col-md-5 text-center mb-3 mb-md-0">
-            <img src="Imágenes/Tiendas/kidsteamarea.png" alt="Kids Team Area" class="img-fluid rounded">
-          </div>
-          <div class="col-md-7">
-            <h2 class="h3 font-weight-bold"><i class="fas fa-child mr-2"></i>Kids Team Area</h2>
-            <div class="embed-responsive embed-responsive-16by9 mb-3">
-              <iframe 
-                class="embed-responsive-item"
-                src="https://www.youtube.com/embed/kq5_1Z-3FYo?si=ACh4Yr7FW_DTskcW"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen>
-              </iframe>
-            </div>
-            <div class="border border-primary rounded p-3 bg-white shadow-sm" style="border-width:2px !important;">
-              <p class="text-left mb-0 font-italic text-primary"><i class="fas fa-paint-brush mr-2"></i>¡Bienvenido a tu rincón favorito de diversión en Plaza Río 2! En nuestra Kids Team Area, los más pequeños de la casa podrán disfrutar de juegos, talleres y actividades diseñadas para estimular su creatividad mientras hacen nuevos amigos.</p>
-               <div class="text-center">
-            <a href="http://www.kidsteamarea.es/" target="_blank" class="btn btn-primary mt-2"><i class="fas fa-external-link-alt mr-1"></i>Visitar web</a>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- Artículo: Mirador Río 2 -->
-      <article id="miradorrio2" class="mb-5 p-4 rounded shadow bg-white">
-        <div class="row align-items-center flex-md-row-reverse">
-          <div class="col-md-5 text-center mb-3 mb-md-0">
-            <img src="Imágenes/Tiendas/miradorrio2.png" alt="Mirador Río 2" class="img-fluid rounded">
-          </div>
-          <div class="col-md-7">
-            <h2 class="h3 font-weight-bold"><i class="fas fa-eye mr-2"></i>Mirador Río 2</h2>
-            <div class="embed-responsive embed-responsive-16by9 mb-3">
-              <iframe 
-                class="embed-responsive-item"
-                src="https://www.youtube.com/embed/ZYJNZe7ahPM?si=5WomWbj7XLiT07IJ"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen>
-              </iframe>
-            </div>
-           <div class="border border-primary rounded p-3 bg-white shadow-sm" style="border-width:2px !important;">
-              <p class="text-left mb-0 font-italic text-primary"><i class="fas fa-utensils mr-2"></i>El Mirador Río 2 es un espacio único en el que disfrutar de la mejor gastronomía y de unas vistas espectaculares del río Manzanares y de Madrid. En este espacio podrás disfrutar de una oferta gastronómica variada y de calidad, con una selección de restaurantes y bares que ofrecen lo mejor de la cocina local e internacional.</p>
-               <div class="text-center">
-            <a href="http://www.miradorrio2.com/" target="_blank" class="btn btn-primary mt-2"><i class="fas fa-external-link-alt mr-1"></i>Visitar web</a>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- Artículo: Sicher Street -->
-      <article class="mb-5 p-4 rounded shadow bg-white">
-        <div class="row align-items-center">
-          <div class="col-md-5 text-center mb-3 mb-md-0">
-          <div>
-            <img src="Imágenes/Tiendas/sicher.png" alt="Sicher Street" class="img-fluid rounded">
-            </div>
-            <div class="border border-primary rounded p-3 bg-white shadow-sm" style="border-width:2px !important;">
-              <p class="text-left mb-0 font-italic text-primary"><i class="fas fa-users mr-2"></i>Sicher Street es el concepto juvenil creado por Sicher para Plaza Río 2. Hemos generado un espacio destinado para niños y adolescentes, creado como una suerte de experiencia global y urbana, la calle está presente con la estética grafiti, vallas y luces de neón.</p>
-              <div class="text-center">
-                <a href="http://www.sicher.es/" target="_blank" class="btn btn-primary mt-2"><i class="fas fa-external-link-alt mr-1"></i>Visitar web</a>
+  <main>
+    <section class="container py-5">
+      <h1 class="mb-5 text-center fw-bold text-primary">
+        <i class="bi bi-controller me-2"></i>Ocio
+      </h1>
+      <div class="row g-4 justify-content-center">
+        <!-- Modal Kids Team Area -->
+        <div class="modal fade" id="modalKidsTeamArea" tabindex="-1" aria-labelledby="modalKidsTeamAreaLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h5 class="modal-title" id="modalKidsTeamAreaLabel">Detalles:</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
               </div>
-             </div>
-          </div>
-          <div class="col-md-7">
-            <h2 class="h3 font-weight-bold"><i class="fas fa-street-view mr-2"></i>Sicher Street</h2>
-            <div class="mb-3">
-              <blockquote 
-                class="tiktok-embed"
-                cite="https://www.tiktok.com/@somossicher/video/7081337504464489734"
-                data-video-id="7081337504464489734"
-                style="max-width: 100%; min-width: 325px;">
-                <section>
-                  <a target="_blank" title="@somossicher" href="https://www.tiktok.com/@somossicher?refer=embed">@somossicher</a> 
-                  Este es nuestro espacio Sicher Street en @plazario_2 Madrid. Un divertido parque de bolas, juegos de video consolas, zona arcade para que te sumerjas en los años 80. Un lugar donde la diversión nunca te va a faltar. Además, celebra el cumple de tu peque con nosotros.
-                </section>
-              </blockquote>
-              <script async src="https://www.tiktok.com/embed.js"></script>
-            </div>
-           
-            
-          </div>
-        </div>
-      </article>
-
-      <!-- Artículo: CatchGo -->
-      <article class="mb-5 p-4 rounded shadow bg-white">
-        <div class="row align-items-center flex-md-row-reverse">
-          <div class="col-md-5 text-center mb-3 mb-md-0">
-          <div>
-            <img src="Imágenes/Tiendas/catchgo.png" alt="CatchGo" class="img-fluid rounded">
-            </div>
-            <div>
-              <div class="border border-primary rounded p-3 bg-white shadow-sm" style="border-width:2px !important;">
-              <p class="text-left mb-0 font-italic text-primary">
-                <i class="fas fa-paw mr-2"></i>CatchGo es una cadena de tiendas que se dedica exclusivamente a la diversión con máquinas caza peluches. Cambiamos el modo de atrapar peluches para asegurarnos de que nuestros clientes vayan felices y satisfechos.
-              </p>
-               <div class="text-center">
-              <a href="http://www.catchgo.es/" target="_blank" class="btn btn-primary mt-2"><i class="fas fa-external-link-alt mr-1"></i>Visitar web</a>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center mb-3">Kids Team Area</h2>
+                <div class="row align-items-center">
+                  <div class="col-md-6 mb-3 mb-md-0">
+                    <img src="Imágenes/Tiendas/kidsteamarea.png" class="img-fluid rounded shadow" alt="Kids Team Area">
+                  </div>
+                  <div class="col-md-6">
+                    <p>¡Bienvenido a tu rincón favorito de diversión en Plaza Río 2! En nuestra Kids Team Area, los más pequeños de la casa podrán disfrutar de juegos, talleres y actividades diseñadas para estimular su creatividad mientras hacen nuevos amigos.</p>
+                    <div class="ratio ratio-16x9 mb-2">
+                      <iframe src="https://www.youtube.com/embed/kq5_1Z-3FYo?si=ACh4Yr7FW_DTskcW" title="YouTube video player" allowfullscreen></iframe>
+                    </div>
+                    <a href="http://www.kidsteamarea.es/" target="_blank" class="btn btn-outline-primary w-100 mt-2">Visitar web</a>
+                  </div>
+                </div>
               </div>
+              <div class="modal-footer border-0">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
               </div>
             </div>
           </div>
-          <div class="col-md-7">
-            <h2 class="h3 font-weight-bold"><i class="fas fa-gift mr-2"></i>CatchGo</h2>
-            <div class="mb-3">
-              <blockquote 
-                class="tiktok-embed"
-                cite="https://www.tiktok.com/@catchgo.es/video/7481241707384720662"
-                data-video-id="7481241707384720662"
-                style="max-width: 100%; min-width: 325px;">
-                <section>
-                  <a target="_blank" title="@catchgo.es" href="https://www.tiktok.com/@catchgo.es?refer=embed">@catchgo.es</a> 
-                  La casa de atrapa-peluches más divertida de toda España! En Catch Go volverás a ser niñ@ divirtiéndote sin parar!
-                </section>
-              </blockquote>
-              <script async src="https://www.tiktok.com/embed.js"></script>
+        </div>
+        <!-- Kids Team Area Card -->
+        <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+          <article class="card h-100 shadow border-0" style="width: 15rem; min-width: 200px;">
+            <div class="card-body pb-2">
+              <h2 class="h6 card-title mb-2 text-start fw-bold">Kids Team Area</h2>
             </div>
-           
-            
+            <img src="Imágenes/Tiendas/kidsteamarea.png" class="card-img-top p-2 rounded-4" alt="Kids Team Area" style="height: 120px; object-fit: contain;">
+            <div class="card-footer bg-white border-0 text-center pt-2">
+              <button type="button" class="btn btn-outline-primary w-100 btn-sm" data-bs-toggle="modal" data-bs-target="#modalKidsTeamArea">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Modal Mirador Río 2 -->
+        <div class="modal fade" id="modalMiradorRio2" tabindex="-1" aria-labelledby="modalMiradorRio2Label" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h5 class="modal-title" id="modalMiradorRio2Label">Detalles:</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center mb-3">Mirador Río 2</h2>
+                <div class="row align-items-center">
+                  <div class="col-md-6 mb-3 mb-md-0">
+                    <img src="Imágenes/Tiendas/miradorrio2.png" class="img-fluid rounded shadow" alt="Mirador Río 2">
+                  </div>
+                  <div class="col-md-6">
+                    <p>El Mirador Río 2 es un espacio único en el que disfrutar de la mejor gastronomía y de unas vistas espectaculares del río Manzanares y de Madrid. En este espacio podrás disfrutar de una oferta gastronómica variada y de calidad, con una selección de restaurantes y bares que ofrecen lo mejor de la cocina local e internacional.</p>
+                    <div class="ratio ratio-16x9 mb-2">
+                      <iframe src="https://www.youtube.com/embed/ZYJNZe7ahPM?si=5WomWbj7XLiT07IJ" title="YouTube video player" allowfullscreen></iframe>
+                    </div>
+                    <a href="http://www.miradorrio2.com/" target="_blank" class="btn btn-outline-primary w-100 mt-2">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer border-0">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
           </div>
         </div>
-      </article>
+        <!-- Mirador Río 2 Card -->
+        <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+          <article class="card h-100 shadow border-0" style="width: 15rem; min-width: 200px;">
+            <div class="card-body pb-2">
+              <h2 class="h6 card-title mb-2 text-start fw-bold">Mirador Río 2</h2>
+            </div>
+            <img src="Imágenes/Tiendas/miradorrio2.png" class="card-img-top p-2 rounded-4" alt="Mirador Río 2" style="height: 120px; object-fit: contain;">
+            <div class="card-footer bg-white border-0 text-center pt-2">
+              <button type="button" class="btn btn-outline-primary w-100 btn-sm" data-bs-toggle="modal" data-bs-target="#modalMiradorRio2">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Modal Sicher Street -->
+        <div class="modal fade" id="modalSicherStreet" tabindex="-1" aria-labelledby="modalSicherStreetLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h5 class="modal-title" id="modalSicherStreetLabel">Detalles:</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center mb-3">Sicher Street</h2>
+                <div class="row align-items-center">
+                  <div class="col-md-6 mb-3 mb-md-0">
+                    <img src="Imágenes/Tiendas/sicher.png" class="img-fluid rounded shadow" alt="Sicher Street">
+                  </div>
+                  <div class="col-md-6">
+                    <p>Sicher Street es el concepto juvenil creado por Sicher para Plaza Río 2. Hemos generado un espacio destinado para niños y adolescentes, creado como una suerte de experiencia global y urbana, la calle está presente con la estética grafiti, vallas y luces de neón.</p>
+                    <div class="mb-2">
+                      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@somossicher/video/7081337504464489734" data-video-id="7081337504464489734" style="max-width: 100%; min-width: 325px;">
+                        <section>
+                          <a target="_blank" title="@somossicher" href="https://www.tiktok.com/@somossicher?refer=embed">@somossicher</a>
+                          Este es nuestro espacio Sicher Street en @plazario_2 Madrid. Un divertido parque de bolas, juegos de video consolas, zona arcade para que te sumerjas en los años 80. Un lugar donde la diversión nunca te va a faltar. Además, celebra el cumple de tu peque con nosotros.
+                        </section>
+                      </blockquote>
+                      <script async src="https://www.tiktok.com/embed.js"></script>
+                    </div>
+                    <a href="http://www.sicher.es/" target="_blank" class="btn btn-outline-primary w-100 mt-2">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer border-0">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Sicher Street Card -->
+        <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+          <article class="card h-100 shadow border-0" style="width: 15rem; min-width: 200px;">
+            <div class="card-body pb-2">
+              <h2 class="h6 card-title mb-2 text-start fw-bold">Sicher Street</h2>
+            </div>
+            <img src="Imágenes/Tiendas/sicher.png" class="card-img-top p-2 rounded-4" alt="Sicher Street" style="height: 120px; object-fit: contain;">
+            <div class="card-footer bg-white border-0 text-center pt-2">
+              <button type="button" class="btn btn-outline-primary w-100 btn-sm" data-bs-toggle="modal" data-bs-target="#modalSicherStreet">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Modal CatchGo -->
+        <div class="modal fade" id="modalCatchGo" tabindex="-1" aria-labelledby="modalCatchGoLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h5 class="modal-title" id="modalCatchGoLabel">Detalles:</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+              </div>
+              <div class="modal-body">
+                <h2 class="h5 card-title text-center mb-3">CatchGo</h2>
+                <div class="row align-items-center">
+                  <div class="col-md-6 mb-3 mb-md-0">
+                    <img src="Imágenes/Tiendas/catchgo.png" class="img-fluid rounded shadow" alt="CatchGo">
+                  </div>
+                  <div class="col-md-6">
+                    <p>CatchGo es una cadena de tiendas que se dedica exclusivamente a la diversión con máquinas caza peluches. Cambiamos el modo de atrapar peluches para asegurarnos de que nuestros clientes vayan felices y satisfechos.</p>
+                    <div class="mb-2">
+                      <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@catchgo.es/video/7481241707384720662" data-video-id="7481241707384720662" style="max-width: 100%; min-width: 325px;">
+                        <section>
+                          <a target="_blank" title="@catchgo.es" href="https://www.tiktok.com/@catchgo.es?refer=embed">@catchgo.es</a>
+                          La casa de atrapa-peluches más divertida de toda España! En Catch Go volverás a ser niñ@ divirtiéndote sin parar!
+                        </section>
+                      </blockquote>
+                      <script async src="https://www.tiktok.com/embed.js"></script>
+                    </div>
+                    <a href="http://www.catchgo.es/" target="_blank" class="btn btn-outline-primary w-100 mt-2">Visitar web</a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer border-0">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- CatchGo Card -->
+        <div class="col-10 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
+          <article class="card h-100 shadow border-0" style="width: 15rem; min-width: 200px;">
+            <div class="card-body pb-2">
+              <h2 class="h6 card-title mb-2 text-start fw-bold">CatchGo</h2>
+            </div>
+            <img src="Imágenes/Tiendas/catchgo.png" class="card-img-top p-2 rounded-4" alt="CatchGo" style="height: 120px; object-fit: contain;">
+            <div class="card-footer bg-white border-0 text-center pt-2">
+              <button type="button" class="btn btn-outline-primary w-100 btn-sm" data-bs-toggle="modal" data-bs-target="#modalCatchGo">
+                Más información
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
   </main>
   <!-- Pie de página -->
-  <footer>
-  <div class="container-fluid">
-    <div class="row d-flex align-items-start">
-      <!-- Sección de dirección -->
-      <div class="address-section col-md-4">
-        <address>
-        <h2>Dónde estamos</h2>
-          <strong>Plaza Rio2</strong>
-          <p>Centro Comercial Plaza Río 2<br>
-            Avenida del Manzanares 210<br>
-            28026 Madrid<br>
-            España</p>
-          <a href="/acceso">Cómo llegar</a>
-        </address>
-      </div>
-
-      <!-- Sección de información -->
-      <div class="info-section col-md-4">
-        <h2>Información</h2>
-        <ul>
-          <li><a href="/todas-las-tiendas">Todas las tiendas</a></li>
-          <li><a href="/prensa">Prensa</a></li>
-          <li><a href="/servicios">Servicios</a></li>
-          <li><a href="/plano-del-sitio-web">Plano del sitio web</a></li>
-          <li><a href="/aviso-legal">Aviso Legal</a></li>
-          <li><a href="/#consent">Gestión de cookies</a></li>
-          <li><a href="/contacto">Contacto</a></li>
-          <li><a href="/trabajar-en-plaza-rio">Trabajar en Plaza Río 2</a></li>
-          <li><a href="/promociones-tiendas">Portal empleado RIO</a></li>
-          <li><a href="/mirador-rio2">Mirador Rio 2</a></li>
-        </ul>
-      </div>
-
-      <!-- Sección de marcas -->
-      <div class="brands-section col-md-4">
-        <h2>Todas las marcas</h2>
-        <div class="d-flex justify-content-center">
-          <ul class="mr-4">
-            <li><a href="/tiendas/1091-moda-mujer">Moda Mujer</a></li>
-            <li><a href="/tiendas/1092-moda-hombre">Moda Hombre</a></li>
-            <li><a href="/tiendas/1093-ninos">Niños</a></li>
-            <li><a href="/tiendas/1089-moda-intima">Moda Intima</a></li>
-            <li><a href="/tiendas/1090-moda-deportiva">Moda Deportiva</a></li>
-            <li><a href="/tiendas/1060-zapateria-bolsos-complem">Zapateria, bolsos, complementos</a></li>
-            <li><a href="/tiendas/1062-belleza-salud">Belleza, salud</a></li>
+ <!-- Pie de página con toda la información útil y enlaces -->
+  <footer class="bg-dark text-light pt-5 pb-3 mt-5">
+    <div class="container-fluid">
+      <div class="row d-flex align-items-start">
+        <!-- Aquí tienes nuestra dirección por si quieres visitarnos -->
+        <div class="address-section col-md-4 mb-4">
+          <address>
+            <h2 class="h5 text-uppercase text-info mb-3">Dónde estamos</h2>
+            <strong>Plaza Rio2</strong>
+            <p class="mb-1">Centro Comercial Plaza Río 2<br>
+              Avenida del Manzanares 210<br>
+              28026 Madrid<br>
+              España</p>
+            <a href="visitanos.html" class="text-decoration-underline text-info">Cómo llegar</a>
+          </address>
+        </div>
+        <!-- Enlaces útiles para que encuentres todo lo que buscas -->
+        <div class="info-section col-md-4 mb-4">
+          <h2 class="h5 text-uppercase text-info mb-3">Información</h2>
+          <ul class="list-unstyled">
+            <li><a href="tiendas.html" class="text-light text-decoration-none">Todas las tiendas</a></li>
+            <li><a href="/prensa" class="text-light text-decoration-none">Prensa</a></li>
+            <li><a href="ocio.html" class="text-light text-decoration-none">Servicios</a></li>
+            <li><a href="/plano-del-sitio-web" class="text-light text-decoration-none">Plano del sitio web</a></li>
+            <li><a href="avisolegal.html" class="text-light text-decoration-none">Aviso Legal</a></li>
+            <li><a href="avisolegal.html#collapseCookies" class="text-light text-decoration-none">Gestión de cookies</a></li>
+            <li><a href="contacto.html" class="text-light text-decoration-none">Contacto</a></li>
+            <li><a href="/trabajar-en-plaza-rio" class="text-light text-decoration-none">Trabajar en Plaza Río 2</a></li>
+            <li><a href="" class="text-light text-decoration-none">Portal empleado RIO</a></li>
+            <li><a href="ocio.html#miradorrio2" class="text-light text-decoration-none">Mirador Rio 2</a></li>
           </ul>
-          <ul>
-            <li><a href="/tiendas/1064-hogar-decoracion">Hogar, decoración</a></li>
-            <li><a href="/tiendas/1066-cultura-ocio-tecnologia">Cultura, ocio, tecnología</a></li>
-            <li><a href="/tiendas/1068-servicios">Servicios</a></li>
-            <li><a href="/tiendas/1070-hipermercado-alcampo">Hipermercado</a></li>
-            <li><a href="/tiendas/1072-universo-gourmet">Universo gourmet</a></li>
-            <li><a href="/tiendas/1094-joyeria-relojeria">Joyería, relojería</a></li>
-            <li><a href="/tiendas/1096-alimentacion">Alimentación</a></li>
-          </ul>
+        </div>
+        <!-- Listado de marcas y categorías para que encuentres tu tienda favorita -->
+        <div class="brands-section col-md-4 mb-4">
+          <h2 class="h5 text-uppercase text-info mb-3">Todas las marcas</h2>
+          <div class="d-flex justify-content-center">
+            <ul class="list-unstyled me-4">
+              <li><a href="tiendas.html" class="text-light text-decoration-none">Moda Mujer</a></li>
+              <li><a href="tiendas.html" class="text-light text-decoration-none">Moda Hombre</a></li>
+              <li><a href="tiendas.html" class="text-light text-decoration-none">Niños</a></li>
+              <li><a href="tiendas.html" class="text-light text-decoration-none">Moda Intima</a></li>
+              <li><a href="tiendas.html" class="text-light text-decoration-none">Moda Deportiva</a></li>
+              <li><a href="tiendas.html" class="text-light text-decoration-none">Zapateria, bolsos, complementos</a></li>
+              <li><a href="tiendas.html" class="text-light text-decoration-none">Belleza, salud</a></li>
+            </ul>
+            <ul class="list-unstyled">
+              <li><a href="tiendas.html" class="text-light text-decoration-none">Hogar, decoración</a></li>
+              <li><a href="tiendas.html" class="text-light text-decoration-none">Cultura, ocio, tecnología</a></li>
+              <li><a href="tiendas.html" class="text-light text-decoration-none">Servicios</a></li>
+              <li><a href="tiendas.html" class="text-light text-decoration-none">Hipermercado</a></li>
+              <li><a href="tiendas.html" class="text-light text-decoration-none">Universo gourmet</a></li>
+              <li><a href="tiendas.html" class="text-light text-decoration-none">Joyería, relojería</a></li>
+              <li><a href="tiendas.html" class="text-light text-decoration-none">Alimentación</a></li>
+            </ul>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-
-    <!-- Sección de redes sociales y boletín -->
-       <div class="container-fluid">
+    
+    <!-- Aquí puedes seguirnos en redes sociales o suscribirte a nuestro boletín -->
+    <div class="container-fluid   pt-4 mt-4">
       <div class="row">
-      <!-- Redes sociales -->
-      <div class="col-md-6">
-        <section>
-       <h2>Síguenos</h2>
-       <ul class="list-inline mb-2">
-         <li class="list-inline-item mx-1">
-        <a href="https://www.facebook.com/PlazaRio2/" target="_blank" aria-label="Facebook">
-        <i class="fab fa-facebook fa-2x"></i>
-        </a>
-         </li>
-         <li class="list-inline-item mx-1">
-        <a href="https://www.instagram.com/plazario_2/" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram fa-2x"></i>
-        </a>
-         </li>
-         <li class="list-inline-item mx-1">
-        <a href="https://twitter.com/plazario_2" target="_blank" aria-label="Twitter">
-        <i class="fab fa-twitter fa-2x"></i>
-        </a>
-         </li>
-         <li class="list-inline-item mx-1">
-        <a href="https://www.tiktok.com/@plazario2" target="_blank" aria-label="TikTok">
-        <i class="fab fa-tiktok fa-2x"></i>
-        </a>
-         </li>
-       </ul>
-        </section>
+        <!-- Síguenos en tus redes favoritas para no perderte nada -->
+        <div class="col-md-6 mb-3">
+          <section>
+            <h2 class="h5 text-uppercase text-info mb-3">Síguenos</h2>
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item mx-1">
+                <a href="https://www.facebook.com/PlazaRio2/" target="_blank" aria-label="Facebook" class="text-light">
+                  <i class="fab fa-facebook fa-2x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mx-1">
+                <a href="https://www.instagram.com/plazario_2/" target="_blank" aria-label="Instagram" class="text-light">
+                  <i class="fab fa-instagram fa-2x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mx-1">
+                <a href="https://twitter.com/plazario_2" target="_blank" aria-label="Twitter" class="text-light">
+                  <i class="fab fa-twitter fa-2x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mx-1">
+                <a href="https://www.tiktok.com/@plazario2" target="_blank" aria-label="TikTok" class="text-light">
+                  <i class="fab fa-tiktok fa-2x"></i>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <!-- Suscríbete a nuestro boletín y recibe todas las novedades -->
+        <div class="col-md-6">
+          <section>
+            <h2 class="h5 text-uppercase text-info mb-3">Suscríbete a nuestro boletín</h2>
+            <form action="/submit" method="post" class="row g-2 align-items-center">
+              <div class="col-8">
+                <label for="newsletter-email" class="visually-hidden">Tu email</label>
+                <input type="email" name="email" id="newsletter-email" class="form-control" placeholder="Tu email" required>
+              </div>
+              <div class="col-4">
+                <button type="submit" class="btn btn-info w-100 text-dark fw-bold">Suscribirse</button>
+              </div>
+            </form>
+          </section>
+        </div>
       </div>
-
-            <!-- Boletín de noticias -->
-            <div class="col-md-6">
-              <section>
-              <h2 class="mb-3">Suscríbete a nuestro boletín</h2>
-              <form action="/submit" method="post" class="form-inline justify-content-center">
-                <div class="form-group mb-2 mr-2 w-75">
-                <label for="newsletter-email" class="sr-only">Tu email</label>
-                <input type="email" name="email" id="newsletter-email" class="form-control w-100" placeholder="Tu email" required>
-                </div>
-                <button type="submit" class="btn btn-primary mb-2">Suscribirse</button>
-              </form>
-              </section>
-            </div>
-</footer>
+      <div class="row mt-4">
+        <div class="col text-center text-secondary small">
+            &copy; Plaza Río 2 Todos los derechos reservados. 2025.
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
