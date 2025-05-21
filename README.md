@@ -59,8 +59,6 @@ El objetivo es ofrecer una experiencia moderna, accesible y adaptada a dispositi
 
 
 
-
-#### 1- Bienvenido a plaza texto …. encima del video
 #### 2- Cambiar letras y distintos tipos para títulos y textos
 #### 5- Ocio: que los iframes todos de YT o TikTok)
 #### 6- Cine
