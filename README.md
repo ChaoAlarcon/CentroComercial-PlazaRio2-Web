@@ -67,7 +67,7 @@ El objetivo es ofrecer una experiencia moderna, accesible y adaptada a dispositi
 #### 	6.1- Las fotos no las tenemos que descargar, tenemos que cogerlas online
 
 #### 10- Footer: Hacer que funcionen los enlaces
-#### -Hacer página de "Prensa" y de "Portal de empelo"
+#### -Crear página de "Prensa" y de "Portal de empelo"
 
 
 
