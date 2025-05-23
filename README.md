@@ -59,10 +59,11 @@ El objetivo es ofrecer una experiencia moderna, accesible y adaptada a dispositi
 
 
 
-#### 2- Cambiar letras y distintos tipos para títulos y textos
+#### -Crear página portal de empleo
 
 #### 6- Cine
 #### 	6.1- Las fotos no las tenemos que descargar, tenemos que cogerlas online
+#### -Quitar iconos de los títulos
 
 
 
