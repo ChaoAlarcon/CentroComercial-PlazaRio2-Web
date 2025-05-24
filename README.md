@@ -50,12 +50,6 @@ El objetivo es ofrecer una experiencia moderna, accesible y adaptada a dispositi
 #### -Ajustar paleta de colores de la página
 
 
-
-
-
-
-
-
 #### -Cine - Las fotos no las tenemos que descargar, tenemos que cogerlas online
 
 
