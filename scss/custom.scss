@@ -1,0 +1,6 @@
+// Sobrescribe variables de Bootstrap
+$primary: #ff6600;       // Naranja personalizado
+$secondary: #333333;     // Gris oscuro personalizado
+
+// Importa Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
