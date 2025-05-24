@@ -54,7 +54,7 @@ El objetivo es ofrecer una experiencia moderna, accesible y adaptada a dispositi
 
 
 
-#### -Poner la letras del Index más visibles
+
 
 #### -Cine - Las fotos no las tenemos que descargar, tenemos que cogerlas online
 

@@ -146,11 +146,19 @@ section {
      font-family: 'DM Sans', Arial, sans-serif;
 }
 
+.texto-descripción{
+     margin-top: -50px;
+     text-align: center;
+     font-family: 'DM Sans', Arial, sans-serif;
+}
+
 .Contenido {
-     margin-top: -470px;
-     margin-bottom: 300px;
+     margin-top: -435px;
+     margin-bottom: 170px;
      font-family: 'Jost', Arial, sans-serif;
 }
+
+
 
 .Vídeo {
      margin-top: -500px;
