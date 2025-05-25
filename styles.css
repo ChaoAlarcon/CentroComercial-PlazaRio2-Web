@@ -144,6 +144,10 @@ section {
      font-family: 'Jost', Arial, sans-serif;
 }
 
+.texto-plano{
+     margin-top: 100px;
+}
+
 /* 6. Cards y contenido */
 .card {
      background-color: #fff;

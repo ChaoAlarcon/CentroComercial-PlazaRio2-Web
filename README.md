@@ -41,6 +41,10 @@ El objetivo es ofrecer una experiencia moderna, accesible y adaptada a dispositi
 
 [Échale un vistazo!](https://plazario2.netlify.app/)
 
+## 🎨 Paleta de Colores utilizada
+
+<img src="AdobeColor-Plaza Río 2.jpeg" alt="Paleta de colores" height="100px">
+
 
 
 ## 📝Notas
@@ -49,7 +53,7 @@ El objetivo es ofrecer una experiencia moderna, accesible y adaptada a dispositi
 #### -Hacer una página de créditos, en la que ponga los nombres del equipo y el proceso de creación del sitio web
 
 
-#### -Hacer la página Responsive
+#### -Reordenar todo el código con comentarios simples
 #### -Cine - Las fotos no las tenemos que descargar, tenemos que cogerlas online
 
 
