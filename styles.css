@@ -122,7 +122,6 @@ section {
 .Presentación {
      margin-top: -570px;
      margin-bottom: -800px;
-     
      text-shadow: 2px 2px 8px rgba(0,0,0,0.25);
      font-family: 'Playfair Display', serif;
      text-align: center;
@@ -134,7 +133,6 @@ section {
 }
 
 .Contenido {
-     
      font-family: 'Jost', Arial, sans-serif;
 }
 
@@ -196,7 +194,6 @@ footer {
      font-size: 0.9rem;
      color: #999;
      font-family: 'DM Sans', Arial, sans-serif;
-     
 }
 
 footer h2, .brands-section h2 {
@@ -260,22 +257,20 @@ main .legal-content::-webkit-scrollbar-thumb {
 
 /* 10. Responsive Design */
 
-/* Ajustes generales para tablets y móviles */
+/* --- Tablets --- */
 @media (max-width: 1024px) {
-   
-    
      main {
           margin-top: 80px;
      }
 }
 
+/* --- Tablets y móviles --- */
 @media (max-width: 768px) {
      nav ul {
           flex-direction: column;
           gap: 10px;
      }
      .logo {
-          
           height: 50px;
           align-items: center;
      }
@@ -289,12 +284,12 @@ main .legal-content::-webkit-scrollbar-thumb {
      section {
           padding: 0 5px;
      }
-   
      .card-content {
           padding: 12px;
      }
 }
 
+/* --- Móviles pequeños --- */
 @media (max-width: 480px) {
      nav {
           flex-direction: column;
@@ -315,7 +310,6 @@ main .legal-content::-webkit-scrollbar-thumb {
      h2 {
           font-size: 1.1rem;
      }
-   
      .card {
           margin-bottom: 16px;
      }
@@ -326,5 +320,3 @@ main .legal-content::-webkit-scrollbar-thumb {
           padding: 0 2px;
      }
 }
-
-

@@ -43,7 +43,7 @@ El objetivo es ofrecer una experiencia moderna, accesible y adaptada a dispositi
 
 ## 🎨 Paleta de Colores utilizada
 
-<img src="AdobeColor-Plaza Río 2.jpeg" alt="Paleta de colores" height="100px">
+<img src="AdobeColor-Plaza Río 2.jpeg" alt="Paleta de colores" height="350px">
 
 
 
@@ -53,7 +53,7 @@ El objetivo es ofrecer una experiencia moderna, accesible y adaptada a dispositi
 #### -Hacer una página de créditos, en la que ponga los nombres del equipo y el proceso de creación del sitio web
 
 
-#### -Reordenar todo el código con comentarios simples
+
 #### -Cine - Las fotos no las tenemos que descargar, tenemos que cogerlas online
 
 
