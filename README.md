@@ -39,7 +39,7 @@ El objetivo es ofrecer una experiencia moderna, accesible y adaptada a dispositi
 
 ## 📸 Vista previa
 
-[Échale un vistazo!](https://www.linkedin.com/posts/chao-alarc%C3%B3n_desarrolloweb-html5-css3-activity-7329267896117809153-zzc0?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE_BcLQBcRZ71RtNDnnh4Qoo--IkG05oJ3U)
+[Échale un vistazo!](https://plazario2.netlify.app/)
 
 
 
