@@ -49,7 +49,7 @@ El objetivo es ofrecer una experiencia moderna, accesible y adaptada a dispositi
 #### -Hacer una página de créditos, en la que ponga los nombres del equipo y el proceso de creación del sitio web
 
 
-
+#### -Hacer la página Responsive
 #### -Cine - Las fotos no las tenemos que descargar, tenemos que cogerlas online
 
 
