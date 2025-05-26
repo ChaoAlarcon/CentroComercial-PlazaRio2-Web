@@ -18,14 +18,11 @@
 .Plaza-Río-2-4-hsla { color: hsla(22, 86, 60, 1); }
 .Plaza-Río-2-5-hsla { color: hsla(17, 7, 62, 1); }
 
+$primary: #4B89BF;       
+$secondary: #A69C98;     
+$success: #F28444;       
+$info: #96B9D9;          
+$warning: #FFD580;       
 
 
-// Sobrescribe variables de Bootstrap usando la paleta de colores
-$primary: #4B89BF;       // Plaza-Río-2-1-hex (azul principal)
-$secondary: #A69C98;     // Plaza-Río-2-5-hex (gris/marrón suave)
-$success: #F28444;       // Plaza-Río-2-4-hex (naranja)
-$info: #96B9D9;          // Plaza-Río-2-2-hex (azul claro)
-$warning: #FFD580;       // Un beige más vivo (amarillo claro)
-
-// Importa Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";

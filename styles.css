@@ -139,12 +139,19 @@ section {
 .Vídeo {
      margin-top: -500px;
      margin-bottom: -800px;
+   
      font-family: 'Jost', Arial, sans-serif;
 }
 
 .texto-plano{
      margin-top: 100px;
 }
+
+.presentation-section{
+     margin-bottom: -150px;
+}
+
+
 
 /* 6. Cards y contenido */
 .card {
