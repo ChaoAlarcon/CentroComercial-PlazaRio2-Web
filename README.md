@@ -55,7 +55,8 @@ El objetivo es ofrecer una experiencia moderna, accesible y adaptada a dispositi
 
 
 
-
+#### -Cmabiar la tipografía
+#### -Añadir sombra al título principal
 
 
 
