@@ -51,12 +51,12 @@ El objetivo es ofrecer una experiencia moderna, accesible y adaptada a dispositi
 
 #### -Hacer mapa interactivo
 #### -Hacer una página de créditos, en la que ponga los nombres del equipo y el proceso de creación del sitio web
-#### -En la paleta de colores, poner el amarillo más fuerte, o otro color que se vea más
 
 
 
-#### -Cmabiar la tipografía
-#### -Añadir sombra al título principal
+
+#### -Cambiar colores transporte
+
 
 
 
