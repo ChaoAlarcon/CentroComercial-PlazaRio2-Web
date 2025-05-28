@@ -1,5 +1,6 @@
 /* 1. Importación de fuentes desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playwrite+DK+Loopet:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
 
 /* 2. Ajustes globales y tipografía base */
 html, body {
@@ -20,7 +21,7 @@ ul, main ul, main ol {
 }
 
 code, pre {
-     font-family: 'DM Mono', 'Source Code Pro', monospace;
+     font-family: 'DM Sans', Arial, sans-serif;
 }
 
 /* 3. Tipografía por elementos */
@@ -42,6 +43,7 @@ h2 {
      font-size: 1.5rem;
      margin-bottom: 20px;
      color: #000;
+     font-family: 'DM Sans', Arial, sans-serif;
 }
 
 main h2, main h3 {
@@ -123,6 +125,9 @@ section {
      display: flex;
      justify-content: center;
      margin-top: -500px;
+      font-family: "Cabin Sketch", sans-serif;
+  font-weight: 700;
+     
 }
 
 .Presentación {
@@ -133,13 +138,33 @@ section {
      text-align: center;
 }
 
+.texto-horario{
+     font-family: "Cabin Sketch", sans-serif;
+  font-weight: 700;
+}
+
 .Text-Presentación, .texto-descripción {
      text-align: center;
-     font-family: 'DM Sans', Arial, sans-serif;
+     font-family: 'Playwrite DK Loopet', 'Jost', Arial, sans-serif;
+  font-weight: 700;
+  
+}
+
+.texto-descripción{
+     margin-bottom: 70px;
+     
+}
+
+.modal-title{
+     font-family: "Cabin Sketch", sans-serif;
+  font-weight: 700;
+     font-size: 2.5rem;
+     
+
 }
 
 .Contenido {
-     font-family: 'Jost', Arial, sans-serif;
+     font-family: 'DM Sans', Arial, sans-serif;
 }
 
 .Vídeo {
@@ -166,6 +191,15 @@ section {
      overflow: hidden;
      transition: transform 0.3s;
      font-family: 'DM Sans', Arial, sans-serif;
+}
+
+.card-title{
+     font-family: 'Playwrite DK Loopet', 'Jost', Arial, sans-serif;
+     font-size: 1.5rem;
+     color: #333;
+    
+  
+    
 }
 
 .card:hover {
@@ -214,8 +248,21 @@ footer h2, .brands-section h2 {
 
 .brands-section ul li {
      margin-bottom: 10px;
-     font-family: 'Jost', Arial, sans-serif;
+   font-family: 'DM Sans', Arial, sans-serif;
 }
+
+.text-light{
+     font-family: 'DM Sans', Arial, sans-serif;
+}
+
+.badge{
+      font-family: 'Playwrite DK Loopet', 'Jost', Arial, sans-serif;
+     font-size: 1.5rem;
+     color: #333;
+    
+
+}
+
 
 /* 8. Aviso legal y contenido legal */
 .avisolegal {

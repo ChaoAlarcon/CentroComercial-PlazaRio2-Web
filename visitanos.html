@@ -58,14 +58,14 @@
     <section>
       <!-- Título y subtítulo -->
       <h1 class="mb-5 text-center fw-bold text-primary texto-plano">Acceso</h1>
-      <h2 class="h4 mb-4 text-center"><i class="fas fa-route me-2"></i>Cómo venir a visitarnos</h2>
+      <h2 class="h4 mb-4 text-center fw-bold"><i class="fas fa-route me-2"></i>Cómo venir a visitarnos</h2>
       <div class="row g-4">
         <!-- Columna: El centro -->
         <div class="col-md-4">
           <div class="card shadow-sm h-100">
             <div class="card-body">
               <address class="mb-4">
-                <h3 class="h5"><i class="fas fa-store me-2"></i>Centro Comercial Plaza Río 2</h3>
+                <h3 class="h5 card-title"><i class="fas fa-store me-2"></i>Centro Comercial Plaza Río 2</h3>
                 <p><i class="fas fa-map-marker-alt me-1"></i>Avenida del Manzanares 210<br>28026 Madrid<br>España</p>
                 <p class="text-success fw-bold"><i class="far fa-clock me-1"></i>Las tiendas estarán hoy abiertas hasta las 22:00</p>
                 <!-- Botón para abrir modal de horarios -->
@@ -84,7 +84,7 @@
         <div class="col-md-4">
           <div class="card shadow-sm h-100" aria-label="Información sobre parking gratuito">
             <div class="card-body">
-              <h3 class="h5 mb-3"><i class="fas fa-parking me-2"></i>Parking gratuito</h3>
+              <h3 class="h5 mb-3 card-title"><i class="fas fa-parking me-2"></i>Parking gratuito</h3>
               <p class="lead">Todos nuestros clientes podrán disfrutar de <strong>2 horas de Parking Gratuito</strong> al día dentro de las 1.500 plazas de aparcamiento disponibles.</p>
             </div>
           </div>
@@ -93,14 +93,14 @@
         <div class="col-md-4">
           <div class="card shadow-sm h-100">
             <div class="card-body">
-              <h3 class="h5 mb-3"><i class="fas fa-bus me-2"></i>Medios de transporte</h3>
+              <h3 class="  h5 mb-3 card-title "><i class="fas fa-bus me-2"></i>Medios de transporte</h3>
               <h4 class="h6"><i class="fas fa-map-signs me-2"></i>Dirección</h4>
               <p><i class="fas fa-map-marker-alt me-1"></i>Avenida del Manzanares 210<br>28026 Madrid</p>
-              <h4 class="h6 mt-3"><i class="fas fa-bus me-2"></i>Bus</h4>
+                <h4 class=" modal-title h6 mt-3 text-primary fw-bold"><i class="fas fa-bus me-2"></i>Bus</h4>
               <p>6, 18, 22, 23, 47, 55, 59, 60, 68, 76, 79, 85, 86,123, 247</p>
-              <h4 class="h6 mt-3"><i class="fas fa-subway me-2"></i>Metro</h4>
+                <h4 class=" modal-title h6 mt-3 fw-bold" style="color: #ffc107;"><i class="fas fa-subway me-2"></i>Metro</h4>
               <p>Legazpi y Usera - Línea 3 y Línea 6</p>
-              <h4 class="h6 mt-3"><i class="fas fa-train me-2"></i>RENFE</h4>
+                <h4 class=" modal-title h6 mt-3 text-danger fw-bold"><i class="fas fa-train me-2"></i>RENFE</h4>
               <p>C1 – C7 – C10 Estación Delicias<br>Conexión directa con Metro Línea 3 – Parada Legazpi</p>
             </div>
           </div>
@@ -227,61 +227,52 @@
     </div>
   </footer>
 
-  <!-- ===========================
-     MODAL DE HORARIOS
-  ============================ -->
-  <div class="modal fade" id="aviso1" tabindex="-1" aria-labelledby="aviso1Label" aria-hidden="true">
-    <div class="modal-dialog modal-md modal-dialog-centered">
-      <div class="modal-content">
-        <!-- Encabezado del modal -->
-        <div class="modal-header bg-primary text-white">
-          <h3 class="modal-title text-white" id="aviso1Label"><i class="fas fa-clock me-2"></i>Horario</h3>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-        </div>
-        <!-- Cuerpo del modal: información de horarios -->
-        <div class="modal-body">
-          <h4 class="text-center mb-4"><i class="fas fa-question-circle me-2"></i>¿Cuándo venir a visitarnos?</h4>
-          <section>
-            <div class="row">
-              <!-- Horario general -->
-              <div class="col-md-6 mb-3 mb-md-0">
-                <div class="card border-0 shadow-sm h-100">
-                  <div class="card-body">
-                    <h5 class="card-title text-center text-primary">Horario del centro</h5>
-                    <div class="d-flex justify-content-center my-3">
-                      <img src="Imágenes/reloj.svg" alt="Horario" class="img-fluid" style="max-width:60px;">
-                    </div>
-                    <ol class="list-unstyled text-center mb-0">
-                      <li>Lunes a Domingo: <strong>10:00 a 22:00</strong></li>
-                    </ol>
-                  </div>
-                </div>
-              </div>
-              <!-- Festivos -->
-              <div class="col-md-6">
-                <div class="card border-0 shadow-sm h-100 bg-light">
-                  <div class="card-body">
-                    <h5 class="card-title text-center text-danger">
-                      <i class="fas fa-star me-2"></i>Aperturas Festivos
-                    </h5>
-                    <p class="card-text text-justify mb-0">
-                      <strong>Domingos y festivos de apertura:</strong><br>
-                      Abrimos todos los domingos y festivos excepto el 25 de diciembre, 1 y 6 de enero y 1 de mayo (abierta zona de restauración).
-                    </p>
-                  </div>
-                </div>
-              </div>
+   <!-- Modal de horarios -->
+      <div class="modal fade" id="aviso1" tabindex="-1" aria-labelledby="aviso1Label" aria-hidden="true">
+        <div class="modal-dialog modal-md modal-dialog-centered">
+          <div class="modal-content">
+            <!-- Encabezado del modal -->
+            <div class="modal-header bg-primary text-white">
+              <h3 class="modal-title text-white" id="aviso1Label"><i class="fas fa-clock me-2"></i>Horario</h3>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
-          </section>
-        </div>
-        <!-- Pie del modal -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-            <i class="fas fa-times me-1"></i>Cerrar
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
+            <!-- Cuerpo del modal: información de horarios -->
+            <div class="modal-body">
+              <h4 class="text-center mb-4 card-title fw-bold"><i class="fas fa-question-circle me-2"></i>¿Cuándo venir a visitarnos?</h4>
+              <section>
+                <div class="row">
+                  <!-- Horario general -->
+                  <div class="col-md-6 mb-3 mb-md-0">
+                    <div class="card border-0 shadow-sm h-100">
+                      <div class="card-body">
+                        <h5 class=" text-center text-primary">Horario del centro</h5>
+                        <div class="d-flex justify-content-center my-3">
+                          <img src="Imágenes/reloj.svg" alt="Horario" class="img-fluid" style="max-width:60px;">
+                        </div>
+                        <ol class=" card-text list-unstyled text-center mb-0">
+                          <li class=" card-text">Lunes a Domingo: <strong>10:00 a 22:00</strong></li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Festivos -->
+                  <div class="col-md-6">
+                    <div class="card border-0 shadow-sm h-100 bg-light">
+                      <div class="card-body">
+                        <h5 class=" text-center text-danger">
+                          <i class="fas fa-star me-2"></i>Aperturas Festivos
+                        </h5>
+                        <p class="card-text text-start mb-0">
+                          <strong>Domingos y festivos de apertura:</strong><br>
+                          Abrimos todos los domingos y festivos excepto el 25 de diciembre, 1 y 6 de enero y 1 de mayo (abierta zona de restauración).
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+           
+    </section>
 </body>
 </html>
