@@ -55,10 +55,6 @@ El objetivo es ofrecer una experiencia moderna, accesible y adaptada a dispositi
 
 
 
-#### -Cambiar colores transporte
-
-
-
 
 
 
