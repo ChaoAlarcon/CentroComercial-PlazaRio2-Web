@@ -82,7 +82,7 @@ nav {
 
 .logo {
      height: 70px;
-     margin-left: 50px;
+     margin-left: 100px;
 }
 
 nav ul {
@@ -321,6 +321,11 @@ main .legal-content::-webkit-scrollbar-thumb {
      main {
           margin-top: 80px;
      }
+
+     .logo {
+          height: 60px;
+          margin-left: 0px;
+     }
 }
 
 /* --- Tablets y móviles --- */
@@ -332,6 +337,7 @@ main .legal-content::-webkit-scrollbar-thumb {
      .logo {
           height: 50px;
           align-items: center;
+          margin-left: 0;
      }
      header {
           padding: 10px 0;
