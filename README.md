@@ -51,7 +51,7 @@ El objetivo es ofrecer una experiencia moderna, accesible y adaptada a dispositi
 
 #### -Hacer mapa interactivo
 #### -Hacer una página de créditos, en la que ponga los nombres del equipo y el proceso de creación del sitio web+
-#### -Reparar botón INDEX, botón de descubrir
+#### -Dar más espacio entre los botones de navegación rápida del index cuadro esta en tamaño para móviles 
 
 
 
