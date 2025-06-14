@@ -3,8 +3,8 @@
 
 ![Logo](Imágenes/PlazaRio2-Logo.png)
 
-**Proyecto grupal desarrollado en el Instituto Nebrija de Formación Profesional**  
-**Autores:** Chao An Alarcón Chen, Álvaro Santos Calvo, Nicolás García-Sampedro Docampo  
+**Proyecto desarrollado en el Instituto Nebrija de Formación Profesional**  
+**Autor:** Chao An Alarcón Chen 
 📅 Abril 2025 - Junio 2025
 
 
