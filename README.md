@@ -4,7 +4,7 @@
 ![Logo](Imágenes/PlazaRio2-Logo.png)
 
 **Proyecto desarrollado en el Instituto Nebrija de Formación Profesional**  
-**Autor:** Chao An Alarcón Chen 
+**Autor:** Chao An Alarcón Chen <br> 
 📅 Abril 2025 - Junio 2025
 
 
