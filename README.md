@@ -22,7 +22,7 @@ El objetivo es ofrecer una experiencia moderna, accesible y adaptada a dispositi
 - Asegurar una navegación fluida e intuitiva
 - Optimizar la visualización para distintos dispositivos (responsive design)
 - Aplicar buenas prácticas de accesibilidad web
-- Desarrollar experiencia en trabajo colaborativo y control de versiones
+- Desarrollar experiencia en control de versiones
 
 
 
